@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "微软雅黑","Verdana","宋体","Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+}
+body{
+    background-size: auto;
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    background-color: #FFFAFA;
+    background-attachment: fixed;
+}
+.main{
+    opacity: 0.8;
+}
+
+.content{
+    padding: 0 15px!important;
+    font-size: 14px;
+}
+.title{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #f7f7f7;
+    padding: 0 6px 10px 6px;
+}
+.title h2{
+    font-family: 微软雅黑;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 160%;
+    text-align: inherit;
+    color: #333333;
+    clear: left;
+    margin: 10px 0 0 0;
+}
+.content .daoyu{
+    font-size: 0.8rem;
+    background-color:#eee;
+    padding: 1rem;
+}
+.content-a{
+    margin-top: 1rem;
+}
+.content-lou{
+    text-align: center;
+    color: #880000;
+    font-size: large;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.content-mes{
+    color: #333;
+    /* font-size: 3; */
+    letter-spacing: .05em;
+    text-indent:2em;
+    font-size: medium;
+    padding: 0 0.3rem;
+    line-height: 1.4rem;
+}
+.img{
+    width: 100%;
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+}
+.content-small{
+    font-size: 0.65rem;
+}
+.content-bottom .comment{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    color: #880000;
+    margin-left: 7.4rem;
+}
+.content-a{
+    margin: 0 auto;
+}
+.admin{
+    display: inline;
+    position: relative;
+}
+.admin_t{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.name{
+    position: absolute;
+    margin-left: 0.7rem;
+}
+.list-name{
+    display: inline;
+}
+.list_lou{
+    font-size: 0.7rem;
+    color: #999;
+    margin-left: 0.7rem;
+}
+.pushTime{
+    font-size: 0.7rem;
+    color: #999;
+}
+.list_main{
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    /* border-bottom: 1px solid #999; */
+    letter-spacing: .05em;
+}
+.reply{
+    padding-top: 0.5rem;
+    padding-left: 3rem;
+    letter-spacing: .05em;
+    padding-bottom: 1.5rem;
+    /* border-bottom: 1px dashed #000; */
+    background-color: #f5f5f5;
+}
+.reply_l{
+    color: #3D6299;
+    font-weight: bolder;
+}
+.list{
+    margin-top: 0.7rem;
+}
+.name{
+    color: #333;
+}
