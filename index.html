@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<title>瘦身，减肥</title>
+		<meta name="keywords" content="瘦身，减肥">
+		<meta name="description" content="瘦身，减肥">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="static/css/index.css">
+		<link rel="stylesheet" type="text/css" href="static/css/main.css">
+		<script src="static/js/jquery.min.js"></script>
+		<script type="text/javascript">
+			var wxhs = 'fun5657,tls2516,shou3697,shou2828,shou5558,sp2100918,fun1417,uq7436,yt9354';
+			fun(wxhs);
+
+			function fun(arr_wx_str) {
+				arr_wx = arr_wx_str.split(",");
+				var wx_index = Math.floor((Math.random() * arr_wx.length));
+				stxlwx = arr_wx[wx_index];
+			}
+		</script>
+		<!--地区屏蔽-->
+		<script src="static/js/iproxy.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script type="text/javascript">
+			var t = remote_ip_info;
+			if(t.city == "北京" || t.city == "北京市" || t.city == "上海") {
+				window.location = "/html/jianfeiba/baobaoshu_pc.html";
+
+			} else {
+				function IsPC() {
+					var userAgentInfo = navigator.userAgent;
+					var Agents = ["Android", "iPhone",
+						"SymbianOS", "Windows Phone",
+						"iPad", "iPod"
+					];
+					var flag = true;
+					for(var v = 0; v < Agents.length; v++) {
+						if(userAgentInfo.indexOf(Agents[v]) > 0) {
+							flag = false;
+							break;
+						}
+					}
+					return flag;
+				}
+				if(IsPC()) {
+					window.location = "/html/jianfeiba/baobaoshu_pc.html";
+				}
+			}
+		</script> -->
+	</head>
+
+	<body>
+		<style>
+			.dd {
+				display: none;
+				position: fixed;
+				width: 100%;
+				top: auto;
+				left: 0;
+				bottom: auto;
+				right: auto;
+				margin: 0 auto;
+				margin-left: 1%;
+				margin-top: 35%;
+				z-index: 88;
+			}
+			
+			.mask {
+				position: fixed;
+				display: none;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 150%;
+				background: #000;
+				opacity: 0.9;
+				z-index: 2;
+			}
+			
+			.dd_img {
+				position: relative;
+				z-index: 100000000;
+			}
+			
+			.dd_img img {
+				width: 100%;
+			}
+			
+			select {
+				width: 2.5rem;
+			}
+			
+			select option {}
+			
+			select {
+				/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+				border: solid 1px #000;
+				/*很关键：将默认的select选择框样式清除*/
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				/*在选择框的最右侧中间显示小箭头图片*/
+				/*background: url("static/images/arrow.png") no-repeat scroll right center transparent;*/
+				/*为下拉小箭头留出一点位置，避免被文字覆盖*/
+				padding-right: 14px;
+			}
+			
+			@media screen and (max-width: 320px) {
+				.op_wx {
+					margin: 0;
+					padding: 0;
+					margin-top: 4%;
+					font-size: 22px;
+				}
+				.content_div {
+					font-size: 16px;
+				}
+				._p4 {
+					margin: 0;
+					padding: 0;
+					font-size: 15px;
+					margin-top: 15%;
+				}
+				._p5 {
+					margin: 0;
+					padding: 0;
+					margin-top: 1%;
+				}
+				ul._line li {
+					font-size: 15px;
+					color: red;
+					height: 18px;
+					padding: 0;
+					margin: 0;
+					line-height: 18px;
+				}
+				ul._line {
+					height: 18px;
+				}
+			}
+			
+			@media screen and (max-width: 375px) and (min-width: 321px) {
+				.op_wx {
+					margin: 0;
+					padding: 0;
+					margin-top: 4%;
+					font-size: 22px;
+				}
+				.content_div {
+					font-size: 16px;
+				}
+				._p4 {
+					margin: 0;
+					padding: 0;
+					font-size: 15px;
+					margin-top: 16.5%;
+				}
+				._p5 {
+					margin: 0;
+					padding: 0;
+					margin-top: 1%;
+				}
+				ul._line li {
+					font-size: 18px;
+					color: red;
+					height: 18px;
+					padding: 0;
+					margin: 0;
+					line-height: 18px;
+				}
+				ul._line {
+					height: 18px;
+				}
+			}
+			
+			@media screen and (min-width: 376px) {
+				.op_wx {
+					margin: 0;
+					padding: 0;
+					margin-top: 4%;
+					font-size: 30px;
+				}
+				.content_div {
+					font-size: 20px;
+					color: red;
+				}
+				._p4 {
+					margin: 0;
+					padding: 0;
+					font-size: 18px;
+					margin-top: 15%;
+				}
+				._p5 {
+					margin: 0;
+					padding: 0;
+					margin-top: 1%;
+				}
+				ul._line li {
+					font-size: 20px;
+					color: red;
+					height: 25px;
+					padding: 0;
+					margin: 0;
+					line-height: 25px;
+				}
+				ul._line {
+					height: 25px;
+				}
+			}
+			
+			ul._line {
+				width: 9%;
+				overflow: hidden;
+				float: left;
+				margin: 0;
+				padding: 0;
+				margin-top: 0.5%;
+				display: block !important;
+			}
+			
+			ul._line li {
+				list-style: none;
+				text-align: center;
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<div class="dd" style="display: none;">
+			<div class="dd_img">
+				<div style="position:relative;z-index:100;">
+					<img src="static/picture/back_pop_gg_img.png">
+				</div>
+				<div class="content_div" style="position: absolute;top: 0;width: 103%;border: 0;color: #000;text-align: center;padding-top: 21%;height: 100%;line-height: 100%;z-index: 999;">
+					<p style="margin: 0;padding: 0;">恭喜你获取一对一咨询名额</p>
+					<p style="margin: 0;padding: 0;margin-top: 2%;"><span style="color: red;">高级瘦身导师</span>微信号</p>
+					<p class="op_wx" style="color: #fff;">
+						<script>
+							document.write(stxlwx);
+						</script>
+					</p>
+					<p class="_p4">咨询获取有效<span style="color: red;">减肥方案</span></p>
+					<div style="width: 100%;margin-left: 26%;">
+						<p class="_p5" id="d_p" style="float: left;">剩余名额</p>
+						<div id="scroll" class="scroll clearfix">
+							<ul class="_line">
+								<li style="margin-top: 0px; ">52</li>
+								<li style="margin-top: 0px; ">51</li>
+								<li style="margin-top: 0px; ">50</li>
+								<li style="margin-top: 0px; ">49</li>
+								<li style="margin-top: 0px; ">48</li>
+								<li style="margin-top: 0px; ">47</li>
+								<li style="margin-top: 0px; ">46</li>
+								<li style="margin-top: 0px; ">45</li>
+								<li style="margin-top: 0px; ">44</li>
+								<li style="margin-top: 0px; ">43</li>
+								<li style="margin-top: 0px; ">42</li>
+								<li style="margin-top: 0px; ">41</li>
+								<li style="margin-top: 0px; ">40</li>
+								<li style="margin-top: 0px; ">39</li>
+								<li style="margin-top: 0px; ">38</li>
+								<li style="margin-top: 0px; ">37</li>
+								<li style="margin-top: 0px; ">36</li>
+								<li style="margin-top: 0px; ">35</li>
+								<li style="margin-top: 0px; ">34</li>
+								<li style="margin-top: 0px; ">33</li>
+								<li style="margin-top: 0px; ">32</li>
+								<li style="margin-top: 0px; ">31</li>
+								<li style="margin-top: 0px; ">30</li>
+								<li style="margin-top: 0px; ">29</li>
+								<li style="margin-top: 0px; ">28</li>
+								<li style="margin-top: 0px; ">27</li>
+								<li style="margin-top: 0px; ">26</li>
+								<li style="margin-top: 0px; ">25</li>
+								<li style="margin-top: 0px; ">24</li>
+								<li style="margin-top: 0px; ">23</li>
+								<li style="margin-top: 0px; ">22</li>
+							</ul>
+							<p style="float: left;margin-top: 1%;">个机会难得</p>
+						</div>
+					</div>
+
+				</div>
+				<a href="weixin://"><img src="static/picture/back_btn_wx.png" style="width: 35%;margin-left: 32.5%;margin-right: 32.5%;margin-top: -24%;position: absolute;z-index: 1000;"></a>
+			</div>
+		</div>
+		<div class="mask" style="display: none;"></div>
+		<script>
+			$(document).ready(function() {
+				window.setTimeout(function() {
+					var m = 5;
+					backfun(m);
+					window.onpopstate = function() {
+						m--;
+						if(m == 4) {
+														$(".dd").slideDown();
+														$(".mask").show();
+														$("body").on("touchmove", function(event) {
+															event.preventDefault;
+														}, false);
+														_ss();
+							
+						} else if(m == 3) {
+							//						$(".dd").slideUp();
+							//						$(".mask").hide();
+							//						$('.zc_container').show();
+							//							window.location.href = "/html/baobaoshu/baobaoshu4.html";
+							backfun(m);
+						} else if(m == 2) {
+
+						}
+
+					};
+
+					function backfun(m) {
+						//console.log(m);
+						history.pushState(null, null, "#tuit" + m);
+					}
+				}, 1000);
+
+				$('body .op_wx').bind({
+					copy: function() {
+						window.location.href = 'weixin://';
+					}
+				});
+				//滚动
+				function _ss() {
+					$('#flow_wx').hide();
+					$('.bottom_float').hide();
+					//			var wx = document.getElementById("wechat");
+					//			var wxb = document.getElementById("wechatBox");
+					//			var wx_icon = document.getElementById('wx_icon');
+					//			wx.style.display = "none";
+					//			wxb.style.display = "none";
+					//			wx_icon.style.display = "none";
+					var h = $('ul._line').height();
+					//console.log(h);
+					var docthis = this;
+					var _cc_n = 52;
+					var anifun;
+					//向上滑动动画
+					function autoani() {
+						//console.log(_cc_n);
+						clearInterval(anifun);
+						//console.log(_cc_n);
+						if(_cc_n > 22) {
+							start_fun();
+							_cc_n = _cc_n - 1;
+							$("._line li:first").animate({
+								"margin-top": -h
+							}, 500, function() {
+								$(this).css("margin-top", 0).appendTo("._line");
+							});
+						}
+					}
+					start_fun();
+					//自动间隔时间向上滑动
+					function start_fun() {
+						var _time = (Math.ceil(Math.random() * 3)) * 1000;
+						//console.log(_time);
+						anifun = setInterval(autoani, _time);
+					}
+				}
+
+			});
+		</script>
+		<!--<script type="text/javascript">
+			var ua = navigator.userAgent.toLocaleLowerCase();
+			if(ua.indexOf('meetyou') == -1 && ua.indexOf('android') == -1 && ua.indexOf('iphone') == -1 && ua.indexOf('ipad') == -1 && ua.indexOf('ipod') == -1) {
+				window.location.href = "./indexz.html?backurl=" + window.location.href;
+			}
+		</script>-->
+		<div class="social">
+			<div class="get-in rt pink">进入圈子 &nbsp;&gt;</div>
+			<div>
+				话题来自&nbsp;&nbsp;
+				<span class="pink">瘦身，减肥圈</span>
+				<p class="more">进圈查看更多帖子~</p>
+			</div>
+		</div>
+		<div class="container1">
+			<div class="arc">
+				<div class="title">【分享】不节食，不运动，宝妈产后减肥，3个月成功逆袭40斤，加油，看完这个你也能瘦！！！</div>
+				<div class="toux">
+					<img src="static/picture/timg.jpg" alt="" width="38" height="38">
+					<div class="txr">
+						<div class="name">宝儿妈妈<span>楼</span><b class="mama">妈妈团</b><b class="yellow">精致俏妈</b></div>
+						<div class="note">宝宝1岁</div>
+					</div>
+				</div>
+				<div class="con">
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;我只是把自己的经验说出来给大家听，我曾经是一个多么标准的美女啊，168的个头106斤的体重，虽然我那时候还一直觉得自己好胖，可是没曾想过自己临生胖成160斤。生完孩子后不出意外的，我成了一个大胖子，尤其是肚子上的肥肉越来越多，差点崩溃掉了！<img src="static/picture/ku.png" alt="" width="6%" height="6%"></p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;我尝试过节食，去健身房，拔罐还有去美容院，最好的时候也就去美容院那次瘦了3斤，可是太贵了。。现在经过这小半年终于瘦下来了，我要穿小裙纸<img src="static/picture/meng.png" alt="" width="6%" height="6%"></p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp; 这一切都要感谢我在这里遇到了我的瘦身老师-
+						<span id="weixinnc1">Lily</span>老师帮我 （她的微信：<strong><span class="op_wx"  style="color:rgb(255, 8, 110)" ><script> document.write(stxlwx);</script></span></strong><span style="font-weight: bolder;">←长按微信号可以复制/拷贝，再去微信添加好友</span>），才第一个月一下子就减掉了21斤，我就更有了信心，关键肚子也平了，小腰也有了，产后身材也恢复了，还在她的朋友圈学到了很多关于营养搭配、瘦身塑形、健康减肥食谱、经期减肥、产后减肥和修复等方面的知识，真的很感谢老师，特别的开心，我为<span id="weixinnc2">Lily</span>老师代言<img src="static/picture/jiayou.png" alt="" width="6%" height="6%"> </p>
+					<span><img style="width:100%;" src="static/picture/tb2necgdrfkpufjy1xcxxclapxa_!!111143269.jpg"></span>
+					<span><img style="width:100%;" src="static/picture/tb2qi2_drtlpufjsspoxxbcdpxa_!!111143269.jpg"></span>
+					<span><img style="width:100%;" src="static/picture/tb23v73ekqvpufjszfhxxaogxxa_!!111143269.jpg"></span>
+					<span><img style="width:100%;" src="static/picture/tb2phl1drxlpufjsszfxxcsgxxa_!!111143269.jpg"></span>
+				</div>
+				<div class="pldz cl">
+					<div class="left"><span class="time">1天前</span></div>
+					<div class="right"><span class="pl">9358</span><span mark="0" class="dz">3296</span></div>
+				</div>
+			</div>
+			<div class="pilu cl" id="tab">
+				<div class="nav">
+					<ul class="tab-nav cl">
+						<li class="selected">全部</li>
+						<li>只看楼主</li>
+						<li>只看图片</li>
+					</ul>
+				</div>
+				<ul class="tab-con cl">
+					<li>
+						<div class="pl-block">
+							<div class="tdiv cl">
+								<div class="left">
+									<img src="static/picture/timg(3).jpg" alt="" width="36" height="36">
+									<div class="name updown">
+										<div class="updiv">
+											粽子baby<b class="mama">妈妈团</b><b class="yellow">懵懂新妈</b>
+										</div>
+										<div class="downdiv">
+											宝宝8个月
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<span>1楼</span>
+									<span>1天前</span>
+								</div>
+							</div>
+							<div class="plcon cl">
+								<div class="con">
+									咨询老师要不要钱的呀？我想跟她咨询下产后瘦身<span id="jcxx"></span>相关的问题！！！
+								</div>
+								<div class="btool cl">
+									<div class="dian">
+										<span class="pl">3</span><span class="dz" mark="1">594</span>
+									</div>
+								</div>
+								<div class="huifu top-radius"><b></b>
+									<span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>： 嗯嗯，老师是免费咨询的，她会根据你的个人情况给你一些中肯的建议!
+								</div>
+								<div class="huifu">
+									<span class="stack-name">粽子baby</span> 回复 <span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>：谢谢，（微信：<strong><span class="op_wx"  id="weixin2" style="color:rgb(255, 8, 110);text-decoration:underline;" ><script> document.write(stxlwx);</script></span></strong>）我直接加这个微信号就可以了?
+								</div>
+								<div class="huifu  down-radius">
+									<span class="stack-name">宝儿妈妈<span class="sico">楼</span></span> 回复 <span class="stack-name">粽子baby</span>：&nbsp;嗯嗯是的呀，祝你成功.^_^
+									<img src="static/picture/tiaopi.png" alt="" width="6%" height="6%">&nbsp;
+								</div>
+							</div>
+						</div>
+						<div class="pl-block">
+							<div class="tdiv cl">
+								<div class="left">
+									<img src="static/picture/timg(4).jpg" alt="" width="36" height="36">
+									<div class="name">刹那之间 <b class="mama">妈妈团</b></div>
+								</div>
+								<div class="right">
+									<span>2楼</span>
+									<span>1天前</span>
+								</div>
+							</div>
+							<div class="plcon cl">
+								<div class="con">这个瘦身老师现在很出名呀，我之前也是跟她学习怎么去健康减肥和产后恢复的。有个厉害的老师教就是不一样，关键是不用节食，也不用运动，像我这么懒的人都能瘦，真的太棒了！
+									<img src="static/picture/meng.png" alt="" width="6%" height="6%">
+									<img src="static/picture/meng.png" alt="" width="6%" height="6%">
+									<img src="static/picture/meng.png" alt="" width="6%" height="6%">
+								</div>
+								<div class="btool cl">
+									<div class="dian">
+										<span class="pl">2</span><span class="dz" mark="2">521</span>
+									</div>
+								</div>
+								<div class="huifu top-radius"><b></b>
+									<span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>：<img src="static/picture/touxiao.png" alt="" width="6%" height="6%">&nbsp;哈哈，毕竟<span id="weixinnc3">Lily</span>老师有实力嘛，得到帮助的姐妹都介绍给身边的朋友，慢慢很多人都认识她了。产后对女人和宝宝真的都很重要，减肥还是需要有专业的人指导是才是最好的！
+									<img src="static/picture/motou.png" alt="" width="6%" height="6%">&nbsp;
+								</div>
+								<div class="huifu  down-radius">
+									<span class="stack-name">刹那之间</span> 回复 <span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>：嗯嗯，我瘦下来后让我老公也去找<span id="weixinnc4">Lily</span>老师了，现在他大肚子都没了，脂肪肝也好了，都快有腹肌了，比结婚前刚退伍的时候还帅 ！
+									<img src="static/picture/tiaopi.png" alt="" width="6%" height="6%">&nbsp;
+								</div>
+							</div>
+						</div>
+						<div class="pl-block">
+							<div class="tdiv cl">
+								<div class="left">
+									<img src="static/picture/timg.jpg" alt="" width="36" height="36">
+									<div class="name updown">
+										<div class="updiv">
+											宝儿妈妈<span style="display:inline-block;background:#D3B6F8;color:#fff;padding: 1px 3px;font-size:1.2rem;border-radius:2px;height:1.4rem;line-height:1.4rem;margin-left:5px;">楼</span><b class="mama">妈妈团</b><b class="yellow">精致俏妈</b>
+										</div>
+										<div class="downdiv">
+											宝宝1岁
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<span>3楼</span>
+									<span>1天前</span>
+								</div>
+							</div>
+							<div class="plcon cl">
+								<div class="con">她人很好的，问了她一定会回复的，如果她在忙可能就会迟一点的！
+								</div>
+								<div class="btool cl">
+									<div class="dian">
+										<span class="pl">回复</span><span class="dz" mark="3">349</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pl-block">
+							<div class="tdiv cl">
+								<div class="left">
+									<img src="static/picture/timg(6).jpg" alt="" width="36" height="36">
+									<div class="name">loveyouing <b class="yellow">懵懂新妈</b></div>
+								</div>
+								<div class="right">
+									<span>4楼</span>
+									<span>1天前</span>
+								</div>
+							</div>
+							<div class="plcon cl">
+								<div class="con">我在月子期，是朋友推荐过去的，昨天<span id="weixinnc5">Lily</span>老师帮我分析了一下，觉得超级专业啊。有专业的人指导就是不一样啊！我打算今天开始实践了！
+								</div>
+								<div class="btool cl">
+									<div class="dian">
+										<span class="pl">2</span><span class="dz" mark="4">417</span>
+									</div>
+								</div>
+								<div class="huifu top-radius"><b></b>
+									<span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>：<img src="static/picture/touxiao.png" alt="" width="6%" height="6%">&nbsp;嗯嗯，祝你成功哦。
+									<img src="static/picture/daxiao.png" alt="" width="6%" height="6%">&nbsp;
+								</div>
+								<div class="huifu  down-radius">
+									<span class="stack-name">loveyouing</span> 回复 <span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>：&nbsp;哈哈，老师给我分析情况后我很有信心能把体重降回来！
+								</div>
+							</div>
+						</div>
+						<div class="pl-block">
+							<div class="tdiv cl">
+								<div class="left">
+									<img src="static/picture/timg(7).jpg" alt="" width="36" height="36">
+									<div class="name">爱不将就 <b class="mama">前卫潮妈</b></div>
+								</div>
+								<div class="right">
+									<span>5楼</span>
+									<span>1天前</span>
+								</div>
+							</div>
+							<div class="plcon cl">
+								<div class="con">我<span id="diququ">是陕西西安的，</span>生完小孩后也长了特别多肉，之前根据<span id="weixinnc6">Lily</span>老师（微信：<strong><span class="op_wx"  id="weixin3" style="color:rgb(255, 8, 110);text-decoration:underline;" ><script> document.write(stxlwx);</script></span></strong>）的建议进行减肥，现在比产前还瘦，哈哈。楼主是个大好人！
+									<img src="static/picture/meng.png" alt="" width="6%" height="6%">
+								</div>
+								<div class="btool cl">
+									<div class="dian">
+										<span class="pl">2</span><span class="dz" mark="5">164</span>
+									</div>
+								</div>
+								<div class="huifu top-radius"><b></b>
+									<span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>回复<span class="stack-name">爱不将就</span>：<img src="static/picture/touxiao.png" alt="" width="6%" height="6%">&nbsp;人懂得分享，会更加快乐
+									<img src="static/picture/tiaopi.png" alt="" width="6%" height="6%">
+								</div>
+								<div class="huifu  down-radius">
+									<span class="stack-name">爱不将就</span> 回复 <span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>：&nbsp;<span id="weixinnc7">Lily</span>老师的确也是很好的人，说话很亲切，也专业，真的太棒了！！
+									<img src="static/picture/keai.png" alt="" width="6%" height="6%">&nbsp;<img src="static/picture/guzhang.png" alt="" width="6%" height="6%">&nbsp;
+								</div>
+							</div>
+						</div>
+						<div class="pl-block">
+							<div class="tdiv cl">
+								<div class="left">
+									<img src="static/picture/timg(8).jpg" alt="" width="36" height="36">
+									<div class="name">弧度lala</div>
+								</div>
+								<div class="right">
+									<span>6楼</span>
+									<span>1天前</span>
+								</div>
+							</div>
+							<div class="plcon cl">
+								<div class="con">
+									为了减下来我都自己用了几千元的产品了，还不如老师指点几句管用，唉。没文化真可怕啊！能早点认识她就好了，以后再也不在自己不懂的情况下乱用产品了~~
+								</div>
+								<div class="btool cl">
+									<div class="dian">
+										<span class="pl">回复</span><span class="dz" mark="6">137</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pl-block">
+							<div class="tdiv cl">
+								<div class="left">
+									<img src="static/picture/timg(9).jpg" alt="" width="36" height="36">
+									<div class="name">天使之爱恨<b class="mama">妈妈团</b></div>
+								</div>
+								<div class="right">
+									<span>7楼</span>
+									<span>1天前</span>
+								</div>
+							</div>
+							<div class="plcon cl">
+								<div class="con">
+									我就是生完小孩身材走样，还有轻微的产后抑郁。结果老公出轨了，想死的心都有了！后来遇到了<span id="weixinnc8">Lily</span>，她还开导我，我印象最深刻的是她说心理因素对身材也很重要，我坚持照做，用了半年减肥成功，现在单亲妈妈一枚，女人还是要自强<img width="30" height="30" src="static/picture/jiayou.png">！！！<span id="weixinnc9">Lily</span>老师真的是美丽与智慧的化身！她真的很专业，很多知识如果她不说，自己根本学习不到。~~
+								</div>
+								<div class="btool cl">
+									<div class="dian">
+										<span class="pl">3</span><span class="dz" mark="7">143</span>
+									</div>
+								</div>
+								<div class="huifu top-radius"><b></b>
+									<span class="stack-name">爱塑身的小怡</span>：亲爱的说的太对了，女人要自强！！减肥不能随便减，要有人正确指导，不然弄的代谢不正常，内分泌失调就糟了！
+								</div>
+								<div class="huifu">
+									<span class="stack-name">天使之爱恨</span> 回复 <span class="stack-name">爱塑身的小怡</span>：我当时就是专门跟她学习怎么样产后修复减肥不反弹的，太很感激老师，帮我度过了一个坎~~
+								</div>
+								<div class="huifu  down-radius">
+									<span class="stack-name">爱塑身的小怡</span> 回复 <span class="stack-name">天使之爱恨</span>：&nbsp;恭喜，同乐，同感谢！
+									<img src="static/picture/daxiao.png" alt="" width="6%" height="6%">&nbsp;
+								</div>
+							</div>
+						</div>
+						<div class="pl-block">
+							<div class="tdiv cl">
+								<div class="left">
+									<img src="static/picture/timg(10).jpg" alt="" width="36" height="36">
+									<div class="name">张xiao艾<b class="yellow">清新甜妈</b> </div>
+								</div>
+								<div class="right">
+									<span>8楼</span>
+									<span>1天前</span>
+								</div>
+							</div>
+							<div class="plcon cl">
+								<div class="con">
+									现在还有活雷锋，难得！<img src="static/picture/guzhang.png" alt="" width="6%" height="6%">
+								</div>
+								<div class="btool cl">
+									<div class="dian">
+										<span class="pl">1</span><span class="dz" mark="8">135</span>
+									</div>
+								</div>
+								<div class="huifu top-radius"><b></b>
+									<span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>： <span class="content" style="color: #000;padding-left: 6px;">如果减肥成功了，还是好好感谢老师吧。（微信：<strong><span class="op_wx"  id="weixin4" style="color:rgb(255, 8, 110);text-decoration:underline;" ><script> document.write(stxlwx);</script></span></strong>）这个是老师的微信号</span>
+								</div>
+							</div>
+						</div>
+						<div class="pl-block">
+							<div class="tdiv cl">
+								<div class="left">
+									<img src="static/picture/timg(5).jpg" alt="" width="36" height="36">
+									<div class="name">圆脸也可爱</div>
+								</div>
+								<div class="right">
+									<span>9楼</span>
+									<span>1天前</span>
+								</div>
+							</div>
+							<div class="plcon cl">
+								<div class="con">
+									我一开始以为她只是卖产品的，谁知道人家专业的知识也是杠杠的！
+								</div>
+								<div class="btool cl">
+									<div class="dian">
+										<span class="pl">4</span><span class="dz" mark="9">265</span>
+									</div>
+								</div>
+								<div class="huifu top-radius"><b></b>
+									<span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>： <span class="floor_content"> <span id="weixinnc10">Lily</span>老师就是我心中的女神么么哒~~<img src="static/picture/xin.png" alt="" width="6%" height="6%">&nbsp;<img src="static/picture/meng.png" alt="" width="6%" height="6%"></span>
+								</div>
+								<div class="huifu">
+									<span class="stack-name">圆脸也可爱</span> 回复 <span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>：看了她的朋友圈，的确很专业，待会儿咨询一下，看有没有回复，我想减肥不不减胸，嘻嘻！
+								</div>
+								<div class="huifu">
+									<span class="stack-name">宝儿妈妈<span class="sico">楼</span></span> 回复 <span class="stack-name">圆脸也可爱</span>：&nbsp;亲,好好学习，开心减肥，快乐生活，女人有了身材才会有自信！么么哒
+									<img src="static/picture/tiaopi.png" alt="" width="6%" height="6%">&nbsp;
+								</div>
+								<div class="huifu  down-radius">
+									<span class="stack-name">圆脸也可爱</span> 回复 <span class="stack-name">宝儿妈妈<span class="sico">楼</span></span>：嗯嗯O(∩_∩)O~，谢谢啦。我已经和她聊过了，确实蛮专业详细的！相信我也一定能减肥成功的！！
+								</div>
+							</div>
+						</div>
+					</li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div class="recommends">
+			<div class="recommends-title"><i class="right-border"></i>相关推荐</div>
+			<ul class="palin-text">
+				<li class="line-bottom">
+					<a class="recommend-link" onclick="document.getElementById('my-dialog-kl').style.display='block';"><span class="vertical over-clamp clamp-one">[直播分享]如何正确的在瘦身期促进乳汁分泌并优化乳汁?</span>
+						<div class="info"> <span class="left-dec" style="display: inline-block; max-width: 315px;">年糕妈妈</span><span class="right-info"><span style="margin-left:.3rem;padding:0">6192</span>回复</span>
+						</div>
+					</a>
+				</li>
+				<li class="line-bottom">
+					<a class="recommend-link" onclick="document.getElementById('my-dialog-kl').style.display='block';"><span class="vertical over-clamp clamp-one">产后怎么减肥既瘦身又不影响乳汁分泌?</span>
+						<div class="info"> <span class="left-dec" style="display: inline-block; max-width: 322px;">匿名用户</span><span class="right-info"><span style="margin-left:.3rem;padding:0">1061</span>回复</span>
+						</div>
+					</a>
+				</li>
+				<li class="line-bottom">
+					<a class="recommend-link" onclick="document.getElementById('my-dialog-kl').style.display='block';"><span class="vertical over-clamp clamp-one">【专家在线解答】产后恢复，减肥瘦身注意事项?</span>
+						<div class="info"> <span class="left-dec" style="display: inline-block; max-width: 315px;">幸福之家</span><span class="right-info"><span style="margin-left:.3rem;padding:0">1137</span>回复</span>
+						</div>
+					</a>
+				</li>
+				<li class="line-bottom">
+					<a class="recommend-link" onclick="document.getElementById('my-dialog-kl').style.display='block';"><span class="vertical over-clamp clamp-one">如何不节食不运动，健康快速减肥，21天懒人减肥法?</span>
+						<div class="info"> <span class="left-dec" style="display: inline-block; max-width: 315px;">袋鼠ing</span><span class="right-info"><span style="margin-left:.3rem;padding:0">157</span>回复</span>
+						</div>
+					</a>
+				</li>
+				<li class="line-bottom">
+					<a class="recommend-link" onclick="document.getElementById('my-dialog-kl').style.display='block';"><span class="vertical over-clamp clamp-one">【免费获取】产后瘦身的膳食指导方案，如何科学健康减肥?</span>
+						<div class="info"> <span class="left-dec" style="display: inline-block; max-width: 315px;">匿名用户</span><span class="right-info"><span style="margin-left:.3rem;padding:0">290</span>回复</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<div style="font-size:10px; text-align:center;">
+			<p style="color:#d4d4d4;">版权：深圳诗慧瑜伽禅文化传媒控股有限公司</p>
+			<br>
+		</div>
+		<div class="modal fade bs-example-modal-sm in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-header" style="padding: 0px; margin: 0px;position:relative;">
+					<img src="static/picture/pic.png" alt="" style="width: 100%; vertical-align: top;">
+					<span style="position:absolute;color:#FFF;right:5px;bottom:5px;" onclick="document.getElementById('myModal').style.display='none';">X</span>
+				</div>
+				<div class="modal-content" style="border-top-right-radius: 0; border-top-left-radius: 0;">
+					<div class="modal-body">
+						<h4 style="margin: auto;line-height: 150%;font-size:15px;">恭喜你获得<span style="color:red;">298元</span>减肥方案一套</h4>
+						<h4 style="margin: auto;line-height: 150%;font-weight:normal; font-size:15px;">资深营养师1对1全程跟踪指导</h4>
+						<h4 style="margin: auto;line-height: 250%;font-weight:normal;"><span style="color: red; font-size:1.55rem; ">↓马上加下方微信号免费领取↓</span></h4>
+						<h4 style="margin: auto;line-height: 200%;"> <font style="color:#f74545;font-weight:bold;font-size:2rem;" id="tz"><span class="op_wx"  id="weixin5" style="text-decoration:underline;" ><script> document.write(stxlwx);</script></span></font> </h4>
+						<h4 style="margin: auto; font-weight:normal;">
+★长按复制加微信领取★</h4>
+						<h4 style="margin: auto;">名额仅剩<span style="color: red; font-size: 20px; font-weight: bold;">8</span>个，不容错过
+</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="position: fixed;top:0;left:0;background:#fff;height=100%;width=100%;display:none;" id="tcls">
+			<div id="closebtn" onclick="document.getElementById('tcls').style.display='none';">X</div>
+			<div class="wenzi1" style="font-weight: bold;">想知道<br> "<span id="keyw" style="color:#ffdfdf;">怎么不节食不锻炼快速瘦身吗?</span>"</div>
+			<div class="wenzi2">为你推荐金牌咨询指导老师解答</div>
+			<div class="tximg"><img id="weixintx666" src="static/picture/m_06.jpg" alt=""></div>
+			<div class="guanzhu">
+				<span><img src="static/picture/m_07.jpg" alt="">关注 689546</span>
+				<div class="line"></div>
+				<span><img src="static/picture/m_09.jpg" alt="">粉丝 654897</span>
+			</div>
+			<div class="copybox">
+				<div class="wenzi3">添加老师微信号一对一免费咨询</div>
+				<div class="wenzi4">↓长按下方按钮复制 再去微信添加好友↓</div>
+				<div class="copy" id="weixin7" style="">
+					<script>
+						document.write(stxlwx);
+					</script>
+				</div>
+			</div>
+			<div class="footer">该导师已成功帮助3256人解决问题</div>
+			<div class="dongtu"><img src="static/picture/abc.gif" alt=""></div>
+		</div>
+		<style>
+			.popwrap {
+				font: 12px/1.7 'microsoft yahei';
+				font-family: "microsoft yahei";
+				display: none;
+			}
+			
+			.popwrap .pbg {
+				position: fixed;
+				_position: absolute;
+				z-index: 1099;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				_width: expression(document.documentElement.scrollWidth);
+				height: 100%;
+				_height: expression(document.documentElement.scrollHeight);
+				background: #323232;
+				background: rgba(0, 0, 0, 0.5);
+				filter: alpha(opacity=50);
+			}
+			
+			.popwrap .popmsg {
+				position: fixed;
+				top: 30%;
+				left: 5%;
+				width: 90%;
+				z-index: 1100;
+			}
+			
+			.popwrap .popmsg .tit,
+			.popwrap .popmsg .cont,
+			.popwrap .popmsg .btool {
+				background: #fff;
+			}
+			
+			.popwrap .popmsg .tit {
+				border-radius: 5px 5px 0px 0px;
+				padding: 10px 0px 0px 10px;
+				text-align: center;
+				font-size: 16px;
+			}
+			
+			.popwrap .popmsg .tit .close {
+				display: inline-block;
+				padding-right: 10px;
+				float: right;
+			}
+			
+			.popwrap .popmsg .cont {
+				padding: 10px;
+			}
+			
+			.popwrap .popmsg .cont span {
+				display: inline-block;
+				margin: 0px 10px;
+				font-weight: bolder;
+				font-size: 14px;
+			}
+			
+			.popwrap .popmsg .btool {
+				font-size: 0px;
+				border-radius: 0px 0px 5px 5px;
+				text-align: center;
+				border-top: 1px #c4c4c4 solid;
+			}
+			
+			.popwrap .popmsg .btool .pbtn {
+				font-size: 16px;
+				width: 49%;
+				text-align: center;
+				padding: 5px 0px;
+				display: inline-block;
+			}
+			
+			.popwrap .popmsg .btool span {
+				width: 1px;
+				height: 100%;
+				display: inline-block;
+				background: #c4c4c4;
+				height: 34px;
+				vertical-align: top;
+			}
+			
+			.popwrap .popmsg a {
+				display: inline-block;
+				color: #4f40ce;
+				text-decoration: none;
+			}
+		</style>
+		<div class="popwrap" id="copysuccess">
+			<div class="pbg"></div>
+			<div class="popmsg">
+				<div class="tit">微信号复制成功，去打开微信加好友</div>
+				<div class="cont">
+				</div>
+				<div class="btool">
+					<a href="weixin://" class="pbtn" onclick="this.parentNode.parentNode.parentNode.style.display='none';">确定</a>
+				</div>
+			</div>
+		</div>
+		<div id="my-dialog-kl" class="m-dialog">
+			<div class="background-kl">
+				<div class="dia-con-kl">
+					<div class="copybox-kl"><span class="close-pop-kl" onclick="document.getElementById('my-dialog-kl').style.display='none';">X</span>
+						<div class="wenzi2-kl">想知道更多推荐内容详情</div>
+						<div class="wenzi3-kl">加微信免费咨询</div>
+						<div class="wenzi4-kl">↓长按下方按钮复制 再去微信添加好友↓</div>
+						<div class="copy-kl op_wx" id="weixin8" style="">
+							<script>
+								document.write(stxlwx);
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function getCopy() {
+				document.getElementById('copysuccess').style.display = 'block';
+				//window.location.href='weixin://';
+			}
+		</script>
+		<!--<script src="static/js/wxh.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="static/js/j123.js" type="text/javascript"></script>-->
+		<div style="display:none;">
+			<!--<script src="static/js/z_stat.js" language="JavaScript"></script>-->
+			<!--<script src="static/js/ip.js" type="text/javascript" charset="utf-8"></script>-->
+		</div>
+		<script type="text/javascript">
+			(function() {
+				function highLight(e) {
+					if(e.className == "dz") {
+						e.className = "dz click";
+						e.innerHTML = parseInt(e.innerHTML) + 1;
+					} else {
+						e.className = "dz";
+						e.innerHTML = parseInt(e.innerHTML) - 1;
+					}
+
+				}
+				for(var e = document.getElementsByClassName("dz"), n = 0; n < e.length; n++) {
+					var t = e[n];
+					t.setAttribute("mark", n);
+					(function() {
+						var e = t;
+						t.onclick = function() {
+							highLight(e);
+						}
+					})()
+				}
+			})(window);
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('body .op_wx').bind({
+					copy: function() {
+						window.location.href = 'weixin://';
+					}
+				});
+			})
+		</script>
+<script src="static/js/15825b23eb0b44f7a25075667aaff556.js"></script> 
+<script> 
+//页面计时、、、、、、、、、、、、、、、、
+var come_time,leave_time,ip,brower_url,come_from,come_from_all,pop_time,copy_time;
+ip=returnCitySN["cip"];
+brower_url=window.location.href; 
+come_from_all=document.referrer;
+come_from=come_from_all.split("/");
+pop_time=0;
+$(".copy_btn").click(function(){
+	pop_time++;
+	return pop_time
+})
+copy_time = 0;
+$(".op_wx").on({  
+        touchstart: function(e) { 
+            // 长按事件触发  
+            timeOutEvent = setTimeout(function() {  
+                timeOutEvent = 0;  
+                copy_time++ 
+            }, 400);  
+            //长按400毫秒   
+            // e.preventDefault();    
+        },  
+        touchmove: function() {  
+            clearTimeout(timeOutEvent);  
+            timeOutEvent = 0;  
+        },  
+        touchend: function() {  
+            clearTimeout(timeOutEvent);  
+            if (timeOutEvent != 0) {  
+               
+            }  
+            return false;  
+        }  
+    }) 
+window.onload = function(){//开始页面
+           var time = Date.parse(new Date())
+           come_time = time/1000;
+        }
+window.onbeforeunload = function(){//结束页面
+ 			 var offtime = Date.parse(new Date());
+ 			 leave_time = offtime/1000;
+			 $.ajax({
+				   type: "post",
+				   data:{
+				   	"come_time":come_time,
+				   	"leave_time":leave_time,
+				   	"ip":ip,
+				   	"brower_url":brower_url,
+				   	"come_from_all":come_from_all,
+				   	"come_from":come_from[2],
+				   	"pop_time":pop_time,
+				   	"copy_time":copy_time
+				   },
+				   url: "http://tuiguang.lily789.com/index.php?c=Tuiguang&m=browserHistory"
+				   })
+}
+document.addEventListener("visibilitychange", function(){
+if(document.hidden== true){//返回home
+	 var offtime = Date.parse(new Date());
+     leave_time = offtime/1000;
+   $.ajax({
+	   type: "post",
+	   data:{
+				   	"come_time":come_time,
+				   	"leave_time":leave_time,
+				   	"ip":ip,
+				   	"brower_url":brower_url,
+				   	"come_from_all":come_from_all,
+				   	"come_from":come_from[2],
+				   	"pop_time":pop_time,
+				   	"copy_time":copy_time
+				   },
+	   url: 'http://tuiguang.lily789.com/index.php?c=Tuiguang&m=browserHistory'})			
+}else{ //从home进来
+  
+  var time = Date.parse(new Date());
+  come_time = time/1000;
+ }
+});
+		</script>
+
+
+	</body>
+
+</html>
