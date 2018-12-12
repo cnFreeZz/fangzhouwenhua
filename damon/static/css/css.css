@@ -1,0 +1,45 @@
+﻿*{margin:0;padding:0;box-sizing:border-box}
+a{text-decoration:none}
+img{border:none}
+li{list-style:none}
+.clear{clear:both}
+.container{max-width:480px;margin:0 auto}
+
+body {margin: 0;padding: 0;font-family: "Microsoft YaHei";color: #333;background:#E5E5EA}
+#wrapper,.wrapper{width:480px;margin:0 auto;overflow:hidden;color:#333;position:relative}
+.wdbox .wdtitle{height:44px;line-height:44px;background:#2E3238;color:#fff;font-size:21px;text-align:center;position:fixed;width:480px;top:0;z-index:9999;margin:0 auto}
+.wdbox .wdcon{margin-top:47px;padding-bottom:6px}
+.wdbox .wdcon .box{padding-top:20px;margin-bottom:60px}
+.wdbox .wdcon .box .left{width:20%;float:left}
+.wdbox .wdcon .box .left img{width:80%;margin:0 auto;display:block}
+.wdbox .wdcon .box .right{width:80%;float:left;padding:0 7px}
+.wdbox .wdcon .box .right .con{min-width:310px;background-color:#fff;border:1px solid #d0d0d0;border-radius:10px;padding:15px;font-size:18px;line-height:28px;position:relative;float:left}
+.wdbox .wdcon .box .right .con .sjx{    position: absolute;width: 0;height: 0;border-left: 10px solid transparent;border-right: 7px solid transparent;border-top: 20px solid #fff;left: -14px;top: 11px;transform: rotate(-272deg);}
+.wdbox .wdcon .hzbox{margin-bottom:60px}
+.wdbox .wdcon .hzbox .left{width:20%;float:right}
+.wdbox .wdcon .hzbox .left img{width:80%;margin:0 auto;display:block}
+.wdbox .wdcon .hzbox .right{width:80%;float:right;padding:0 10px}
+.wdbox .wdcon .hzbox .right .con{min-width:30px;border-radius:10px;padding:10px;font-size:18px;line-height:25px;position:relative;background:#a0e75a;float:right;text-align:center}
+.wdbox .wdcon .hzbox .right .con .sjx{    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #a0e75a;
+       right: -8px;
+    top: 6px;
+    transform: rotate(139deg);}
+.wdfixbom{z-index:1000;position:fixed;bottom:0;width:480px;background:#f4f4f6;border-top:1px solid #dcdcdc;height:80px;box-sizing:border-box}
+.wdfixbom .btnbox{float:left;padding:0 9px}
+.wdfixbom .btnbox button{display:block;height:60px;border:1px solid #83d45a;margin:10px auto;background:#A0E75A;border-radius:10px;cursor:pointer;width:100%;font-size:24px}
+.wdfixbom .w100{width:100%}
+.wdfixbom .w50{width:50%}
+.wdfixbom .w33{width:50%}
+.wdfixbom .input-group{width:90%;margin:10px auto;background:red}
+.wdfixbom .input-group input{float:left;width:70%;height:58px;border:1px solid #d3d3d3;background:#f4f4f6;border-radius:10px 0 0 10px ;padding-left:10px;font-size:18px;color:#333}
+.wdfixbom .input-group .tel{float:left;width:30%;background:#3F740B;color:#fff;font-size:18px;border:none;height:58px;border-radius:0 10px 10px 0;cursor:pointer}
+.wdfixbom .lsbtn{margin-top:20px}
+.wdfixbom .lsbtn li{float:left;width:100%;padding:0 .6rem;height:40px;line-height:40px}
+.wdfixbom .lsbtn li span{display:block;width:100%;height:100%;background:#298DD9;color:#fff;font-size:18px;text-align:center;border-radius:10px}
+
+.wdfixbom .lsbtn li {display:block;width:100%;height:100%;background:#298DD9;color:#fff;font-size:18px;text-align:center;border-radius:10px}
