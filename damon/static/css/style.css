@@ -338,3 +338,15 @@ body{
     margin-left:.06rem;
     padding:0
 }
+.stack-box .publish-floor{
+    background: rgba(193,149,255,.7);
+    display: inline-block;
+    height: 0.28rem;
+    width: 0.28rem;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    line-height: 0.28rem;
+    vertical-align: middle;
+    border-radius: 2px;
+}
