@@ -350,3 +350,6 @@ body{
     vertical-align: middle;
     border-radius: 2px;
 }
+h6{
+    display: inline-block;
+}
