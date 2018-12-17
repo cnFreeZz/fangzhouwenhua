@@ -1,0 +1,48 @@
+
+    html{font-family: "微软雅黑";}
+    body{width: 100%;}
+    *{margin:0;padding:0;font-size: 0.6rem;}
+    img{width:100%;}
+    li{list-style: none;}
+    a{text-decoration: none;}
+    .clearfix:after {
+        content:"";
+        display: block;
+        clear:both;
+    }
+    .contain .part1{height: 15rem;width:100%;display: block;position: relative;}
+    .contain .part1 ul{height:15rem;position: relative;}
+    .contain .part1 ul li {position: absolute;left: 0;top:0;opacity: 0;filter:alpha(opacity:0);text-align:center; width: 100%;}
+    .contain .part1 ul li a{width: 100%;height: 15rem;text-align: center;display: block;}
+    .contain .part1 ul li a img{height: 15rem;display: block;}
+    .contain .part1 ol { position: absolute; bottom: 1rem; z-index: 1; left: 50%;}
+    .contain .part1 ol li { float: left; margin-right: 0.75rem; display: inline; cursor: pointer;  width:0.6rem;height:0.6rem; color: white; font-size: 0.6rem;border-radius: 100%;background-color: #ff4c40; }
+    .contain .part1 ol .ac1 {background-color: #333333;}
+    .contain .part1 .moveBtn { width:1.5rem; height:3rem; line-height:3rem; font-size:1.5rem;color: #fff; text-align: center;background:rgba(0,0,0,.15);  position: absolute; top: 50%; margin-top:-40px; z-index: 2;opacity: 0;filter:alpha(opacity:0);}
+    .contain .part1 .prev { left: 10%; }
+    .contain .part1 .next { right: 10%; }
+    .contain .part2 img{height: 2rem;width:100%;display: block;}
+    .contain .part2{position: relative;}
+    .contain .part2 .daojishi{position: absolute;right: 0.4rem;top:0.9rem;}
+    .contain .part2 .daojishi span{line-height: 0.8rem; font-size: 0.55rem;text-align:center;color:white; float: left;width: 0.8rem;height: 0.8rem;border-radius: 0.1rem;background-color: #552c0e;}
+    .contain .part2 .daojishi b{float: left;color: #552c0e;}
+    .contain .part3{width: 100%;}
+    .contain .part3 .one {min-height: 2rem;width: 100%;line-height: 1.1rem; overflow: hidden;line-height: 2.4rem;}
+    .contain .part3 .one span{float: left;width: 2rem;height: 0.7rem;background-color: #fc4966;color: white;font-size: 0.6rem;text-align: center;line-height: 0.7rem;margin-top: 0.85rem;margin-left: 0.65rem;margin-right: 0.65rem;}
+    .contain .part3 .one strong{ padding-left: 2%; font-size: 0.7rem;font-weight: normal; display: block;}
+    .contain .part3 .two{height: 0.7rem;width: 100%;padding-bottom: 0.5rem;}
+    .contain .part3 .two span{float: left;height: 0.8rem;line-height: 0.8rem;display: block;}
+    .contain .part3 .two .span1{color: #fe0000;font-size: 0.5rem;font-weight: bold;margin-left: 0.75rem;}
+    .contain .part3 .two .span2{color: #fe0000;font-size: 0.8rem;font-weight: bold;margin-left: 0.4rem;margin-right: 0.6rem;}
+    .contain .part3 .two .span3{color: #999;margin-right: 0.85rem;}
+    .contain .part3 .two .span4{height: 0.8rem;width: 2.3rem;padding-right:0.35rem;background: url("../images/bg2.jpg")no-repeat; background-size:cover; color: #ff994f;font-size: 0.6rem;text-align: right;line-height: 0.85rem;}
+    .contain .part3 .three{height: 0.65rem;line-height: 0.65rem;padding-bottom: 1rem;}
+    .contain .part3 .three span{text-align: center; float: left;color: #fe4a65;border: 1px solid #fe4a65;width: 1.4rem;height: 0.65rem;margin-left: 0.3rem;}
+    .contain .part3 .four{ min-height: 1.5rem;width: 96%;line-height: 1.5rem; overflow: hidden; padding: 0 2%;}
+    .contain .part3 .four img{float: left;display: block;width: 1.5rem;margin-left: 0.6rem;margin-right: 0.5rem;}
+    .contain .part3 .four .xiaobian{color: #999;float: left;font-size: 0.6rem;}
+    .contain .part3 .four .fabu{color: #999;float: right;margin-right: 0.6rem;font-size: 0.6rem;}
+    .contain .part3 .five{height: 2rem;padding-left: 0.3rem;font-size: 0.7rem;color:#333;font-weight: bold;line-height: 2rem;}
+    .contain .part3 .six{ height: 0.6rem;line-height: 0.6rem;font-size: 0.5rem;color: #666;padding-left: 0.3rem;padding-bottom: 0.65rem;}
+    .contain .part3 .six span{color: #f52342;font-weight: bold;font-size: 0.6rem;}
+    .contain .part4{ height: 1.8rem;width: 100%;background-color: #fe4a65;text-align: center;line-height: 1.8rem;font-size: 0.9rem;color: white; border: none;}
