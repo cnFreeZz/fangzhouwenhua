@@ -1,0 +1,86 @@
+/* ::::: http://dt1.sycymygs.cn/main.css ::::: */
+
+body { margin: 0px; padding: 0px; font-family: "微软雅黑"; color: rgb(112, 112, 112); min-width: 1004px; }
+a { color: rgb(112, 112, 112); text-decoration: none; outline: medium none; }
+a:active {  }
+img { border: 0px none; }
+.clear { clear: both; }
+a:link { text-decoration: none; outline: medium none; }
+a:visited { text-decoration: none; outline: medium none; }
+a:hover { text-decoration: none; color: rgb(82, 146, 200); outline: medium none; }
+ul, p, dl, dt, dd { padding: 0px; margin: 0px; }
+li { list-style-position: outside; list-style-type: none; }
+h1, h2, h3, h4, h5 { font-size: 14px; padding: 0px; margin: 0px; }
+h1 { font-size: 16px; font-weight: 400; }
+.fl { float: left; width: 666px; position: relative; }
+.fr { float: right; font-size: 12px; width: 235px; }
+.clear_f { clear: both; height: 27px; padding: 0px; margin: 0px; display: block; }
+.clear_f1 { clear: both; height: 50px; padding: 0px; margin: 0px; display: block; }
+.clear_l { height: 35px; }
+input { padding: 0px; border: 0px none; background: transparent none repeat scroll 0% 0%; font-family: "微软雅黑"; color: rgb(153, 153, 153); outline: medium none; }
+.wal { width: 1000px; margin: 0px auto; }
+.headDiv, .headDiv .wal { height: 115px; overflow: hidden; position: relative; }
+.headDiv .logo { position: absolute; z-index: 1; left: 0px; top: 29px; }
+#gdbgh { background: rgb(240, 240, 240) none repeat scroll 0% 0%; width: 100%; height: 50px; }
+.nav { height: 50px; overflow: hidden; position: relative; }
+.nav li { float: left; height: 50px; background: rgba(0, 0, 0, 0) url('navbg.gif') no-repeat scroll right top; padding-right: 1px; }
+.nav a { display: block; float: left; height: 50px; line-height: 50px; position: relative; top: 2px; padding: 0px 30px; font-size: 16px; font-family: "微软雅黑"; }
+.nav li:hover { background: rgb(28, 176, 178) none repeat scroll 0% 0%; }
+.nav a:hover { color: rgb(255, 255, 255); }
+.sNav { position: absolute; z-index: 100; left: 50%; margin-left: -502px; top: 165px; background: rgba(0, 0, 0, 0) url('snav.png') repeat-x scroll center top; height: 40px; width: 1003px; display: none; }
+.footLink { height: 205px; overflow: hidden; background: rgb(240, 240, 240) none repeat scroll 0% 0%; position: relative; }
+.footLink .wal { width: 1000px; overflow: hidden; position: relative; }
+.selectLayer { position: absolute; z-index: 100; display: none; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(186, 186, 186); }
+.tabContent { display: none; }
+img { border: 0px none; }
+.yygh { float: left; margin-top: 40px; width: 390px; }
+.yygh_l { background: rgb(255, 102, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); font-size: 18px; font-weight: bold; height: 30px; line-height: 30px; width: 446px; text-align: center; }
+.yygh_r { border-width: 1px 1px 1px 0px; border-style: solid solid solid none; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(204, 204, 204) currentcolor; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; float: left; background: rgb(243, 248, 254) none repeat scroll 0% 0%; padding: 10px; font-size: 12px; width: 426px; height: 196px; overflow: hidden; }
+.yygh_r li { list-style: outside none none; margin-bottom: 4px; display: inline; float: left; }
+.yygh_r .gh1 { width: 60px; height: 30px; margin-right: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; line-height: 30px; border: 1px solid rgb(222, 222, 222); }
+.yygh_r .time { width: 110px; height: 30px; margin-right: 5px; background: rgb(255, 255, 255) url('date.gif') no-repeat scroll right center; line-height: 30px; padding-right: 14px; border: 1px solid rgb(222, 222, 222); }
+.yygh_r .tel { width: 110px; height: 30px; margin-right: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; line-height: 30px; padding-right: 14px; border: 1px solid rgb(222, 222, 222); }
+.yygh_r .miaoshu { width: 200px; height: 80px; line-height: 20px; border: 1px solid rgb(222, 222, 222); background: rgb(255, 255, 255) none repeat scroll 0% 0%; overflow: hidden; }
+.yygh_r span { font-size: 12px; margin-right: 5px; color: rgb(255, 0, 0); }
+.yygh_r b { float: right; margin-top: 20px; display: inline; margin-left: 10px; }
+.yygh_r .art_gh1 { width: 65px; height: 23px; background: rgba(0, 0, 0, 0) url('gh01.gif') no-repeat scroll 0% 0%; cursor: pointer; border: 0px none; float: left; }
+.yygh_r .art_gh2 { width: 65px; height: 23px; background: rgba(0, 0, 0, 0) url('gh02.gif') no-repeat scroll 0% 0%; margin-left: 10px; cursor: pointer; border: 0px none; float: left; }
+.xiala { width: 123px; height: 30px; margin-right: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; line-height: 30px; border: 1px solid rgb(222, 222, 222); }
+/* ::::: http://dt1.sycymygs.cn/index.css ::::: */
+
+.pageBanner { height: 368px; overflow: hidden; position: relative; }
+.gdgee { width: 100%; background: rgb(28, 176, 178) none repeat scroll 0% 0%; }
+.indexFlash li { position: absolute; z-index: 1; left: 0px; top: 0px; display: none; }
+.indexFlash .btnDiv { width: 100%; position: absolute; z-index: 10; left: 0px; bottom: 15px; text-align: center; }
+.newsPart1 { width: 635px; height: 235px; overflow: hidden; position: relative; }
+.newsPart1 .fl { width: 313px; height: 213px; overflow: hidden; position: relative; top: 10px; }
+.newsPart1 .fl li { position: absolute; z-index: 1; left: 0px; top: 0px; width: 313px; height: 213px; overflow: hidden; display: none; }
+.newsPart1 .fl .name { position: absolute; z-index: 2; left: 0px; bottom: 0px; height: 28px; line-height: 28px; width: 100%; overflow: hidden; background: rgba(0, 0, 0, 0) url('bg.png') repeat scroll 0% 0%; }
+.newsPart1 .fl .name a { color: rgb(255, 255, 255); padding-left: 12px; font-family: "微软雅黑"; }
+.newsPart1 .fl .btnDiv { position: absolute; z-index: 10; right: 10px; bottom: 5px; }
+.newsPart1 .fl .btnDiv span { display: block; float: left; background: rgba(0, 0, 0, 0) url('btn1.png') no-repeat scroll center top; width: 13px; height: 13px; overflow: hidden; cursor: pointer; }
+.newsPart1 .fl .btnDiv .spanNow { background: rgba(0, 0, 0, 0) url('btn2.png') no-repeat scroll center top; }
+.newsPart1 .fr { width: 300px; }
+.newsPart1 .fr h1 a { color: rgb(51, 51, 51); }
+.newsPart1 .fr h1 a:hover { color: rgb(82, 146, 200); }
+.newsPart1 .fr .content { line-height: 22px; color: rgb(112, 112, 112); padding-top: 6px; text-align: justify; width: 265px; }
+.btnDiv { padding-bottom: 0px; margin: 0px 0px 0px 30px; }
+.indexTitle { height: 50px; line-height: 47px; overflow: hidden; position: relative; }
+.indexTitle li { float: left; margin-right: 20px; height: 47px; overflow: hidden; font-size: 18px; color: rgb(112, 112, 112); }
+.indexTitle .liNow { color: rgb(51, 51, 51); border-bottom: 4px solid rgb(77, 139, 205); }
+.indexPart2 { width: 610px; height: 285px; overflow: hidden; }
+.indexPart2 .tabContent { height: 240px; position: relative; }
+.indexPart2 h1 { font-size: 16px; padding: 20px 0px 5px; width: 265px; }
+.indexPart2 h1 a { color: rgb(51, 51, 51); }
+.indexPart2 h1 a:hover { color: rgb(82, 146, 200); }
+.indexPart2 .content { line-height: 18px; color: rgb(112, 112, 112); text-align: justify; }
+.tabContent li { font-size: 14px; height: 28px; line-height: 28px; overflow: hidden; position: relative; }
+.fl.fadeFlash.indexflash { top: 22px; }
+/* ::::: http://dt1.sycymygs.cn/css.css ::::: */
+
+#LRdiv0 { display: none !important; }
+#LRdiv1 { display: none !important; }
+/* ::::: http://dt1.sycymygs.cn/JS5.css ::::: */
+
+/* ::::: http://dt1.sycymygs.cn/JS5_001.css ::::: */
+
