@@ -1,0 +1,21 @@
+/* ::::: http://www.6251111.com/Css/style.css ::::: */
+
+BODY { background: rgb(255, 255, 255) url('mybg.gif') repeat-x scroll center top; color: rgb(85, 85, 85); font-size: 12px; line-height: 150%; text-decoration: none; }
+TD { color: rgb(85, 85, 85); font-size: 12px; }
+A { text-decoration: none; }
+A:link { color: rgb(85, 85, 85); }
+A:visited { color: rgb(85, 85, 85); }
+A:active { color: rgb(85, 85, 85); }
+A:hover { color: rgb(255, 102, 17); }
+.menu { padding-top: 3px; white-space: nowrap; }
+A.menu { color: rgb(85, 85, 85); font-size: 12px; text-decoration: none; }
+A.menu:link { color: rgb(85, 85, 85); }
+A.menu:visited { color: rgb(85, 85, 85); }
+A.menu:active { color: rgb(85, 85, 85); }
+A.menu:hover { color: rgb(255, 102, 17); }
+.menunow { padding-top: 3px; white-space: nowrap; }
+A.menunow { color: rgb(85, 85, 85); font-size: 12px; text-decoration: none; }
+A.menunow:link { color: rgb(85, 85, 85); }
+A.menunow:visited { color: rgb(85, 85, 85); }
+A.menunow:active { color: rgb(85, 85, 85); }
+A.menunow:hover { color: rgb(255, 102, 17); }
