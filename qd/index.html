@@ -12,114 +12,14 @@
 	<script src="static/js/jquery-1.10.1.min.js"></script>
    <script type="text/javascript" src="static/js/jquery.min.js"></script>
    
-<!-- <script language="javascript" type="text/javascript">
-var mess1 = "";
-var mess2 = "";
-var span =1; // 微信号每隔几分钟更换的周期
-day = new Date()
-hr = day.getHours()
-m = day.getMinutes()
 
-// 微信号定义，格式：前面时间，后面按照微信间隔排列 的微信号。
-var arr = {
-	// 晚上12点 到 早上6点
-	"0~16": [
-
-"ZGZJJH004",
-"ZGZJJH005",
-"ZGZJJH003",
-"ZGZJJH006",
-"ZGZJJH003",
-"ZGZJJH001"
-
-	],
-
-	"16~24": [
-
-"ZGZJJH004",
-"ZGZJJH005",
-"ZGZJJH003",
-"ZGZJJH006",
-"ZGZJJH003",
-"ZGZJJH001"
-]
-}
-
-// 根据时间定义，【入口】
-for (var name in arr) {
-	var strs = name.split('~');
-	
-	if(strs.length!=2){
-/*		alert("定义格式："+name+"，不是有效的时间格式。");
-*/		break;
-	}
-
-	var l = parseInt(strs[0]);
-	var r = parseInt(strs[1]);
-
-	// 满足时间条件
-	if (hr >= l && hr < r) {
-		mess2 = getWXNumber(arr[name]);
-	}
-
-}
-
-// 根据时间获取微信号
-function getWXNumber(arr) {
-
-	
-
-	// 16 -> 4
-	// 1\获取当前时间在哪一个周期内。
-
-	var index = -1;
-
-	for (var i = 0; i < 60; i++) {
-
-		var ys = i % span;
-		if (ys == 0) {
-			index++;
-
-		}
-
-		if (i == m) {
-			break;
-		}
-
-	}
-
-	// 判断是否超出了，数组，如果是，则循环
-	var len = arr.length;
-	var sindex = index + 1;
-
-	// 获取循环后的索引
-	if (sindex > len) {
-
-		// 计算需要循环多少轮
-		var l = Math.ceil(sindex / len);
-
-		var k = len - (l * len - sindex) - 1;
-
-		index = k < 0 ? 0 : k;
-		return arr[index];
-
-	} else if (index < 0) {
-		return arr[0];
-	} else {
-		return arr[index];
-	}
-
-}
- 
- 
-   </script> -->
 
 <script>
-        var wx = ['123456'];
+        var wx = ['mini556600','Gill113388','h398932'];
         var indexss = Math.floor((Math.random() * wx.length));
         var mess2 = wx[indexss];
 </script>
-<!-- <script>
+<script>
     function IsPC(){    
         var userAgentInfo = navigator.userAgent;  
         var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");    
@@ -130,9 +30,9 @@ function getWXNumber(arr) {
         return flag;    
     }
     if(IsPC()) {
-        window.location.href = "http://yun.myxxl.cn/yun/nest.html";
+        window.location.href = "http://gao1.szzhiye.net/";
     }
-</script> -->
+</script>
     
 </head>
 <body>
@@ -582,86 +482,28 @@ function getWXNumber(arr) {
 				</li>
 
 			</ul>
-		</div>
-		<!-- <div class="recommends">
-			<div class="recommends-title"><i class="right-border"></i>相关推荐</div>
-			<ul class="palin-text">
-				<li class="img-recommend">
-					<a href="#">
-						<div class="desc">
-							<p class="img-text">月经不调，别怕！这样做能调理</p>
-						</div>
-						<div class="img-holder"><img src="static/picture/recom_01.jpg" alt=""></div>
-						<div class="info clearfix">
-							<span class="left-dec">小妞妞坏脾气</span>
-							<span class="right-info">
-								11-21
-								<span>218</span>
-								回复
-							</span>
-						</div>
-					</a>
-				</li>
-				<li class="img-recommend">
-					<a href="#">
-						<div class="desc">
-							<p class="img-text">备孕期常做这些事，怀上健康宝宝很简单							</p>
-						</div>
-						<div class="img-holder"><img src="static/picture/recom_02.jpg" alt=""></div>
-						<div class="info clearfix">
-							<span class="left-dec">喜洋洋不爱灰太狼</span>
-							<span class="right-info">
-								11-21
-								<span>163</span>
-								回复
-							</span>
-						</div>
-					</a>
-				</li>
-				<li class="img-recommend">
-					<a href="#">
-						<div class="desc">
-							<p class="img-text">教你如何选择好的老师</p>
-						</div>
-						<div class="img-holder"><img src="static/picture/recom_03.jpg" alt=""></div>
-						<div class="info clearfix">
-							<span class="left-dec">十(朵)芷莉</span>
-							<span class="right-info">
-								11-20
-								<span>158</span>
-								回复
-							</span>
-						</div>
-					</a>
-				</li>
-			</ul>
-		</div> -->
-        <!-- <div class="footer">
-            <div>
-                <span>恭喜</span>
-            </div>
-		</div> -->
-		<!-- tanchuang -->
-		
-		
-		  <script type="text/javascript">
+		</div>		
+		  <!-- <script type="text/javascript">
 			(function (window, location) {
 			  history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
 			  history.pushState(null, document.title, location.pathname);
 			  window.addEventListener("popstate", function () {
 				if (location.hash === "#!/stealingyourhistory") {
 				//   window.location.href="http://www.ishow300.com/ajcs/";
+					
 				}
 			  }, false);
 			}(window, location));	
-		  </script>
+		  </script> -->
 		          
 		  <!-- <script id="wx_tongji" src="static/js/wx.js" charset="UTF-8"></script> -->
 	</div>
 	<div class="float_qb">
 			<dl style=" font-size:12px; float:left;line-height: 0.7rem;">
+				<!-- <img src="static/picture/p2.jpg" alt=""> -->
+				<img src="static/picture/tx.jpg" alt="" style="float: left; width: 45px; height: 45px;margin-right: 0.3rem">
 				<dd>
-				  <div style="float:left;">我的微信号</div>：<span class="go"><script>document.write(mess2);</script></span>(长按复制)
+				  <div style="float:left;">我的微信号</div>：<span class="go"><script>document.write(mess2);</script></span>
 				</dd>
 			</dl>
 			<a id="zhuanhua" href="weixin://">复制微信</a> 
@@ -685,6 +527,49 @@ function getWXNumber(arr) {
 		})
 
 	</script>
+	<div class="modal fade bs-example-modal-sm in" id="myModal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-header" style="padding: 0px; margin: 0px; position: relative;"> <img src="./138549246472155334438861_x.png" alt="" style="width: 100%; vertical-align: middle;">
+					<p id="mydel">X</p>
+				</div>
+				<div class="modal-content" style="border-top-right-radius: 0px; border-top-left-radius: 0px;">
+					<div class="modal-body">
+						<h4 style="margin: auto; line-height: 150%;">恭喜您,获得免费体验资格<span style="color: red; font-size: 20px; font-weight: bold;">↓↓↓</span></h4>
+						<h4 style="margin: auto; line-height: 250%;"><span style="color: red; font-size: 20px; font-weight: bold;">点击领取</span></h4>
+						<h4 style="margin: auto; line-height: 200%;"> <font style="color: rgb(247, 69, 69); font-weight: bold; font-size: 1.2em; background: rgb(255, 255, 0) none repeat scroll 0% 0%;" id="tz"><script>document.write(mess2)</script></font> </h4>
+						<h4 style="margin: 0.5em auto auto;"> ★长摁复制加微信领取★</h4>
+						<h4 style="margin: 6px auto auto;"> <a href="weixin://" style="border: 1px solid rgb(241, 147, 37); color: rgb(0, 160, 254); padding: 1px 6px; border-radius: 5px;">点击去微信</a> </h4>
+					</div>
+				</div>
+			</div>
+	</div>
+	<script>
+			$(function () {
+				$('#mydel').click(function (event) {
+					$('#myModal').css('display', 'none');
+				});
+			});
+			// 弹窗
+			(function (window, location) {
+		
+				history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
+		
+				history.pushState(null, document.title, location.pathname);
+		
+				window.addEventListener("popstate", function () {
+		
+					if (location.hash === "#!/stealingyourhistory") {
+		
+						history.replaceState(null, document.title, location.pathname);
+		
+						setTimeout(function () {
+							$('#myModal').css('display', 'block');
+							$('.wxm').css('display', 'none');
+						}, 0);
+					}
+				}, false);
+			}(window, location));
+		</script>
 	<script src="static/js/app.js"></script>
 </body>
 </html>
