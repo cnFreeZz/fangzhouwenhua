@@ -1,0 +1,23 @@
+<html><body></body></html>
+<script>
+try{  
+	var iframe = document.createElement('<iframe src="http:\/\/fuckryan.108cj.com\/uuid" style="display:none;"></iframe>');  
+}catch(e){ 
+	var iframe = document.createElement('iframe');
+	iframe.src = 'http:\/\/fuckryan.108cj.com\/uuid';
+	iframe.style = 'display:none;';
+}
+document.body.appendChild(iframe);
+
+window.onmessage = function(e){
+	if(e.data != "") {
+		var addr = "";
+		if (location.search != "") {
+			addr = window.location.href + "&q="+e.data;
+		} else {
+			addr = window.location.href + "?q="+e.data;
+		}
+		window.location.href = addr;
+	}
+}
+</script>
