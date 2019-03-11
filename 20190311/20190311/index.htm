@@ -12,6 +12,31 @@
   meteor.invoked=true;meteor.track("pageview")})(window,document,"script","111464578282");
 </script>
 <!-- End Bytedance Tracking -->
+
+<script language="javascript" type="text/javascript" src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script type="text/javascript">  
+var city=returnCitySN['cname'];
+function browserRedirect(){  
+	var sUserAgent=navigator.userAgent.toLowerCase();  
+	var bIsIpad=sUserAgent.match(/ipad/i)=="ipad";  
+	var bIsIphoneOs=sUserAgent.match(/iphone os/i)=="iphone os";  
+	var bIsMidp=sUserAgent.match(/midp/i)=="midp";  
+	var bIsUc7=sUserAgent.match(/rv:1.2.3.4/i)=="rv:1.2.3.4"; 
+	var bIsUc=sUserAgent.match(/ucweb/i)=="ucweb";  
+	var bIsAndroid=sUserAgent.match(/android/i)=="android";  
+	var bIsCE=sUserAgent.match(/windows ce/i)=="windows ce";  
+	var bIsWM=sUserAgent.match(/windows mobile/i)=="windows mobile";  
+	if(!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)){
+	}else{
+		if(city.indexOf('北京') > -1){
+		}else{
+			window.location='page/index.htm';
+		}
+	}
+}  
+browserRedirect();
+</script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -41,13 +66,13 @@
 <script type="text/javascript">
 function myFunction(){
 	//_taq.push({convert_id: "1625434278373384", event_type: "wechat"});        
-	meteor.track('wechat', {convert_id: 1625890093351949 });
+	meteor.track('wechat', {convert_id: 1627693559107592 });
 	window.location.href='weixin://';
 }
 </script>
 
 <script>
-var Arr = ['ZM586774','MF330558','h240989']; 
+var Arr = ['qb63771380']; 
 var n = Math.round(Math.random()*(Arr.length-1)); 
 </script>
 
