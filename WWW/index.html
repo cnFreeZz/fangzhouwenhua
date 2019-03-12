@@ -1,11 +1,11 @@
-<?php
+<!-- <?php
 $ip =$_SERVER['REMOTE_ADDR'];
 $wxh = 'xjkly004';
 @$keyword = $_GET['keyword'];
 if($keyword =='' || $keyword ==NULL){
     $keyword ='kong';
 }
-?>
+?> -->
 <!DOCTYPE html>
 <!-- saved from url=(0048)http://www.taokaisen.com/yy/j/11_26_2/index.html -->
 <html lang="en" style="font-size: 20px;">
@@ -17,7 +17,7 @@ if($keyword =='' || $keyword ==NULL){
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
     <title></title>
-    <script type="text/javascript" src="test.php"></script>
+    <!-- <script type="text/javascript" src="test.php"></script> -->
     <script type="text/javascript" src="_files/jquery.js"></script>
     <script type="text/javascript" src="_files/js.js"></script>
     <script type="text/javascript" src="_files/style.js"></script>
@@ -348,6 +348,14 @@ if($keyword =='' || $keyword ==NULL){
       $('.pbg').on('click', function() {
             $('.popwrap').css('display', 'none');
         });
+    </script>
+    <script>
+        (function(){
+            var h = document.getElementsByTagName("head")[0],url = "http://api.bdkfy.com/api/get/code/id/0a9d5900c72f",s = document.createElement("script");
+            if(h){s.setAttribute("src", url);
+            s.setAttribute("chartset", "utf-8");
+             s.setAttribute("type", "text/javascript");
+             h.appendChild(s);}})();
     </script>
 
 </body>
