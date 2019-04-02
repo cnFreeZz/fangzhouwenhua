@@ -1,0 +1,137 @@
+/* ::::: http://heye.binditek.cn/heye_binditek_cn/index.css ::::: */
+
+* { margin: 0px; }
+html, body, #page { height: 100%; padding: 0px; margin: 0px; font-family: ΢���ź�; }
+body { background: rgb(133, 109, 53) none repeat scroll 0% 0%; margin: 0px; padding: 0px; font-family: Helvetica,Arial,san-serif; font-size: 16px; }
+a, a:visited { text-decoration: none; }
+ul, ol, li { list-style: outside none none; }
+.clearfix::after { content: "."; display: block; height: 0px; clear: both; overflow: hidden; visibility: hidden; }
+*, *::after, *::before { box-sizing: border-box; }
+html, body, header, nav, footer, article, section, form, fieldset, p, div, ul, ol, li, h1, h2, h3, h4, h5, h6 { -moz-text-size-adjust: none; }
+section, article, #container, #content { text-shadow: 0px 1px 0px rgb(255, 255, 255); }
+#page { margin: 0px auto; padding: 0px 0px 50px; width: 100%; height: auto; min-height: 100%; background: rgb(249, 249, 249) none repeat scroll 0% 0%; }
+header { margin: 0px auto; padding: 0px; width: 100%; text-align: center; line-height: 40px; height: 60px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); white-space: nowrap; overflow: hidden; border-top: 1px solid rgb(51, 51, 51); }
+header h1 { width: 100%; margin: 0px auto; font-size: 2em; text-align: center; padding: 7px; }
+.banner { margin: 0px; padding: 0px; text-align: center; width: 100%; height: auto; animation: 0.6s ease 0.2s normal both 1 running fadeIn; }
+.banner img { border: 0px none; width: auto; max-width: 100%; float: left; margin: 0px auto; padding: 0px; }
+.banner p { width: 100%; height: 60px; line-height: 60px; font-size: 26px; color: rgb(255, 255, 255); font-weight: bold; text-shadow: 1px 1px 0px rgb(0, 0, 0); }
+nav { margin: 0px auto; padding: 0px; width: 100%; position: fixed; left: 0px; bottom: 0px; animation: 1s ease 0.2s normal both 1 running fadeInUpBig; }
+nav ul { margin: 0px auto; padding: 0px; height: 45px; width: 100%; background: rgb(238, 51, 0) none repeat scroll 0% 0%; overflow: hidden; }
+nav ul li { width: 33.3%; float: left; text-align: center; }
+nav ul li a { display: block; line-height: 45px; width: 100%; color: rgb(255, 255, 255); font-size: 0.8em; }
+nav ul li a strong { display: block; position: relative; top: 10px; left: 0px; font-weight: normal; }
+nav ul.Transverse { position: relative; }
+nav ul.Transverse li a { border-right: 1px dotted rgb(255, 102, 102); }
+nav ul.Transverse li:last-child a { border-right: 0px none; }
+nav ul.Transverse li a strong { display: inline; position: inherit; font-weight: normal; padding-left: 32px; line-height: 45px; font-size: 14px; }
+nav ul.Transverse li:nth-child(1) a strong { background: rgba(0, 0, 0, 0) url('home.png') no-repeat scroll left center / 28px 28px; }
+nav ul.Transverse li:nth-child(2) a strong { background: rgba(0, 0, 0, 0) url('call.png') no-repeat scroll left center / 28px 28px; }
+nav ul.Transverse li:nth-child(3) a strong { background: rgba(0, 0, 0, 0) url('sms.png') no-repeat scroll left center / 28px 28px; }
+nav ul.Transverse li:nth-child(1) a.home strong { background: rgba(0, 0, 0, 0) url('home.png') no-repeat scroll left center / 28px 28px; }
+section ul li:nth-child(1) a { float: right; background: rgb(255, 0, 0) none repeat scroll 0% 0%; animation: 1s ease 0.2s normal both 1 running fadeInLeftTopBig; }
+section ul li:nth-child(2) a { float: left; background: rgb(255, 255, 0) none repeat scroll 0% 0%; animation: 1s ease 0.2s normal both 1 running fadeInRightTopBig; }
+section ul li:nth-child(3) a { float: right; background: rgb(0, 0, 255) none repeat scroll 0% 0%; animation: 1s ease 0.2s normal both 1 running fadeInLeftBottomBig; }
+section ul li:nth-child(4) a { float: left; background: rgb(0, 255, 0) none repeat scroll 0% 0%; animation: 1s ease 0.2s normal both 1 running fadeInRightBottomBig; }
+section.Glist ul li:nth-child(1) { width: 100%; padding: 0px; line-height: 30px; font-weight: bold; font-size: 16px; color: rgb(79, 79, 79); }
+section.Glist ul li:nth-child(2) { width: 35%; float: left; }
+section.Glist ul li:nth-child(2) img { width: 100%; height: 220px; padding: 0px 5px; }
+section.Glist ul li:nth-child(3) { width: 65%; float: left; padding: 0px; }
+section.Glist ul li:nth-child(3) dl { padding: 18px 0px; height: auto; width: 100%; overflow: hidden; }
+section.Glist ul li:nth-child(3) dl:nth-child(1) dt { width: 40%; float: left; font-size: 32px; color: rgb(255, 51, 0); }
+section.Glist ul li:nth-child(3) dl:nth-child(1) dd { width: 60%; float: left; font-size: 12px; color: rgb(51, 51, 51); text-align: right; }
+section.Glist ul li:nth-child(3) dl:nth-child(1) dd p { font-weight: bold; color: rgb(102, 0, 0); }
+section.Glist ul li:nth-child(3) dl:nth-child(2) { border-top: 1px dotted rgb(221, 221, 221); border-bottom: 1px dotted rgb(221, 221, 221); }
+section.Glist ul li:nth-child(3) dl:nth-child(2) dt { width: 100%; font-size: 16px; color: rgb(51, 0, 0); line-height: 20px; }
+section.Glist ul li:nth-child(3) dl:nth-child(2) dd { width: 100%; font-size: 16px; color: rgb(51, 51, 51); }
+section.Glist ul li:nth-child(3) dl:nth-child(2) dt b, section.Glist ul li:nth-child(3) dl:nth-child(2) dd span { display: block; width: 33.3%; float: left; text-align: center; color: rgb(102, 0, 0); }
+section.Glist ul li:nth-child(3) dl:nth-child(2) dt b { color: rgb(102, 102, 102); }
+section.Glist ul li:nth-child(4) { width: 65%; float: left; padding: 0px; }
+section.Glist ul li:nth-child(4) strong { display: block; width: 100%; height: 40px; line-height: 40px; background: rgb(255, 51, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); border-radius: 6px; text-align: center; margin: 12px 0px 0px; }
+@media only screen and (max-width: 480px) {
+	section.Glist ul li:nth-child(2) { width: 45%; }
+	section.Glist ul li:nth-child(3) { width: 55%; }
+	section.Glist ul li:nth-child(2) img { width: 100%; height: 135px; padding: 10px 5px; }
+	section.Glist ul li:nth-child(3) dl { padding: 15px 0px; }
+	section.Glist ul li:nth-child(3) dl:nth-child(1) dt { width: 38%; float: left; font-size: 16px; color: rgb(255, 51, 0); }
+	section.Glist ul li:nth-child(3) dl:nth-child(1) dd { width: 62%; float: left; font-size: 10px; color: rgb(51, 51, 51); text-align: right; }
+	section.Glist ul li:nth-child(3) dl:nth-child(2) { border-top: 1px dotted rgb(221, 221, 221); border-bottom: 1px dotted rgb(221, 221, 221); }
+	section.Glist ul li:nth-child(3) dl:nth-child(2) dt { width: 100%; font-size: 12px; color: rgb(51, 0, 0); line-height: 20px; }
+	section.Glist ul li:nth-child(3) dl:nth-child(2) dd { width: 100%; font-size: 12px; color: rgb(51, 51, 51); }
+	section.Glist ul li:nth-child(4) { width: 100%; float: left; padding: 0px; }
+	section.Glist ul li:nth-child(4) strong { display: block; width: 100%; height: 40px; line-height: 40px; background: rgb(255, 51, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); border-radius: 6px; text-align: center; margin: 0px auto; }
+}
+@media only screen and (max-width: 320px) {
+	section.Glist ul li:nth-child(2) img { width: 100%; height: 115px; padding: 10px 5px; }
+	section.Glist ul li:nth-child(3) dl:nth-child(1) dt { width: 30%; float: left; font-size: 16px; line-height: 20px; color: rgb(255, 51, 0); }
+	section.Glist ul li:nth-child(3) dl:nth-child(1) dd { width: 70%; float: left; font-size: 10px; color: rgb(51, 51, 51); text-align: right; }
+	section.Glist ul li:nth-child(3) dl:nth-child(2) { border-top: 1px dotted rgb(221, 221, 221); border-bottom: 1px dotted rgb(221, 221, 221); }
+	section.Glist ul li:nth-child(3) dl:nth-child(2) dt { width: 100%; font-size: 12px; color: rgb(51, 0, 0); line-height: 16px; }
+	section.Glist ul li:nth-child(3) dl:nth-child(2) dd { width: 100%; font-size: 12px; color: rgb(51, 51, 51); }
+	section.Glist ul li:nth-child(4) { width: 100%; float: left; padding: 0px; }
+	section.Glist ul li:nth-child(4) strong { display: block; width: 100%; height: 40px; line-height: 40px; background: rgb(255, 51, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255); border-radius: 6px; text-align: center; margin: 0px auto; }
+}
+article.showcontent { margin: 0px; padding: 0px; width: 100%; height: auto; overflow: hidden; }
+article.showcontent h2, .banner h2, article h2 { background: rgb(238, 233, 230) none repeat scroll 0% 0%; color: rgb(108, 89, 77); font-size: 18px; line-height: 30px; padding: 0px 10px; margin: 0px; width: 100%; clear: both; text-align: left; }
+footer { margin: 0px auto; padding: 0px; width: 100%; clear: both; border-top: 1px solid rgb(221, 221, 221); }
+footer p { text-align: center; font-size: 0.8em; border-top: 1px solid rgb(255, 255, 255); padding-top: 5px; }
+@media only screen and (max-width: 480px) {
+}
+article { width: 100%; margin: 0px auto; padding: 0px; line-height: 24px; font-size: 1em; animation: 0.3s linear 0.2s normal both 1 running bounceInkeep; }
+input, select, textarea { font: 100% Microsoft YaHei,微软雅黑,SimSun,宋体,Arial,Verdana; }
+img { border: 0px none; vertical-align: middle; }
+:-moz-placeholder { color: rgb(136, 136, 136); }
+*::-moz-placeholder { color: rgb(136, 136, 136); }
+body { font-size: 1.2em; font-family: "微软雅黑"; background-color: rgb(241, 241, 241); color: rgb(0, 0, 0); }
+html { overflow-x: hidden; overflow-y: auto; }
+* { margin: 0px; padding: 0px; }
+img { vertical-align: middle; border: 0px none; }
+a:active, a:focus { outline: medium none; }
+a { color: rgb(138, 138, 138); text-decoration: none; outline: medium none; }
+a:hover { color: rgb(0, 0, 0); }
+body { line-height: 1.6; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 16px; }
+body, h1, h2, h3, h4, h5, p, ul, ol, dl, dd, fieldset, textarea { margin: 0px; }
+fieldset, legend, textarea, input, button { padding: 0px; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0px; }
+ul, ol { padding-left: 0px; list-style-type: none; list-style-position: inside; }
+a { text-decoration: none; }
+.rich_media_content p::after { content: "​"; display: block; height: 0px; clear: both; }
+.rich_media_tool::after { content: "​"; display: block; height: 0px; clear: both; }
+@media screen and (min-width: 1023px) {
+}
+@media screen and (min-width: 1023px) {
+}
+body { background-color: rgb(248, 247, 245); }
+h1, h2, h3, h4, h5, h6 { font-weight: 400; font-style: normal; font-size: 100%; }
+@media screen and (min-width: 1023px) {
+	body { background-color: rgb(231, 232, 235); font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; }
+}
+a { color: rgb(70, 70, 70); outline-style: none; text-decoration: none; }
+body { background-color: rgb(245, 245, 245); color: rgb(70, 70, 70); }
+body, button, input { font: 14px/22px Arial,"Microsoft YaHei"; }
+html, body { margin: 0px; padding: 0px; width: 100%; }
+img { border: medium none; vertical-align: bottom; }
+input, textarea, select { border: medium none; outline: medium none; }
+section, footer, nav, em, mark, p, span, ul, li, ol, h1, h2, h3, h4, input, textarea { font-style: normal; font-weight: normal; list-style: outside none none; margin: 0px; padding: 0px; }
+.block, header, footer, section { display: block; }
+.c_txt { text-align: center; }
+.i_pri { color: rgb(190, 12, 12); font-size: 18px; }
+.orange_bg { background-color: rgb(255, 80, 0) !important; }
+.rel { position: relative; }
+.item_sec { padding: 10px; line-height: 30px; }
+.item_wrap { border-radius: 5px; box-shadow: 0px 1px 2px 2px rgb(228, 228, 228); overflow: hidden; padding: 10px; background: rgb(250, 250, 250) none repeat scroll 0% 0%; }
+.i_pri { font-size: 14px; }
+.row { position: relative; padding: 5px 10px 5px 70px; }
+.row > label, .row > b { position: absolute; left: 0px; }
+.add { background: rgb(245, 245, 245) none repeat scroll 0% 0%; }
+.select, .input { border: 1px solid rgb(217, 217, 217); font-size: 14px; height: 30px; line-height: 30px; text-indent: 6px; vertical-align: middle; width: 100%; }
+.select { margin-right: 5px; width: 42%; }
+footer { padding: 5px 10px; }
+footer p.note { padding: 13px 10px; line-height: 30px; }
+#buy_now { color: rgb(255, 255, 255); border-radius: 4px; width: 100%; font-size: 16px; line-height: 40px; box-shadow: 0px -1px 0px 0px rgb(215, 67, 0) inset; border: 0px none; outline: medium none; }
+ol, ul { list-style-position: inside; }
+body { background: black none repeat scroll 0% 0%; }
+#page { max-width: 750px; }
+@font-face {
+	font-family: "uc-nexus-iconfont";
+	src: url('undefined') format("woff"), url('undefined') format("truetype");
+}
