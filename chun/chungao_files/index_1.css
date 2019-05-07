@@ -1,0 +1,133 @@
+/* ::::: https://g.alicdn.com/tb/login/0.4.7/css/mini.css?t=20130321 ::::: */
+
+body { font: 12px/1.5 Tahoma,Helvetica,Arial,"宋体",sans-serif; }
+html, legend { color: rgb(64, 64, 64); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul { margin: 0px; padding: 0px; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: 400; }
+li { list-style: outside none none; }
+q::after, q::before { content: ""; }
+button, input, select, textarea { font: 100% Tahoma,Helvetica,Arial,sans-serif; }
+a { color: rgb(109, 109, 109); text-decoration: none; }
+a:hover { color: rgb(255, 66, 0); text-decoration: underline; }
+.clearfix::after { content: " "; display: block; height: 0px; clear: both; }
+.login-box .field { position: relative; z-index: 1; }
+.pwd-field { z-index: 2; }
+.ph-label { position: absolute; padding: 0px 0px 0px 6px; line-height: 35px; height: 35px; color: rgb(153, 153, 153); opacity: 1; transition: all 0.2s ease-out 0s; left: 35px; }
+.install-plugin-popup .bd strong, .install-plugin-popup .bd ul li, .install-plugin-popup .hd, .install-plugin-popup h3, .login-box .entries li, .login-box .mobile-num, .login-box .msg p.error, .login-box .submit button, .login-box ul.entries, .long-login-help { background: rgba(0, 0, 0, 0) url('stuff.png') no-repeat scroll 1000px 1000px; }
+body, html { overflow-x: hidden; overflow-y: auto; background-color: rgb(250, 250, 250); height: 100%; }
+.login-box { width: 310px; overflow: hidden; margin: 0px auto; }
+.login-box .msg { margin-bottom: 5px; }
+.login-box .msg p.error { background-position: -319px -449px; background-color: rgb(255, 242, 242); border-color: rgb(255, 128, 128); line-height: 18px; padding: 2px 10px 2px 23px; }
+.login-box .msg p { border: 1px solid rgb(204, 204, 204); float: none; white-space: normal; overflow-wrap: break-word; }
+.login-box .bd { padding: 10px 30px 0px; }
+.login-box .field { padding-bottom: 5px; vertical-align: middle; }
+.login-box .field label { display: block; font-weight: 700; padding-bottom: 3px; color: rgb(102, 102, 102); }
+.login-box .login-text { width: 242px; height: 18px; line-height: 18px; margin-right: 3px; padding: 3px; border: 1px solid rgb(200, 200, 200); vertical-align: middle; }
+.login-box .dynamic-link, .login-box .forget-pw { position: absolute; right: 0px; top: 0px; }
+.login-box .login-msg p { float: none; white-space: normal; overflow-wrap: break-word; }
+.login-box .password-edit { display: inline-block; height: 28px; overflow: hidden; margin-left: -1px; vertical-align: middle; }
+#J_StandardPwd { display: inline-block; height: 28px; vertical-align: middle; }
+.login-box .password-edit-tmp { display: block; width: 0px; height: 0px; overflow: hidden; }
+.login-box .submit { padding-top: 5px; overflow: hidden; }
+.login-box .submit button { width: 250px; height: 33px; border: 0px none; display: inline-block; overflow: hidden; vertical-align: middle; line-height: 31px; font-size: 14px; font-weight: 700; color: rgb(255, 255, 255); background: rgba(0, 0, 0, 0) url('c.png') no-repeat scroll 0px 0px; cursor: pointer; }
+.login-box .submit button:hover, .login-submit button.hover { background-position: 0px -33px; }
+.login-box ul.entries { overflow: hidden; padding: 2px 0px 0px; }
+.quick-login ul.entries { padding-top: 10px; }
+.login-box ul.entries li { word-break: keep-all; float: left; }
+.login-box ul.entries .register { float: right; }
+.login-box ul.entries a { color: gray; }
+.login-box ul.entries a:hover { color: rgb(255, 102, 0); }
+.login-box .field .warning-tip { display: block; padding: 0px; color: rgb(255, 10, 10); font-weight: 400; line-height: 1.2; }
+.login-box strong { font-weight: 700; }
+.field .ph-label { position: absolute; padding: 0px 0px 0px 6px; line-height: 26px; height: 26px; color: rgb(153, 153, 153); opacity: 1; transition: all 0.2s ease-out 0s; left: 0px; }
+.dynamic, .module-dynamic .quick-login, .module-dynamic .static, .module-quick .dynamic, .module-quick .static, .quick-login { display: none; }
+.ql-box { padding: 10px 0px 0px; }
+.ql-box .userlist { height: 8em; overflow: auto; margin: 10px 0px 0px; padding: 0px; }
+.ql-box ul.entries a { color: rgb(0, 136, 204); }
+.ql-box ul.entries a:hover { color: rgb(255, 102, 0); }
+@font-face {
+	font-family: "nc_iconfont";
+	src: url('font_1465353706_4784257.eot') format("embedded-opentype"), url('font_1465353706_4784257.woff') format("woff"), url('font_1465353706_4784257.ttf') format("truetype"), url('font_1465353706_4784257.svg') format("svg");
+}
+@font-face {
+	font-family: "ncpc_iconfont";
+	src: url('font_384029_rhzpmteb25oecdi.eot') format("embedded-opentype"), url('font_384029_rhzpmteb25oecdi.woff') format("woff"), url('font_384029_rhzpmteb25oecdi.ttf') format("truetype"), url('font_384029_rhzpmteb25oecdi.svg') format("svg");
+}
+.nc-container #nc-loading-circle .sk-circle::before { content: ""; display: block; margin: 0px auto; width: 15%; height: 15%; background-color: rgb(129, 129, 129); border-radius: 100%; animation: 1.2s ease-in-out 0s normal both infinite running sk-circleFadeDelay; }
+.nc-container #nc-loading-circle .sk-circle2::before { animation-delay: -1.1s; }
+.nc-container #nc-loading-circle .sk-circle3::before { animation-delay: -1s; }
+.nc-container #nc-loading-circle .sk-circle4::before { animation-delay: -0.9s; }
+.nc-container #nc-loading-circle .sk-circle5::before { animation-delay: -0.8s; }
+.nc-container #nc-loading-circle .sk-circle6::before { animation-delay: -0.7s; }
+.nc-container #nc-loading-circle .sk-circle7::before { animation-delay: -0.6s; }
+.nc-container #nc-loading-circle .sk-circle8::before { animation-delay: -0.5s; }
+.nc-container #nc-loading-circle .sk-circle9::before { animation-delay: -0.4s; }
+.nc-container #nc-loading-circle .sk-circle10::before { animation-delay: -0.3s; }
+.nc-container #nc-loading-circle .sk-circle11::before { animation-delay: -0.2s; }
+.nc-container #nc-loading-circle .sk-circle12::before { animation-delay: -0.1s; }
+.nc-container .scale_text2 #nc-loading-circle .sk-circle::before { background-color: rgb(255, 255, 255); }
+.nc_iconfont { font-family: "nc_iconfont"; color: rgb(255, 63, 8); font-size: 16px; font-style: normal; }
+.clickCaptcha_text .btn_refresh { font-style: normal; cursor: pointer; background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(115, 115, 131); }
+.imgCaptcha .btn_refresh { font-size: 20px; cursor: pointer; background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(115, 115, 131); }
+.nc_voice { display: none; position: relative; margin-top: -34px; z-index: 99; width: auto; height: 34px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.nc_voicebtn { position: absolute; padding: 0px; right: -25px; font-size: 23px; color: rgb(136, 136, 136); cursor: pointer; line-height: 34px; }
+.nc_helpbtn { position: absolute; cursor: pointer; right: -95px; top: 4px; font-size: 12px; background-color: rgb(255, 182, 104); color: rgb(255, 255, 255); padding: 4px; border-radius: 2px; line-height: 18px; display: none; }
+.nc_helpbtn::before { width: 0px; height: 0px; content: ""; position: absolute; left: -2px; top: 6px; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-right: 4px solid rgb(255, 182, 104); }
+.nc-container .nc_captcha_img_text { width: auto; height: auto; line-height: 20px; visibility: hidden; font-size: 12px; color: rgb(153, 153, 153); font-weight: normal; display: none; padding: 0px 0px 10px; background-position: 0px 0px; }
+.nc-container .imgCaptcha .nc_captcha_img_text { width: auto; }
+.nc_captcha_img_text { height: auto; line-height: 20px; visibility: hidden; font-size: 12px; color: rgb(153, 153, 153); font-weight: normal; display: none; padding: 0px 0px 10px 3px; background-position: 0px 0px; }
+.nc-container .nc_wrapper { width: auto; }
+.nc_scale { width: auto; height: 34px; background: rgb(232, 232, 232) none repeat scroll 0% 0%; position: relative; margin: 0px; padding: 0px; }
+.nc-container .nc_scale div { height: auto; }
+.nc-container .nc_scale .btn_slide { color: rgb(115, 115, 131); background-image: none; }
+.nc-container .nc_scale span { text-align: center; width: 40px; height: 32px; line-height: 32px; border: 1px solid rgb(204, 204, 204); position: absolute; left: 0px; cursor: move; background: rgb(255, 255, 255) none repeat scroll 0% 0%; z-index: 2; }
+.nc-container .nc_scale span.nc-lang-cnt { float: none; width: auto; height: auto; border: medium none; position: static; cursor: inherit; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; z-index: 0; display: inline; }
+@media not all, not all {
+	.nc_scale span { height: 32px; }
+}
+.nc-container .clickCaptcha_text .btn_refresh { font-size: 20px; }
+.nc-container .nc_scale .nc_ok, .nc-container .nc_scale .nc_bg { background: rgb(122, 194, 60) none repeat scroll 0% 0%; }
+.nc-container .nc_scale .nc_bg { position: absolute; height: 100%; left: 0px; width: 10px; }
+.nc-container .nc_scale .scale_text { width: 100%; height: 100%; text-align: center; position: absolute; z-index: 1; background: transparent none repeat scroll 0% 0%; color: rgb(156, 156, 156); line-height: 34px; font-size: 12px; cursor: pointer; }
+.nc-container .nc_scale .imgCaptcha, .nc-container .nc_scale .clickCaptcha { display: none; overflow: hidden; border: 1px solid rgb(204, 204, 204); background: rgb(255, 255, 255) none repeat scroll 0% 0%; z-index: 20000; }
+.nc-container .nc_scale .imgCaptcha { height: auto; }
+.nc-container .nc_scale .clickCaptcha { position: absolute; left: 0px; top: 35px; height: 270px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: none; }
+.nc-container .nc_scale .clickCaptcha div { position: static; clear: both; width: 100%; background: rgb(255, 255, 255) none repeat scroll 0% 0%; height: auto; }
+.nc-container .nc_scale .clickCaptcha .clickCaptcha_text { height: 30px; line-height: 30px; font-size: 12px; color: rgb(153, 153, 153); }
+.nc-container .nc_scale .clickCaptcha .clickCaptcha_text b { font-weight: normal; }
+.nc_btn_2 { position: absolute; right: 0px; top: 0px; cursor: pointer; margin: 2px 9px 0px 0px; }
+.nc_iconfont.nc_btn_2 { position: absolute; right: 0px; top: 0px; cursor: pointer; }
+.nc_iconfont.nc_btn_1 { position: absolute; top: 10px; right: 5px; }
+.nc_btn_1 { top: 10px; right: 10px; }
+.nc-container .clickCaptcha .clickCaptcha_img { margin: 0px auto; clear: both; position: relative; }
+.nc-container .clickCaptcha .clickCaptcha_btn { margin: 10px 0px 0px 15px; position: relative; text-align: left; }
+.nc-container .imgCaptcha { position: absolute; left: 0px; top: 35px; height: auto; padding-bottom: 15px; border: 1px solid rgb(204, 204, 204); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.nc-container .imgCaptcha div { position: static; width: 90%; background-color: rgb(255, 255, 255); }
+.nc-container .imgCaptcha, .nc-container .clickCaptcha { text-align: left; }
+.nc-container .imgCaptcha .imgCaptcha_text { height: 42px; line-height: 42px; width: 120px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; font-size: 14px; text-align: left; color: rgb(116, 116, 116); float: left; margin-left: 10px; }
+.nc-container .imgCaptcha .imgCaptcha_text input { margin-top: 5px; height: 30px; line-height: 30px; font-size: 14px; width: 90px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.nc-container .imgCaptcha .imgCaptcha_text input:focus { outline: medium none; color: rgb(187, 187, 187); }
+.nc-container .imgCaptcha .imgCaptcha_btn { margin: 0px 0px 0px 12px; clear: both; padding-top: 5px; width: 90%; }
+.nc-container .imgCaptcha .nc_scale_submit { margin: 0px auto; cursor: pointer; background-color: rgb(252, 70, 30); width: 120px; height: 32px; line-height: 32px; color: rgb(255, 255, 255); text-align: center; }
+.nc-container .imgCaptcha .imgCaptcha_img { margin: 4px 0px 0px 100px; height: 40px; width: 130px; overflow: hidden; cursor: pointer; }
+.nc-container { font-size: 12px; touch-action: none; }
+.nc-container .scale_text.scale_text span[data-nc-lang="_startTEXT"] { display: inline-block; width: 100%; }
+.nc-container.tb-login { position: relative; margin-top: 20px; display: none; }
+.nc-container.tb-login .nc_scale { width: auto; }
+.nc-container.tb-login .imgCaptcha, .nc-container.tb-login .clickCaptcha { width: 252px; border: 0px none; min-height: 300px; max-height: inherit !important; }
+.nc-container.tb-login .imgCaptcha { padding-top: 66px; }
+.nc-container.tb-login .imgCaptcha .imgCaptcha_text { width: 100px; margin-left: 0px; }
+.nc-container.tb-login .imgCaptcha .imgCaptcha_text input:focus { color: rgb(0, 0, 0); }
+.nc-container.tb-login .imgCaptcha .imgCaptcha_img { width: 120px; }
+.nc-container.tb-login .imgCaptcha .imgCaptcha_btn { width: 100%; margin-left: 0px; }
+.nc-container.tb-login .imgCaptcha .nc_scale_submit { width: 100%; height: 36px; line-height: 36px; margin-top: 20px; margin-left: 0px; border-radius: 3px; font-size: 16px; font-family: Tahoma,Helvetica,Arial,sans-serif; background: rgb(255, 63, 8) none repeat scroll 0% 0%; }
+.nc-container.tb-login .clickCaptcha { padding-top: 40px; }
+.nc-container.tb-login .clickCaptcha .clickCaptcha_text { text-indent: 4px; }
+.nc-container.tb-login .nc_btn_1 { top: 77px; }
+.nc-container.tb-login .nc_btn_2 { top: 36px; }
+.nc-container.tb-login.nc-old-login { margin: 20px 0px 10px; width: 250px; }
+.nc-container.tb-login.nc-old-login .nc_wrapper { width: 250px; }
+.nc-container.tb-login.nc-old-login .imgCaptcha, .nc-container.tb-login.nc-old-login .clickCaptcha { width: 250px; min-height: auto; }
+.nc-container.tb-login.nc-old-login .clickCaptcha { padding-top: 28px; }
+.nc-container .nc_scale .nc-cc { display: none; position: absolute; left: 0px; top: 35px; z-index: 20000; width: 360px; height: 570px; border: 1px solid rgb(94, 174, 241); border-radius: 4px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; font-size: 14px; line-height: 18px; color: rgb(51, 51, 51); }
+.login-box .nc-container.tb-login.nc-old-login .nc_scale { width: 248px; }
