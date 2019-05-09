@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta content="telephone=no" name="format-detection">
+	    <meta content="email=no" name="format-detection">
+	    <meta name="format-detection" content="email=no">
+	    <meta http-equiv="Cache-Control" content="no-cache">
+		<title>脸部祛斑咨询平台</title>
+		<script type="text/javascript" src="./qba_files/jquery.js" tppabs="http://kz32.gzliyanji.com/qz/js/jquery.js">
+		</script>
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=480px, user-scalable=no">
+		<!--<script type="text/javascript" src="js/style.js" tppabs="http://kz32.gzliyanji.com/qz/js/style.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="./qba_files/css.css" tppabs="http://kz32.gzliyanji.com/qz/css/css.css">
+<!--		<link rel="stylesheet" href="css/index.css" />-->
+		<!--<link rel="stylesheet" href="css/base_1.css" />-->
+		<!--<link rel="stylesheet" href="css/button.css" />-->
+                <link rel="stylesheet" href="./qba_files/tz.css">
+		<link rel="stylesheet" href="./qba_files/style.css">
+
+
+
+<script type="text/javascript">
+	arr_wx=['mini556600','Gill113388','h398932'];
+	var wx_index = Math.floor((Math.random()*arr_wx.length));
+	var stxlwx = arr_wx[wx_index];
+</script>
+
+<script>
+$(function(){
+	var wangzhi = window.location.href;
+	var da=[];
+	var loadbtnstr=[];
+	var btnarr=[];
+	var csarr=[];
+	var warr=[];
+	var text=[];
+	loadbtnstr[0]='<div class="btnbox w100"><button>稍等……</button></div>';
+	loadbtnstr[1]='<div class="btnbox w100"><button>请稍候，正在为您生成结果……</button></div>';
+	text[0]='您已完成全部自测答题，请及时添加老师微信： <span name="notweixin" class="wxnum bgcopy bnt coby">'+stxlwx+'</span> ，领取对应<span style="color:#fc7c74">祛斑方案</span>！';
+	text[1]='您的手机号码我们已收到，稍后我们的老师会电话通知您自测分析检测结果；或直接添加专家微信：<span style="color:red;"></span>，随时咨询专家！';
+	btnarr[0]='<div class="btnbox w100"><button class="btn" index="1" wtindex="0">开始</button></div></div>';
+	btnarr[1]='<div class="btnbox w33"><button class="btn" index="2" wtindex="1">25岁之前</button></div><div class="btnbox w33"><button class="btn" index="2" wtindex="1">25~35岁</button></div><div class="btnbox w33"><button class="btn" index="2" wtindex="1">35岁以上</button></div>';
+	btnarr[2]='<div class="btnbox w50"><button class="btn" index="3" wtindex="2">缺水无油</button></div><div class="btnbox w50"><button class="btn" index="3" wtindex="2">缺水多油</button></div><div class="btnbox w50"><button class="btn" index="3" wtindex="2">仅多油</button></div><div class="btnbox w50"><button class="btn" index="3" wtindex="2">正常</button></div>';
+	btnarr[3]='<div class="btnbox w50"><button class="btn" index="4" wtindex="3">高压睡眠欠缺</button></div><div class="btnbox w50"><button class="btn" index="4" wtindex="3">低压睡眠充足</button></div><div class="btnbox w50"><button class="btn" index="4" wtindex="3">家庭压力大工作压力小</button></div><div class="btnbox w50"><button class="btn" index="4" wtindex="3">较为轻松无压力</button></div>';
+	btnarr[4]='<div class="btnbox w50"><button class="btn" index="5" wtindex="4">是</button></div><div class="btnbox w50"><button class="btn" index="5" wtindex="4">否</button></div>';
+	btnarr[5]='<div class="input-group" style="position: fixed;bottom: 0;z-index: 1000;width: 480px;background: #f4f4f6;border-top: 1px solid #dcdcdc;box-sizing: border-box; display:none;">复制  <span class="wxnum" name="notweixin" data-clipboard-action="copy" data-clipboard-target=".copy">'+stxlwx+'</span>  <a href="weixin://" >去微信</a> </div>';
+	btnarr[6]='<ul class="lsbtn">';
+	btnarr[6]+="<li>您已提交成功！我们将尽快与您联系！</li>";
+
+	btnarr[9]+='</ul>';
+	warr[0]='色斑是在多少岁开始长出的？';
+	warr[1]='目前的长斑的位置，是否干燥缺水，或者容易出油？';
+	warr[2]='工作家庭属于以下那类型？';
+	warr[3]='是否尝试过祛斑？';
+	csarr[0]='你有任何色斑的问题，你都可以直接咨询我，我会根据你脸部的色斑形状以及颜色判断出长斑的原因。并且提供合适的祛斑方法给你，给你定制一系列的祛斑步骤帮助你解决色斑问题。';
+	csarr[1]='点击下方<b style="color: red;">【开始】</b>之后，根据自身情况选择相应的答案。点击开始，进行自测';
+	csfun();
+	appendbtn(0);
+	$('#comment_box').css('display','block');
+	function csfun(){
+		for(var i=0;i<8;i++){
+			da[i]=0;
+		}
+		var str="";
+		$("#wdcon").empty();
+		for(var i=0;i<csarr.length;i++){
+			str='<div class="box">';
+			str+='<div class="left">';
+			str+='<img src="./qba_files/mface.png">';
+			str+='</div>';
+			str+='<div class="right">';
+			str+='<div class="con"><span class="sjx"></span>'+csarr[i]+'</div>';
+			str+='</div>';
+			str+='<div class="clear"></div>';
+			str+='</div>';
+			$("#wdcon").append(str);
+		}
+	}
+	function appendbtn(index){
+		$("#wdfixbom").empty();
+		$("#wdfixbom").append(btnarr[index]);
+		if(index==5){
+			$(".submit").show();
+		}
+//		if ($("#wdfixbom").find("#wx").size()) {
+//			$("#wdfixbom").find("#wx").text(mess2);
+//		}
+	}
+	function apphzlt(text){
+		var str='<div class="hzbox">';
+		str+='<div class="left">';
+		str+='<img src="./qba_files/person.png">';
+		str+='</div>';
+		str+='<div class="right">';
+		str+='<div class="con"><span class="sjx"></span>'+text+'</div>';
+		str+='</div>'
+		str+='<div class="clear"></div>';
+		str+='</div>';
+		$("#wdcon").append(str);
+		var height=$(document).height() - $(window).height();
+		if(!($(document).scrollTop() >= height)){
+			var h=$("#wdcon").height()
+			$('body,html').animate({ 
+			 	// scrollTop: h
+			},500);
+		}
+	}
+	function appyslt(text){
+		//alert(text);//老师的问题
+		var str='<div class="box">';
+		str+='<div class="left">';
+		str+='<img src="./qba_files/mface.png">';
+		str+='</div>';
+		str+='<div class="right">';
+		str+='<div class="con"><span class="sjx"></span>'+text+'</div>';
+		str+='</div>';
+		str+='<div class="clear"></div>';
+		str+='</div>';
+		$("#wdcon").append(str);
+//		if ($("#wdcon").find("#wx").size()) {
+//			$("#wdcon").find("#wx").text(mess2);
+//		}
+		var height=$(document).height() - $(window).height();
+		
+		
+        if(!($(document).scrollTop() >= height)){
+			var h=$("#wdcon").height()
+			$('body,html').animate({ 
+			 	// scrollTop: h
+			},500);
+		}
+	}
+	function loadbtn(index){
+	
+		$("#wdfixbom").empty();
+		$("#wdfixbom").append(loadbtnstr[index]);
+	}
+	function ajaxdata(){
+
+		var wangzhi = window.location.href;        	
+        var cityname="name=xinxiliu";
+        var yiyuan = "xa_全国";
+        var sex = warr[0]+da[0];
+		var ttzz = warr[1]+da[1];
+		var blxx = warr[2]+da[2];
+		var wlxx = warr[3]+da[3];
+		var gjsx = warr[4]+da[4];
+		var sfjc = warr[5]+da[5];
+		var subtel =da[7];
+		var subtext ="问题1：" + sex + "<br>问题2：" + ttzz + "<br>问题3：" + blxx + "<br>问题4：" + wlxx + "<br>问题5：" +  gjsx + "<br>问题6：" + sfjc;
+		openZoosUrl('chatwin','&e='+escape('信息流:<br/>电话：'+subtel+'<br/>内容:'+ subtext));
+
+	}
+	
+	$("#wdfixbom .btn").live('click',function(){
+		var wtindex=$(this).attr('wtindex');
+		var index=$(this).attr('index');
+		apphzlt($(this).html());
+		loadbtn(0);
+		da[wtindex-1]=$(this).html();
+		/*alert(da[wtindex-1]);//答案*/
+    
+    
+    
+    	$('#wdcon').scrollTop( $('#wdcon')[0].scrollHeight );
+     
+    
+    
+    
+		setTimeout(function(){
+			appendbtn(index);
+			if(wtindex<=warr.length-1){
+				appyslt(warr[wtindex]);
+				/*alert(warr[wtindex]);//wenti*/
+			}else{
+				appyslt(text[0]);
+				var script=document.createElement("script");
+				script.type="text/javascript";
+				script.src="qq.asp";
+				document.getElementsByTagName('body')[0].appendChild(script); 
+				setTimeout(function(){
+					//加载留言
+					
+			        setTimeout(function(){
+						var h=$("#wdcon").children('div:last-child').height()+80;
+						$('html, body').animate({
+			                // scrollTop: $(".mm-comment").offset().top-h
+			            }, 600);
+		            },300);
+				},600);
+			}
+			
+			$('#wdcon').scrollTop( $('#wdcon')[0].scrollHeight );
+			
+		},1000);
+	});
+	$("#telbtn").live('click',function(){
+		var telname=$("#telname").val();
+		//alert(telname);//电话号码
+		var index=$(this).attr('index');
+		if(telname==''){
+			alert('电话或微信不能为空！');
+		}else{
+			da[index-2]=telname;
+			loadbtn(1);
+			apphzlt(telname);
+			setTimeout(function(){
+				appendbtn(index);
+				appyslt(text[1]);
+				// ajaxdata();
+			},1000);
+		}
+	});
+	$("#start").live('click',function(){
+		appendbtn(0);
+		csfun();
+	})
+})
+</script>
+	</head>
+
+	<body>
+<div style="position: fixed;bottom: 0;background: #eee;border-top: 1px solid #ccc;width: 100%;font-size: 16px;padding:5px;left:0px;z-index:999;">
+  <table>
+    <tbody>
+      <tr>
+        <td style="padding-left: 5px;">老师微信：
+          <font style="background:#ff0000;color:#fff" id="qb13">
+          <script>document.write(stxlwx)</script></font>长按可复制
+          <br>安全健康祛斑，就是这么简单</td>
+        <td style="padding-left:7rem; ">
+          <a style="background: #1356e2;
+          color: #fff;
+          border-radius: 12px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          box-shadow: 0 1px 3px 0 #000;display:block;width:80px;" class="weixinid public-name" href="weixin://">去微信</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+		<div class="open_weChat"></div>
+	
+		<div class="weChar_wrap">
+			<p>微信号复制成功，去打开微信加好友</p>
+			<a href="javascript:;" onclick="openWWW()">确定</a>
+		</div>
+		<div class="wrapper">
+			<div class="container">
+				
+
+				<div class="wdbox" style="background: #fff;"><br>
+					<p style="font-size: 40px;margin: 0 auto;width: 90%;margin-bottom: 24px; text-align: center;font-weight: bold;color: #fff;background: #fc7c74;border-radius: 16px;padding: 16px 0;">只需一招<br>快速解决斑点！</p>
+					
+					<!-- <div class="wdtitle">
+                    肌肤问题咨询平台
+                </div> -->
+					<!--<div class="wdtit" style="text-indent: 2em">
+						你研究过产品的成分是否适合你吗？你有可能一直在用错误的方法，使用不科学成分的产品，这些只会加深你脸部的皱纹
+					</div>-->
+					<!--<nav class="m-nav" style="padding:.7rem;">
+						<img src="picture/tb21r3iqgatbunjsszfxxxgfpxa_!!2684310334.png">
+					</nav>-->
+					<ul class="m-message">
+						<li>为什么有的人脸上斑斑点点，有的人却像珍珠一样嫩白无瑕？有些人想尽办法只为祛斑，而有些人压根没有困扰？在你花尽积蓄祛斑时，脸蛋却不如别人分文不花？</li>
+					</ul>
+					<ul>
+						<li><img src="./qba_files/s00222.gif" style="width:100%;"></li>
+					</ul>
+					<ul class="m-message1">
+						<li>
+							<p style="text-indent: 2em;line-height: 1.5;font-weight: normal; text-align: justify;">
+								2018年3月26日，科学研究明确表明：<strong>“所有长斑的人群均可通过增强细胞活性成功祛除斑点” </strong>
+								为证实此理论，祛斑团队<span style="color: #fc7c74;">索芙特的老师们</span>召集了10000名脸部长黄褐斑、雀斑、黑斑、日晒斑等的女性。自2017年10月15开始，开展了为时30天的实验历程，平均在15天内就解决了斑点问题！
+							</p>
+							<!-- <p style="text-indent: 2em;line-height: 1.5;font-weight: normal; text-align: justify;">
+							</p> -->
+							<p style="text-indent: 2em;line-height: 1.5;font-weight: normal; text-align: justify;">
+								如果你一直长斑，尝试了很多方式都去不掉，<strong>毋庸置疑，细胞已经失去活性！</strong>需要使用<strong>分斑祛斑</strong>的科学方法，才能一步将色斑解决到位，不再走弯路！
+							</p>
+						</li>
+					</ul>	
+				</div>
+				<!--<div class="fword">
+					
+				</div>-->
+				<div class="wdbox">
+					<div class="wdcon" id="wdcon"><div class="box"><div class="left"><img src="./qba_files/mface.png"></div><div class="right"><div class="con"><span class="sjx"></span>你有任何色斑的问题，你都可以直接咨询我，我会根据你脸部的色斑形状以及颜色判断出长斑的原因。并且提供合适的祛斑方法给你，给你定制一系列的祛斑步骤帮助你解决色斑问题。</div></div><div class="clear"></div></div><div class="box"><div class="left"><img src="./qba_files/mface.png"></div><div class="right"><div class="con"><span class="sjx"></span>点击下方<b style="color: red;">【开始】</b>之后，根据自身情况选择相应的答案。点击开始，进行自测</div></div><div class="clear"></div></div></div>
+
+					<div id="thumb"></div>
+					<div class="hander clearfix">
+					<style>
+							.chating {
+					margin: 0 auto;
+					text-align: center;
+					position: relative;
+					
+				}
+				
+				;
+				.chating img {
+					width: 20rem;
+					height: 5.4375rem;
+					display: inline-block
+				}
+				
+				.chating>p {
+					font-size: 1rem;
+					line-height: 1;
+					margin-top: .8rem;
+					color: #FF0000;
+					font-weight: bold
+				}
+				
+				.pl-tit {
+					border-bottom: 2px solid #9fc8f5;
+					font-size: 16px;
+					line-height: 2
+				}
+						.nav {
+							width: 100%;
+							height: 30px;
+							line-height: 30px;
+							margin: 0 auto;
+						}
+						
+						.nav ul {
+							width: 100%;
+							overflow: hidden;
+						}
+						
+						.nav ul li {
+							float: left;
+							width: 25%;
+							text-align: center;
+							display: inline;
+						}
+						
+						.nav ul li a {
+							color: #ccc;
+							font-family: "微软雅黑";
+							font-size: 12px;
+							font-weight: bold;
+							display: block;
+							margin-left: 5px;
+							text-align: center;
+							height: 30px;
+							line-height: 30px;
+							overflow: sshidden;
+						}
+						
+						.nav ul li a span {
+							display: block;
+							font-family: "微软雅黑";
+							vertical-align: middle;
+							font-size: 13px;
+						}
+					</style>
+
+					<!--<div style="height: 80px;"></div>-->
+
+					<div class="wdfixbom" id="wdfixbom"><div class="btnbox w100"><button class="btn" index="1" wtindex="0">开始</button></div></div>
+				</div>
+					
+				
+				
+				
+			</div>
+<div class="chating">
+					<img src="./qba_files/abcd.gif" style="width: 23rem;">
+					<p>已有<span id="txt">59841</span>人通过测试，成功领取祛斑方案</p>
+					
+				</div>
+               <div class="mm-comment" id="comment_box" style="display: block;">
+						<link rel="stylesheet" href="./qba_files/new_style.css">
+				
+						<div class="m-commentResult">
+							<div class="m-commentResultHead">精彩评论</div>
+							<ul class="m-conmentList">
+                              
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0be5c81d.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0be5c81d.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">阿一洗</span><span class="m-discussAddress">甘肃兰州</span></div>
+									<div class="m-discussContent">看上面说咨询都是免费啊 挺好的</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>8535</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0d5c6b65.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0d5c6b65.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">又是一轮清月</span><span class="m-discussAddress">广东汕头</span></div>
+									<div class="m-discussContent">这个实验当时还上了新闻的，我早就加微信领取了，现在脸上一点斑都没有了，真的是太感谢了！还在盲目祛斑的姐妹，不要再尝试了，没用的，细胞不活动，黑色素根本排不出来，斑也还是会有的，还是试试科学方法吧，反正免费，试试无妨咯。微信是这个：<b style="color:red" name="notweixin" class="btn copy"><script>document.write(stxlwx);</script></b></div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>3542</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0c584a64.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0c584a64.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">忠实粉丝</span><span class="m-discussAddress">广西桂林</span></div>
+									<div class="m-discussContent">难怪我什么祛斑的护肤品都用了，脸上一点好转都没有，根源都没解决！真是浪费了！</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">3天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>5944</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0cfa6678.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0cfa6678.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">巧克力酱</span><span class="m-discussAddress">北京东城</span></div>
+									<div class="m-discussContent">我脸上长期干燥，脸上也是很多斑，一直以为是身体不好，原来是脸上细胞不动弹了</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">3天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>2386</span></div>
+									</div>
+                              </li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0da4ae88.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0da4ae88.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">你的背包</span><span class="m-discussAddress">四川成都</span></div>
+									<div class="m-discussContent">有人加微信了嘛？我脸上长斑很多年了，不知道该怎么去才好，用了好多产品都没用</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">4天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>2356</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0df52967.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0df52967.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">菠萝镜子</span><span class="m-discussAddress">吉林长春</span></div>
+									<div class="m-discussContent">听君一席话胜读十年书啊，才知道脸部细胞不动就没法祛斑的，那脸上的不都是脏东西，难怪丑出天际，天哪！</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">5天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1548</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0e2e563d.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0e2e563d.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">东闯闯西走走</span><span class="m-discussAddress">江苏苏州</span></div>
+									<div class="m-discussContent">科学就是力量，事实摆在面前不信都不行。而且女性同胞一定要爱护好自己的脸，我就是个例子，因为黄褐斑一起来，不漂亮了，我老公就偷腥，哭闹都没用，就离婚了。后来我加了微信，现在脸上已经没有斑了，过得潇洒</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">5天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>2387</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0e85ab6c.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0e85ab6c.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">梁静茹给你的勇气吗？</span><span class="m-discussAddress">天津</span></div>
+									<div class="m-discussContent">这个增强细胞活性的方案是真的很厉害，我的斑20天立马就没有了，非常棒！</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">6天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1568</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0ec49963.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0ec49963.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">猫奴</span><span class="m-discussAddress">广东潮州</span></div>
+									<div class="m-discussContent">黄褐斑能去吧  反正都是一个根源 刚刚加微信还挺好的 一对一咨询 问的很清楚</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">6天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>6541</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db1328fb1c.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db1328fb1c.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">Girls like you</span><span class="m-discussAddress">浙江杭州</span></div>
+									<div class="m-discussContent">以前觉得雀斑没事 现在不行了 恨死我这张脸了 最后试一次吧</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">6天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>5952</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0f291e6f.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0f291e6f.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">绿箩萝萝萝萝</span><span class="m-discussAddress">江苏南京</span></div>
+									<div class="m-discussContent">这个我听我表姐提过啊 说是很有用 昨天我见到她还以为她脸上像刷白漆一样化妆呢 哈哈哈哈哈哈或或  后来她告诉我按照这个增强细胞活性的方案现在都已经好了 皮肤水灵灵的 微信推荐给大家：<b style="color:red" name="notweixin" class="btn"><script>document.write(stxlwx);</script></b></div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">6天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>5684</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3dd7bf5b7e5.png" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3dd7bf5b7e5.png" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">人生啊快活啊</span><span class="m-discussAddress">浙江杭州</span></div>
+									<div class="m-discussContent">加了还没通过  真好 可以为每个人的皮肤状况定制方案</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">8天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>2654</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3dd7ca721fc.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3dd7ca721fc.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">一口盐汽水</span><span class="m-discussAddress">广东广州</span></div>
+									<div class="m-discussContent">朋友圈还有护肤方法，祛斑这么多年，原来都是做了无用功 今天真是恍然大悟</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">8天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1568</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0ef26ea0.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0ef26ea0.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">海草海草随风飘摇</span><span class="m-discussAddress">云南玉溪</span></div>
+									<div class="m-discussContent">加微信咨询了之后我发现我的护肤手法全错了 这老师是厉害人</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">9天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>8564</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0f602ce2.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0f602ce2.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">痴人说梦</span><span class="m-discussAddress">北京</span></div>
+									<div class="m-discussContent">加了还没通过</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">9天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>5685</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db0f981ca5.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0f981ca5.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">886</span><span class="m-discussAddress">上海</span></div>
+									<div class="m-discussContent">现在脸上的斑真是让我醉了</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-03 15:20:46</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>5984</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db136bfb41.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db136bfb41.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">咿呀一字哟</span><span class="m-discussAddress">广州</span></div>
+									<div class="m-discussContent">科学就是力量啊 自己弄了那么久 没一点用 不如别人几句话</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-03 10:33:28</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>3568</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3db12f13fa3.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db12f13fa3.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">铅笔王</span><span class="m-discussAddress">江西南昌</span></div>
+									<div class="m-discussContent">原来小妙招是不能用的啊？之前我还用过什么网上很火的马齿苋，把我脸都给损坏了 我还以为是正常现象</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-02 15:35:03</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1954</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/5b3dd7d2082a0.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3dd7d2082a0.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">清明雨上</span><span class="m-discussAddress">陕西西安</span></div>
+									<div class="m-discussContent">乡间土办法什么的 大家可千万别用啊 我都试怕了</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-02 10:35:18</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1654</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/tou13.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db136bfb41.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">若若弱弱</span><span class="m-discussAddress">广东湛江</span></div>
+									<div class="m-discussContent">我脸上的斑是真的丑 现在我就去加一下微信看一下</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-01 16:14:42</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1425</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/tou14.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db136bfb41.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">酸奶饼饼饼干</span><span class="m-discussAddress">广州</span></div>
+									<div class="m-discussContent">我之前听说什么土方法 用河里的泥敷在脸上 那么多的重金属 细菌 还有虫 怎么敢往脸上敷啊</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-01 12:03:17</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1357</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./qba_files/tou15.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db136bfb41.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">智能小书屋</span><span class="m-discussAddress">广州</span></div>
+									<div class="m-discussContent">楼上的那个也太恐怖了吧  大家一定要用科学的方法啊</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-01 10:25:07
+										</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1277</span></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--<div class="m-sendComment"><span class="m-s-btn">发表评论</span></div>-->
+					</div>
+					<!-- <p style="text-align:center;font-size: 16px;color: #0D0D0D;line-height: 1;margin-top: 12px;width: 480px;margin-left: -9px;font-size:15px;color:#ccc;margin-bottom: 15px;">版权所有：河南素颜堂化妆品有限公司</p> -->
+
+				</div>
+
+			<style>
+				/*.wdfixbom{height:80px;}*/
+				
+				.pl-tit {
+					border-bottom: 2px solid #9fc8f5;
+					font-size: 16px;
+					line-height: 2
+				}
+
+			</style>
+		 
+
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-header" style="padding: 0px; margin: 0px;">
+				<img src="./qba_files/pic.png" alt="" style="width: 100%;"><p id="mydel">X</p>
+			</div>
+			<div class="modal-content" style="border-top-right-radius: 0; border-top-left-radius: 0;">
+				
+					
+					
+	     <div class="modal-body">
+				    <h4 style="margin: auto;line-height: 150%; margin-bottom:0.3em;font-size:1.5em; color:#FF0000;">免费获得VIP咨询名额</h4>
+                                    <h4 style="margin: auto;line-height: 150%; margin-bottom:0.3em;font-size:1.3em;">仅剩<span style="color:#FF0000; padding:5px;">6</span>个名额</h4>
+					<span style="font-size:1.2em;">↓长按复制添加微信↓</span>
+					<center><span style="display:block; background:#E5004F;border-radius:5px;font-size:1.3em; color:#FFFFFF; padding:3px; margin-top:0.8em; margin-bottom:0.5em;box-shadow:5px 5px 5px #888888; width:50%;" id="qb11"> <script>document.write(stxlwx);</script> </span></center>
+					<span style="size:0.5em;">咨询获取一对一<span style="color:#FF0000;">祛斑方案</span></span>
+					<span style="size:0.5em; display:block;"><span style="color:#FF0000;">50个</span>幸运名额，机会难得</span>
+              </div>
+					
+				
+			</div>
+		</div>
+	</div>	
+
+
+
+<style type="text/css">
+	.float-body {
+    display: block;
+    position: relative;
+   
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+    max-width: 600px;
+    left: 0;
+    right: 0;
+}
+ .tc2,.tc1,.tc3{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 999;
+    max-width: 38rem;
+    float: none;
+    margin: 0 auto;
+ 	display: none;
+ }
+  .tc2 .ceng-body{ background: none;position: absolute; width: 100%; height: 100%; }
+    .tc2 .bgtc1{ width: 100%;/* position: absolute; left: 0px; right: 0; bottom: 0; margin: auto; top: 0px;*/}
+    .tc2 .txt{ position: absolute; width: 80%; margin-left: 10%; font-size: .1rem; text-align: center; top: 35%;}
+    .tc2 .txt1{ font-size: .35rem; color: #2b2b2b; font-weight: bold; text-align: justify;}
+    .tc2 .txt2{ font-size: .38rem; color: #2b2b2b; text-align: justify;}
+    .tc2 .txt1:after,.tc2 .txt2:after { display: inline-block /* Opera */; content: ''; padding-left: 100%; }
+    .tc2 .txt1, .tc2 .txt2{ height: .5rem; overflow: hidden;}
+    .tc2 .txt3{ font-size: 18px; color: #eaeaea; width: 100%; text-align: center; position: absolute;top: 103%;   text-align: center; margin-left: auto; margin-right: auto;}
+    .tc2 .txt3:after{ display: inline-block; content: ''; padding-left: 100%;}
+    .tc2 .weixin{max-width: 80%; height: 2rem;right: 0;left: 0;margin: auto; line-height: 2rem; border: solid 2px #111817;  position: absolute; top: 78%; border-radius: .1rem;}
+    .tc2 .weixin:after{ display: inline-block; clear: both; content: '';}
+    .tc2 .weixin p{ font-size: 18px; color: #c0c0c0; float: left;width: 100%}
+    .tc2 .weixin p:first-child{ color: #c0c0c0; width: 30%; font-size: 18px;}
+    .tc2 .weixin p:nth-child(2){ color: #e22f2f; width: 60%; text-align: center; font-size: 18px;}
+    .tc2 .bgcopy{ width: 28%; position: absolute; top:87%; left: 0;right: 0; margin-left: auto; margin-right: auto;}
+    .tc2 .bgcopy img{ width: 100%;}
+    .tc2 .closex{ position: absolute; width: 9%; right: 1rem; top: -3%; z-index: 2;}
+     .txtback{ padding-top: 10rem; color: #fff; font-size: 18px;  padding-bottom: 8px; width: 90%; text-align: left; margin-left: 10%;}
+
+     .tc3 .ceng-body{ 
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30%;
+    border-radius: .2rem;
+}
+    .tc3 .bgtc1{ width: 100%; left: 0px; top: 0px;}
+    .tc3 .txt{ position: absolute; width: 80%; margin-left: 10%; /*font-size: 7rem;*/ text-align: center; top: 37.5%; z-index: 99;}
+    .tc3 .txt1{ font-size: 1.7rem; color: #2b2b2b; font-weight: bold; text-align: justify;}
+    .tc3 .txt2{ font-size: 1.8rem; color: #2b2b2b; text-align: justify;}
+    .tc3 .txt1:after,.tc3 .txt2:after { display: inline-block /* Opera */; content: ''; padding-left: 100%; }
+    .tc3 .txt1, .tc3 .txt2{ height: 2.5rem; overflow: hidden;}
+    .tc3 .txt3{ font-size: 0.9rem; color: #858585; padding-top: .8rem; width: 60%; text-align: justify; margin-left: auto; margin-right: auto;}
+    .tc3 .txt3:after{ display: inline-block; content: ''; padding-left: 100%;}
+    .tc3 .weixin{ border: solid 1px #111817; padding: .1rem; border-radius: 1rem; line-height: 2.5rem; height: 3rem; overflow: hidden;}
+    .tc3 .weixin:after{ display: inline-block; clear: both; content: '';}
+    .tc3 .weixin p{ color: #c0c0c0; float: left;}
+    .tc3 .weixin p:first-child{ color: #c0c0c0; width: 30%; font-size: 1rem;}
+    .tc3 .weixin p:nth-child(2){ color: #e22f2f; width: 40%; text-align: center; font-size: 1.7rem;}
+    .tc3 .bgcopy{ width: 50%; padding-top: 1rem; margin-left: auto; margin-right: auto; font-size: 1rem;}
+    .tc3 .bgcopy img{ width: 100%;}
+    .tc3 .closex{ position: absolute; width: 12%; right: 0px; top: 2rem; z-index: 100;}
+		.copyoktxt {
+		    text-align: center;
+		    font-size: 1.3rem;
+		    color: #FFF;
+		}
+		.copyoktxtbg, .copyoktxt {
+		    position: absolute;
+		    line-height: 2rem;
+		    top: 52%;
+		    width: 80%;
+		    margin-left: 10%;
+		    background: rgba(0,0,0,.4);
+		}
+</style>
+
+
+<!--
+<div class="ceng col-md-4 tc1" style="">
+        <div class="ceng-body">
+            <div style="text-align: center;" class="ceng-content">
+                <p class="copyoktxtbg" style="top: 3.7rem; opacity: 0; display: none;"></p>
+               <p class="copyoktxt">复制成功！已获<txt style='color:#ff3939'>VISIA</txt>色斑检测</p>
+               <!-- 复制成功！已获<strong style="color:#ff3939;">VISIA</strong>色斑检测！ -->
+ <!--               <p class="txtback">返 回</p>
+                <img src="picture/bgtc3.png" style="width:90%;">
+            </div>
+        </div>
+    </div>
+-->
+
+
+ <div class="ceng col-md-4 tc2" style="display: none; overflow:hidden;">
+        <div class="ceng-body">
+            <div class="txt copyBtn" data-clipboard-action="copy" data-clipboard-target=".copytext">
+                <img src="./qba_files/bg2.png" class="bgtc1">
+            	<img src="./qba_files/x.png" class="closex">
+                <div class="txt3">每日限定添加50名</div>
+                <div class="weixin"><p>微信号：</p><p class="copytext copyBtn2"><script>document.write(stxlwx);</script></p></div>
+                <div onclick="" class="bgcopy"><img class="fzwxh" onclick="" src="./qba_files/btcopy.gif"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ceng col-md-4 tc3" style="display:none;">
+        <div class="ceng-body">
+            <img src="./qba_files/bgtc1.png" class="bgtc1">
+            <img src="./qba_files/x.png" class="closex">
+            <div class="txt">
+                <div class="txt1">索芙特团队私人定制祛斑方案</div>
+                <div class="txt2">-轻松解决肌肤问题-</div>
+                <div class="txt3">每天只通过50个添加名额</div>
+                <div class="weixin"><p>微信号：</p><p class="copytext"><script>document.write(stxlwx);</script></p></div>
+                <div class="copyBtn bgcopy" style="padding-top: 0px;"><img src="./qba_files/btcopy.gif"></div>
+            </div>
+        </div>
+    </div>
+<!--
+<div class="float-body col-md-4 copyBtn submit" style="float: none;margin: 0 auto;padding: 0; display:none;" >
+        <img src="picture/bg.png" style="float:left; width:100%; position:absolute; bottom:0px;" />
+        <div style="position:absolute; bottom:0.4rem; right:0.4rem; width:17%; border:solid 1px #683b35; padding:2px; border-radius:1.1rem;"><img src="picture/copy.gif" style="width:100%; float:left;  border-radius:1.1rem;" /></div>
+        <div style="position:absolute; bottom:1.1rem; right:16%; width:50%; font-size:1.14rem; text-align:center;">
+            <p style="color:#FFF; font-size:1.1rem;">添&nbsp;加&nbsp;老&nbsp;师&nbsp;微&nbsp;信&nbsp;检&nbsp;测&nbsp;皮&nbsp;肤</p>
+            <p style="color:#ff3939; font-size:1.3rem;" class="copytext"><script>document.write(stxlwx);</script></p>
+            <p style="color:#ffd578;  border-radius:.75rem;" class="foottxt">现在添加免费使用VISIA检测</p>
+        </div>
+    </div>
+-->
+
+
+
+
+
+
+<script type="text/javascript" src="./qba_files/clipboard.min.js"></script>
+	<!--复制-->
+	<script>
+				$(function() {
+					var $txt = $('#txt');
+					var v = parseInt($txt.html());
+					var st = setInterval(function() {
+						var n = parseInt(Math.random() * 10);
+						v += n;
+						if(v >= 1000000000 && v != "9999999+") {
+							v = "9999999+"
+							clearInterval(st);
+						}
+						$txt.html(v)
+					}, 1000)
+				});
+				
+				var cw = document.documentElement.clientWidth;
+				if(cw<600){
+					$(".tc3 .copyBtn").css("padding-top","0")
+				}else{
+					$(".bottomTxtBox").css("bottom","1.5rem")
+				}
+				var clipboard1 = new Clipboard('.bgcopy,.fzwxh,.btn.copy', {
+					text: function() {
+
+						return stxlwx;
+					}
+				});
+
+				clipboard1.on('success', function(e) {
+
+				});
+
+				clipboard1.on('error', function(e) {
+					alert("复制失败 请手动复制");
+				});
+			</script>
+
+
+
+
+
+<script>
+$(function(){	
+	
+	  $(".bgcopy,.btn.copy").on('click', function () {
+            $('.tc2,.tc3').hide(0);
+             $('.tc1').show('1000');
+        });
+	
+		  $(".submit").on('click', function () {
+            $('.tc3').show('1000');
+        });
+	
+		  $(".closex").on('click', function () {
+            $('.tc2,.tc3').hide(0);
+        });
+	
+		  $(".tc1").on('click', function () {
+            $('.tc1').hide(0);
+        });
+	
+	$("#mydel").click(function(){
+		$("#myModal").css("display",'none');
+	});
+   
+})
+</script>
+<style type="text/css">
+#mydel{position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    right: -16px;
+    top: 82px;
+    background: rgba(0,0,0,.85);
+    color: #fff;
+    border-radius: 50px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+	}
+</style>
+<!-- <script type="text/javascript" src="js/30205c1ec09e496fa01c118250066f65.js"></script> -->
+<script type="text/javascript">
+// // strdistrict =[lo, lc].join('\t');
+// if(strdistrict.indexOf("北京")>=0||strdistrict.indexOf("上海")>=0||strdistrict.indexOf("广州")>=0||strdistrict.indexOf("深圳")>=0||strdistrict.indexOf("东莞")>=0||strdistrict.indexOf("苏州")>=0){
+// }
+// else{
+//         //添加历史记录
+//         history.pushState({
+//             prjCoverFloor: ""
+//         }, "");
+//         //添加sessionStorage
+//         sessionStorage.prjCoverFloor = true;
+// 		/*
+// 		 ** 监听历史记录来响应物理返回键
+// 		 */
+// window.addEventListener("popstate", function(e) {
+	    
+// 	     ** sessionStorage 页面存储 关闭页面会被清空
+	     
+//             $('#myModal').css('display', 'block');
+//             $('#myModal').addClass('in'); 
+//         sessionStorage.prjCoverFloor = false; //更新sessionStorage
+// }, false);var uaTest = /Android|webOS|Windows Phone|iPhone|ucweb|ucbrowser|iPod|BlackBerry/i.test
+
+// (navigator.userAgent.toLowerCase());var touchTest = 'ontouchend' in document;if(uaTest && touchTest)
+
+// {$('html, body').animate({ scrollTop: $("#art_doc").offset().top  }, 510);}
+// };
+
+var Cookies={};
+        //保存Cookies----参数na为名称;va为值;s为有效时间（单位/小时）3600000=60*60*1000
+        Cookies.Set=function(na,va,s){var da=new Date();da.setTime(da.getTime()+3600000*s);document.cookie=na+"="+escape(va)+"; expires="+da.toGMTString()+"; path=/; true";}
+        //获取Cookies----参数na为指定名称
+        Cookies.Get=function(na){var Harr=document.cookie.split("; ");for(var i=0;i<Harr.length;i++){var Arr=Harr[i].split("=");if(Arr[0]==na) return unescape(Arr[1]);}return "";}
+     
+</script>			
+	
+	<script type="text/javascript" src="./qba_files/comment.js"></script>
+ 
+
+
+
+
+</div></body></html>
