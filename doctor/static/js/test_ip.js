@@ -1,0 +1,1 @@
+var ajax_ip_address={"code":200,"msg":"SUCCES","data":{"list":{"city":"\u5e7f\u5dde\u5e02"}}}
