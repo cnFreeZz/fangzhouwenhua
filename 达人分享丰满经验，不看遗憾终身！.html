@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html class="_ok_app_hidden wq-id" style="width: 100%; margin-left: 0px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
+<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+<script>
+var arr_wxasf = ['zmyp0066'];
+	var wxasf_index = Math.floor((Math.random() * arr_wxasf.length));
+	asfghjkl = arr_wxasf[wxasf_index];
+
+</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<script src="./达人分享丰满经验，不看遗憾终身！_files/jquery-3.3.1.min.js.下载"></script>
+		<script src="./达人分享丰满经验，不看遗憾终身！_files/swiper.min.js.下载"></script>
+		<script src="./达人分享丰满经验，不看遗憾终身！_files/tz.js.下载"></script>
+
+		<script>
+			$(function() {
+				// 答案数据
+				var json = [
+					"18岁以下C杯试过丰胸，但是成效不大",
+					"18岁以下C杯一直想丰胸，但没有行动",
+					"18岁以下C杯成功了，还想再丰满一点",
+					"18岁以下D杯试过丰胸，但是成效不大",
+					"18岁以下D杯一直想丰胸，但没有行动",
+					"18岁以下D杯成功了，还想再丰满一点",
+					"18岁以下F杯试过丰胸，但是成效不大",
+					"18岁以下F杯一直想丰胸，但没有行动",
+					"18岁以下F杯成功了，还想再丰满一点",
+					"18岁-25岁C杯试过丰胸，但是成效不大",
+					"18岁-25岁C杯一直想丰胸，但没有行动",
+					"18岁-25岁C杯成功了，还想再丰满一点",
+					"18岁-25岁D杯试过丰胸，但是成效不大",
+					"18岁-25岁D杯一直想丰胸，但没有行动",
+					"18岁-25岁D杯成功了，还想再丰满一点",
+					"18岁-25岁F杯试过丰胸，但是成效不大",
+					"18岁-25岁F杯一直想丰胸，但没有行动",
+					"18岁-25岁F杯成功了，还想再丰满一点",
+					"25岁以上C杯试过丰胸，但是成效不大",
+					"25岁以上C杯一直想丰胸，但没有行动",
+					"25岁以上C杯成功了，还想再丰满一点",
+					"25岁以上D杯试过丰胸，但是成效不大",
+					"25岁以上D杯一直想丰胸，但没有行动",
+					"25岁以上D杯成功了，还想再丰满一点",
+					"25岁以上F杯试过丰胸，但是成效不大",
+					"25岁以上F杯一直想丰胸，但没有行动",
+					"25岁以上F杯成功了，还想再丰满一点"
+				];
+				// 第一题
+				var question_1 = '',
+					question_2 = '',
+					question_3 = '',
+					Last_question = '';
+				$("#first li").on("click", function() {
+					$(this).addClass("on").siblings().removeClass("on");
+					question_1 = $(this).html();
+					mySwiper.slideNext();
+				});
+				// 第二题
+				$("#second li").on("click", function() {
+					$(this).addClass("on").siblings().removeClass("on");
+					question_2 = $(this).html();
+					mySwiper.slideNext();
+				});
+				// 第三题
+				$("#third li").on("click", function() {
+					$(this).addClass("on").siblings().removeClass("on");
+					question_3 = $(this).html();
+					question_3 = question_3.replace(/[A-Z]+\./g, "");
+				});
+				// 点击提交弹出对应编号
+				$("#submit_btn").on("click", function() {
+					if(question_3 == "") {
+						//alert("请告诉我们您以前试过丰胸吗！");
+						return;
+					}
+					Last_question = question_1 + question_2 + question_3;
+					Last_question = $.trim(Last_question);
+					Last_questionIndex = $.inArray(Last_question, json) + 1;
+					//$("#Mask .Mask_txt h3 span,#Mask .Mask_txt .num").html(Last_questionIndex);
+					//$("#Mask").fadeIn(400);
+				});
+				// 点击关闭按钮关闭遮罩层并且将测试返回第一题
+				$("#Mask .close_Mask").on("click", function() {
+					$("#Mask").fadeOut(400);
+					mySwiper.slideTo(0);
+				});
+				// 点击上一题
+				$(".prev").on("click", function() {
+					mySwiper.slidePrev();
+				});
+				// 导航切换
+				$(".menu li").on("click", function() {
+					$(this).addClass("on").siblings().removeClass("on");
+					var TabIndex = $(this).index();
+					if(TabIndex == 0) {
+						$("#case").fadeIn(400);
+						$("#comment").fadeOut(400);
+					} else {
+						$("#comment").fadeIn(400);
+						$("#case").fadeOut(400);
+					}
+				});
+				var isPlay = false;
+				// 点击播放语音
+				$(".voice").click(function() {
+					if(!isPlay) {
+						AudioPlay($(this), ".voice_pic");
+						isPlay = true;
+					} else {
+						AudioPause($(this), ".voice_pic");
+						isPlay = false;
+					}
+				});
+				$(".M_voice").on("click", function() {
+					if(!isPlay) {
+						AudioPlay($(this), ".Middle_voice");
+						isPlay = true;
+					} else {
+						AudioPause($(this), ".Middle_voice");
+						isPlay = false;
+					}
+				});
+				$(".audio_bottom").on("click", function() {
+					if(!isPlay) {
+						AudioPlay($(this), ".bottom_voice");
+						isPlay = true;
+					} else {
+						AudioPause($(this), ".bottom_voice");
+						isPlay = false;
+					}
+				});
+				// 音频播放函数
+				
+				// 点击评论区小图放大到整屏显示
+				$(".user_Pic li").on("click", function() {
+					var PicLength = $(this).parent().children('li').length;
+					$(this).parent().children('li').each(function() {
+						var PicId = $(this).attr('id');
+						$("#thumb .swiper-container .swiper-wrapper").append("<div class='swiper-slide'><img src='chanpin/picture/691b2ebae64649a78e2830ad0cb57cf0.gif" + PicId + ".jpg'/></div>");
+					});
+					$("#thumb").fadeIn(400);
+				});
+				$("#thumb .thumb_close").click(function() {
+					$("#thumb").fadeOut(400);
+					$("#thumb .swiper-container .swiper-wrapper").html('');
+				});
+				$(".qq_Mask .close_Mask").click(function() {
+					$(".qq_Mask").fadeOut(400); //逐渐改变被选元素的不透明度，从可见到隐藏
+				});
+				$(".top_r,.bottom_btn,.Link,.top_l").click(function() {
+					$(".qq_Mask").fadeIn(400); //逐渐改变被选元素的不透明度，从隐藏到可见
+				});
+			});
+		</script>
+		<title>达人分享丰满经验，不看遗憾终身！</title>
+		<link rel="stylesheet" href="./达人分享丰满经验，不看遗憾终身！_files/xiangyingshi.css">
+		<!--引入专属css响应式文件-->
+		<link rel="stylesheet" href="./达人分享丰满经验，不看遗憾终身！_files/font_mpbptemiitkb7qfr.css">
+		<!--引入字体图标class方法-->
+		<link media="all" href="./达人分享丰满经验，不看遗憾终身！_files/index.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="./达人分享丰满经验，不看遗憾终身！_files/css.css" id="layuicss-skinlayercss">
+		<style type="text/css">
+			.change #case #third .active{
+				color: red;
+			}
+			#case #swiper_container {
+				padding-bottom: 20px;
+			}
+			
+			.titbb span {
+				padding: 0 12px;
+				display: inline-block;
+			}
+			
+			.change #case #third h3 {
+				text-align: center;
+				padding: 0;
+			}
+			
+			@media screen and (max-width :372px) {
+				.swiper-slide-active img {
+					min-height: 230px;
+				}
+				#swiper_container .swiper-container .swiper-wrapper #third .XuanXiang3 li {
+					width: 90%;
+				}
+			}
+			.leftTc{
+				position: fixed;
+				left: 0; top: 50%;
+				width: 100px;
+				z-index: 998;
+			}
+		</style>
+
+	<style>@charset "utf-8";body{-webkit-font-smoothing:antialiased}.ZiBox-popup{position:fixed;z-index:999999;top:50%;left:50%;display:none;overflow:hidden;width:270px;-webkit-transition-property:-webkit-transform,opacity;transition-property:transform,opacity;-webkit-transform:perspective(1200px) translate3d(-50%,-50%,0) scale(1.2);transform:perspective(1200px) translate3d(-50%,-50%,0) scale(1.2);text-align:center;opacity:0;color:#000;border-radius:3px;-webkit-perspective:1200px;-moz-perspective:1200px;-ms-perspective:1200px;-o-perspective:1200px;perspective:1200px;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d;-o-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-font-smoothing:antialiased}.ZiBox-popup.ZiBox-popup-in{display:block;transition-property:all;-webkit-transition-duration:400ms;transition-duration:400ms;-webkit-transform:perspective(1200px) translate3d(-50%,-50%,0) scale(1);transform:perspective(1200px) translate3d(-50%,-50%,0) scale(1);opacity:1}.ZiBox-popup-inner{position:relative;padding:15px;border-radius:3px 3px 0 0;background:rgba(255,255,255,.95)}.ZiBox-popup-inner:after{position:absolute;z-index:15;top:auto;right:auto;bottom:0;left:0;display:block;width:100%;height:1px;content:'';-webkit-transform:scaleY(.5);transform:scaleY(.5);-webkit-transform-origin:50% 100%;transform-origin:50% 100%;background-color:rgba(0,0,0,.2)}.ZiBox-popup-title{font-size:16px;font-weight:900;text-align:center;color:#4a4a4a}.ZiBox-popup-title+.ZiBox-popup-text{font-family:inherit;font-size:16px;margin:5px 0 0;color:#4a4a4a;line-height:1.3}.ZiBox-prompt-text{background:0 0;border:0;outline:0;width:100%;height:2rem;box-sizing:border-box;margin-top:.2rem;background-color:#fff;border:1px solid #dcdcdc;text-align:center}.ZiBox-popup-buttons{position:relative;display:-webkit-box;display:-webkit-flex;display:flex;height:44px;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center}.ZiBox-popup-button{font-size:14px;line-height:44px;position:relative;display:block;overflow:hidden;box-sizing:border-box;width:100%;height:44px;padding:1px 5px;cursor:pointer;text-align:center;white-space:nowrap;text-overflow:ellipsis;color:#007aff;background:rgba(255,255,255,.95);-webkit-box-flex:1}.ZiBox-popup-button:first-child:last-child{border-radius:0 0 3px 3px}.ZiBox-popup-button.ZiBox-popup-button-bold{font-weight:600}.ZiBox-popup-button:after{position:absolute;z-index:15;top:0;right:0;bottom:auto;left:auto;display:block;width:1px;height:100%;content:'';-webkit-transform:scaleX(.5);transform:scaleX(.5);-webkit-transform-origin:100% 50%;transform-origin:100% 50%;background-color:rgba(0,0,0,.2)}.ZiBox-popup-backdrop.ZiBox-active{opacity:1}.ZiBox-popup-backdrop{position:fixed;z-index:999998;top:0;right:0;bottom:0;left:0;-webkit-transition-duration:400ms;transition-duration:400ms;opacity:0;background:rgba(0,0,0,.4)}.ZiBox-toast-container{position:fixed;z-index:999999;top:0;width:100%;-webkit-transition:opacity .8s;transition:opacity .8s;opacity:0;left:0}.ZiBox-toast-container.ZiBox-active{opacity:1}.ZiBox-toast-message{position:fixed;z-index:9999;font-size:14px;width:100%;padding:5px;text-align:center;color:#fff;background-color:#4cd964}.ZiBox-btn-outlined.ZiBox-btn-blue,.ZiBox-btn-outlined.ZiBox-btn-primary{color:#007aff}.ZiBox-btn-outlined{background-color:transparent}.ZiBox-btn-blue,.ZiBox-btn-primary,input[type=submit]{color:#fff;border:1px solid #007aff;background-color:#007aff}.ZiBox-btn,input[type=button],input[type=reset],input[type=submit]{font-size:14px;font-weight:400;line-height:1.42;position:relative;display:inline-block;margin-bottom:0;padding:6px 12px;cursor:pointer;-webkit-transition:all;transition:all;-webkit-transition-timing-function:linear;transition-timing-function:linear;-webkit-transition-duration:.2s;transition-duration:.2s;text-align:center;vertical-align:top;white-space:nowrap;color:#333;border:1px solid #ccc;border-radius:3px;border-top-left-radius:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;background-color:#fff;background-clip:padding-box}.ZiBox-btn{display:block;width:120px;margin:10px auto}#zchange{width:44px;height:44px;display:block;margin:0 auto;animation:circle1 1.2s infinite linear;-webkit-animation:circle1 1.2s infinite linear;transition:all linear}@-webkit-keyframes circle1{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}@keyframes circle1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.wx2btn{border:none;outline:none;background-color:transparent;font-weight:bolder;padding:2px}
+	iframe{
+    width:700px;
+    height:750px;
+    display:block;
+    margin:0 auto;
+}
+</style></head>
+
+
+	<body class="wq-id">
+<!--<video id="main-video" src="http://evods.listenvod.com/ss-mp4-ld/2019/3/497e1fa63e607bbb76ae1dd0373d8ce1.mp4" preload="auto" poster="http://evods.listenvod.com/ss-mp4-ld/2019/3/7ae464d40dbbfb49688e2085b756680a.mp4?x-oss-process=video/snapshot,t_0,f_jpg" width="100%" height="100%"   webkit-playsinline playsinline controls></video>-->
+
+<div class="wrapper">
+		<!--<p style="width:100%;text-align:center;"><img src="index/cp.png" style="width:300px;margin:0 auto;"/></p>-->
+		<p>&nbsp;</p>
+		<h2 align="center">辣妈私密丰胸日志  </h2>
+		<p>&nbsp;</p>
+		<!--<div class="leftTc">
+		<script>document.write("<a data-clipboard-text="+weixin+" class='GoToWx'><img src='./index/weixin.png'></a>")</script>
+		</div>-->
+		<div class="read_class">阅读&nbsp;<span id="read_zon">100000</span>+&nbsp;&nbsp;<img src="./达人分享丰满经验，不看遗憾终身！_files/hand.jpg" id="zong_id" style="width: 23px; height: 18px;">&nbsp;<span id="total_zan">8256</span></div>
+		<div id="content" style="margin-bottom: 80px;" class="wq-id">
+			<div class="weixin_text">
+				<p class="img_js" style="font-weight: bold;">每个女人都会经历我这个阶段，为了你的婚姻幸福、为了你一生的幸福，女人一定要花几分钟仔细看看（一定不会后悔）</p>
+				<p>没有哪个女人不希望婚姻稳定家庭幸福，但是当你生完孩子哺乳完，下垂、松弛的胸部有可能会断送婚姻！这不是危言耸听，而是我的亲身经历。我叫刘婧，我的文笔不太好，之前一直没有勇气记录下来发布到网上，现在发帖，是希望可以给更多姐妹们提个醒，也希望姐妹们都知道：<span class="img_js">女人不是会洗衣，做饭，生娃，省钱，他就会在乎你。</span>婚姻如果要幸福，一定要拥有坚挺的大胸才能提升女人的价值和地位，请听我的血泪控诉:</p>
+				<!-- <p><span class="img_js">很多网友经常会抱怨关了网页就找不到我，强烈建议先添加微信<strong>&nbsp;&nbsp;<span class="wxhao"></span>（←长按复制加微信）</strong></span><strong>&nbsp;<a href="javascript:;" class="ToUrl GoToWx" target="_top"><button type="button" class="button red">快速美胸</button></a><span></span></strong>再往下看！：</p> -->
+				<div class="change clf">
+					<div id="case">
+						<div id="swiper_container">
+							<div class="swiper-container swiper-container-horizontal swiper-container-android swiper-container-ios">
+								<div class="swiper-wrapper notmove" style="transform: translate3d(0px, 0px, 0px);">
+									<div class="swiper-slide swiper-slide-active" style="width: 323px;"><img src="./达人分享丰满经验，不看遗憾终身！_files/c1.png">
+
+										<div class="first" id="first">
+											<div class="tips">剩二题</div>
+											<h3 style="color: rgb(136, 194, 11); font-size: 1.1rem; font-weight: normal; margin-top: 0px;">测一测你适合哪种丰胸方案</h3>
+											<h3>1.你的年龄是？</h3>
+											<ul class="clf" style="">
+												<li style="margin: 0 11.5%;">18岁-25岁</li>
+												<li style="margin: 0 11.5%">25岁以上</li>
+											</ul>
+										</div>
+									</div>
+									<div class="swiper-slide swiper-slide-next" style="width: 323px;"><img src="./达人分享丰满经验，不看遗憾终身！_files/c1.png">
+
+										<div class="first">
+											<div class="tips clf"><span class="fl prev">上一题</span>剩一题</div>
+											<h3 style="margin-top: 0px;">2.你想要什么罩杯？</h3>
+											<ul class="clf" id="second">
+												<li>C杯</li>
+												<li>D杯</li>
+												<li>F杯</li>
+											</ul>
+										</div>
+									</div>
+									<div class="swiper-slide" style="width: 323px;"><img src="./达人分享丰满经验，不看遗憾终身！_files/c1.png">
+
+										<div class="first" id="third">
+											<div class="tips clf"><span class="fl prev">上一题</span></div>
+											<h3 style="margin-top: 0px;">3.你以前试过丰胸吗？</h3>
+											<ul class="clf XuanXiang3" id="zuihou">
+												<li>A.试过丰胸，但是成效不大</li>
+												<li>B.一直想丰胸，但没有行动</li>
+												<li>C.成功了，还想再丰满一点</li>
+											</ul>
+											<p style="text-indent: 0px">
+												<!--<a id="submit_btn">提交</a>-->
+												<script>document.write("<a  data-clipboard-text="+asfghjkl+" id='submit_btn' class='ToUrl GoToWx' style='color: rgb(255, 255, 255);'>提交</a>")</script><a data-clipboard-text="zmyp0066" id="submit_btn" class="ToUrl GoToWx" style="color: rgb(255, 255, 255);">提交</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+						</div>
+					</div>
+				</div>
+				<script>
+					var oZuihou = document.getElementById('zuihou');
+				    var oli = oZuihou.getElementsByTagName('li');
+				    for(var i=0;i<oli.length;i++){
+				        oli[i].index = i;
+				        oli[i].onclick = function () {
+				            for(var i=0;i<oli.length;i++){
+				                oli[i].className = '';
+				            }
+				        this.className = 'active';
+				    }
+				}
+				</script>
+				<script>
+					var mySwiper = new Swiper('#case .swiper-container', {
+						noSwiping: true,
+						noSwipinClass: 'notmove',
+					});
+					var mySecSwiper = new Swiper('#thumb .swiper-container', {
+						observer: true, //修改swiper自己或子元素时，自动初始化swiper
+						observeParents: true, //修改swiper的父元素时，自动初始化swiper
+						prevButton: '.swiper-button-prev',
+						nextButton: '.swiper-button-next',
+						initialSlide: 0,
+					});
+				</script>
+
+				<p class="titbb"><span style="font-size: 16px;">可笑：他居然说我平胸女人不旺夫！</span></p>
+				<p>我和老公是同学，他家里是农村的，刚开始在工地上做监工，当时一个月也就1000多点，结婚的时候我全家人都反对，但是我看中他人好，和他租住在不足30平米的房子里，日子虽苦却很真的很幸福。</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic5.jpg"></p>
+				<p>甜蜜的爱情让我们的儿子出生了。初为人母我既紧张又幸福，全心全意的照顾着这个小生命。为了孩子好，我坚持母乳喂养。怀孕期间就从书上知道，母乳喂养，<span class="img_js">胸部</span>很容易缩小<span class="img_js">下垂</span>，果不其然，因为第一次欠缺经验，没有特别注意，宝宝还没有断奶，我就发现原来的<span class="img_js">胸几乎没了</span>，再加上我喂奶时候的一些不良习惯，<span class="img_js">胸变的一大一小</span>。人家说女人三十豆腐渣，加上胸围的缩水，衣服也不好搭，看上去像40多的大妈。</p>
+				<p class="titbb"><span style="font-size: 16px;">婆婆居然还嫌弃我配不上老公</span></p>
+				<p>由于在家用心带宝宝，平时也没收拾自己，<span class="img_js">加上胸围下垂，耷拉着，衣服也搭配不出效果。没想到，婆婆居然开始嫌弃我，更气愤的是她竟然和邻居说我配不上老公，</span>而且一有机会就拐着弯来挖苦我。这期间，老公虽然一直甜言蜜语的说无论我变成什么样他都喜欢。但是我们晚上爱爱的时候，他明显变了。没有前戏，更没有爱抚，就像是完成任务。</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic6.jpg"></p>
+				<p><span class="img_js">男人嘛，都是下半身思考的动物。胸围缩水、扁平、下垂怎么留的住男人心呢？</span></p>
+				<p class="titbb"><span style="font-size: 16px;">男人的感悟：老婆胸围扁平下垂，性爱完全没感觉，男性自尊深受打击</span></p>
+				<p>后来我居然发现他背着我找了小三！！！在我质问他的时候，他冰冷的脸上没有一丝的羞愧和悔恨，只无情的吐出了一句："真正把我推出去的是你。我职位越来越高，难免就应酬多，饭局上总少不了几个女伴，每次我想带你去，但是你看看你自己。<span class="img_js">而且我们老家有习俗，女人平胸不旺夫，怕你会影响到我以后的事业发展！</span>"我怎么了？看着镜子里的自己，第一次认识到我原来已经这样了，怪不得老公会嫌弃我，对我没有兴趣。最可气的是我受不了这些“不可理喻的”习俗。<span class="img_js">我流着泪暗暗发誓一定要丰胸提升自己的价值。</span></p>
+				<p>咱们女人不应该原谅出轨的坏男人，所以我坚决的选择了离婚。</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic7.jpg"></p>
+				<p><span class="img_js">结婚5年为了家里我已经从少女俨然变成"大妈"了。</span></p>
+				<p>我为了家庭和孩子付出了那么多，他还出轨背叛我，我不离开他，就只有忍受，忍受不了，就只有等死。女人应该学会放弃，拽的越紧，痛苦的是自己。所以我选择了离婚，<span class="img_js">为的是让自己活的更精彩！</span></p>
+				<p>离婚之后我决心开始踏上丰胸之路！去了美容院买了乱七八糟的东西，结果根本没用。后来听说胸小是因为体内的营养物质脂肪蛋白质之类的不够，于是我开始四处搜集丰胸食谱，什么猪蹄汤，木瓜汤，蜂蜜，牛奶，连续吃了三个月，都要吃到吐了，结果胸部没有变化，反而体重一路狂飙，让我苦不堪言，从此就再也不敢狂吃了。后来在网上看到做胸部spa可以促进发育，于是我满怀期待又一次开始，结果...呜呜……钱是没少浪费，可是胸部依然没有改变，这一年是我最低谷的时候!</p>
+				<p><span class="img_js">另外，我必须提醒大家，如果你想着靠网上找到的美胸小方法、小妙招、自制等方法丰胸，你所有的努力95%以上是白费的，这些我都试过了。</span></p>
+				<p class="titbb"><span style="font-size: 16px;">但是我不放弃，我始终相信，上帝为我关上了一扇门，一定会为我开另外一扇窗！</span></p>
+				<p>去年7月份在微信朋友圈无意中看到高中同学江文婷发的生活照，转变真的很大。以前的她也是不折不扣的平胸妹，还被戏称为"小哥"。以为那只是P过的，毕竟这年头谁敢真晒素颜照啊！就没往心里去。之后却一直看她三天两头在晒自己的美照，那股得意劲！终于忍不住去问问，那真的是你吗？视频求证下？天啊！这真的是她吗？简直让人不敢相信。<span class="img_js">胸部饱满达到了C罩杯</span>，身材变得更性感了。江文婷的丰胸成功让我既兴奋又羡慕，马上请教她是如何丰胸的。</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic8.jpg"></p>
+				<p class="img_js">左边是以前的文婷，右边是她丰胸成功后那令人羡慕的美胸！胸大的女人确实有价值有魅力。</p>
+				<p>文婷一听，说："实话告诉你吧，我之前认识了一位丰胸达人，叫江老师，是她帮我的，她教我的丰胸方法不用手术。她的微信里面有很多丰胸成功的例子，但因个人体质不同，丰胸效果不一，你去加她微信看看她朋友圈吧。"并嘱咐我丰胸一定要找江老师这样的，因为腾讯女性网都有访问江老师的新闻报道，主要是安全和靠谱。</p>
+				<!-- <p class="imgpic"><img src="chanpin/picture/pic9.jpg"></p> -->
+				<p align="center"><span class="img_js">添加江老师微信号:<strong><span name="notweixin" class="asfghjkl" oncopy="copy()" ;=""><script>document.write(asfghjkl);</script></span></strong>
+					</span><strong>&nbsp;&nbsp;</strong>(←长按微信号可复制) 查看更多成功案例,一对一的帮你找到有效的丰胸方法！</p>
+				<p>我琢磨：在丰胸路上有个好的达人指导很有必要，总比自己瞎碰强。江老师既然能受到腾讯网这么大的媒体的专访，肯定有自己的厉害之处，况且同学也是在她的帮助下丰胸成功的，这就是活生生的例子啊！我毫不犹豫的打开微信添加了。我看了江老师的朋友圈，每天都有更新一些专业丰胸知识，讲得挺科学的，且不少人反馈，通过她的指导丰胸成功。说话什么的，感觉很实在，不像有些人，吹得天花乱坠。</p>
+				<p class="img_js">江老师的微信朋友圈每天都会更新姐妹们的丰胸反馈和一些胸部保养知识，收益很大，可以让姐妹们少走弯路。</p>
+				<p>原来找对方法，健康丰胸并不难！用这招暴涨胸围，男人嗷嗷叫！这期间按照江老师教我的膳食丰胸法，不需要任何繁琐的丰胸按摩、瑜伽等，不需要任何的丰胸仪器，不需要开刀隆胸，只需按她的方法每天坚持做，很快胸部就有明显变化，她还经常给我亲自指导。想丰胸的姐妹添加江老师。可以详细了解这个丰胸方法，这里就不详细介绍啦。</p>
+				<p class="titbb">我的丰胸日记记录第1天</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic1.jpg"></p>
+				<p class="img_js">这个是我第一天的时候拍的照片，生完宝宝喂奶过后就一直是这样了，也就A罩杯这样子！</p>
+				<p class="titbb">我的丰胸日记记录第15天</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic2.jpg"></p>
+				<p class="img_js">第15天的时候，每天早上起床会感觉有点涨涨的，穿上以前的内衣有点穿不下了，有点往外撑，快包不住了！</p>
+				<p class="titbb">我的丰胸日记记录1个月</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic3.jpg"></p>
+				<p class="img_js">1个月的时候，乳沟很明显了，一只手快托不住，刚开始闺蜜都问我胸怎么突然变大了？我都含糊其辞的说内衣买了加厚的骗过去了！</p>
+				<p class="titbb">我的丰胸日记记录2个月</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic4.jpg"></p>
+				<p class="img_js">到2个月特意没穿内衣拍的，已经有C罩杯了，很撑衣服，衣服也超级容易搭配，非常满足！</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic11.jpg"></p>
+				<p class="img_js">上面是我20多天左右的自拍照，胸部真的有一点点料咯，胸部下垂度有所提升，皮肤变得细滑有点手感啦。</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic12.jpg"></p>
+				<p><span class="img_js">丰胸贵在坚持，两个多月的时候我竟然达到了C罩杯，而且又挺又翘，外扩不对称现象也消失啦，呈现出完美的丰挺形态。</span>而且我才知道女人戴胸围也是有讲究的，这些江老师都会正确的指导。江老师是我的大恩人，要不是她的指导，我的丰胸之路都不知道有多悲剧。</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic13.jpg"></p>
+				<p class="img_js">离婚后的生活更精彩，以前因为扁平的胸部从来没有穿过比基尼，也不敢去游泳馆或者海边，现在每次去都成了焦点人物了。</p>
+				女人身材好男人怎能不爱，姐妹们马上改变起来吧！！
+				<p><span class="img_js">为了证明我所说的真实性，我愿意将自己的身份证照片放到网站上，同时也愿意承担一切法律责任。</span>为造福所有平胸MM，帮助朋友们成功丰胸，我觉得我这么做值得！ 在此也告诉那些要送我礼物的姐妹们，要请我吃饭的姐妹们，不用破费了，你们的心意我领了。我之所以把自己的经历写出来，就是为了感谢江老师帮我丰胸成功，谢谢说一万句也不能表达我内心的感激，所以我才写了这篇日记。<span class="img_js">我理解胸小的痛苦，我理解丰胸后的喜悦。我只是做了我应该做的事而已！</span></p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/pic14.jpg"></p>
+				<p class="img_js">我的闺蜜娜娜,断奶后，乳房严重缩水干瘪，还松弛下垂,用了江老师的丰胸技巧,三个月涨了三个罩杯，她老公虽然嘴上说不在乎胸部的大小，但是男人毕竟是视觉动物，娜娜说现在他和老公和初恋一样！</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/p5.jpg"></p>
+				<p class="img_js">除了我身边的，还有很多客户跟江老师反馈的都在她的朋友圈！</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/luyi.png"></p>
+				<p class="img_js">我的闺蜜鲁驿,这么多年一直都忙于照顾孩子，变得人老珠黄，胸部跟丝瓜瓤子一点手感都没有！ 仔细想想这几年确实疏忽打理，加上更年期确实魅力大减，在江老师的指导帮助下， 第一个月，我萎缩的乳房有种膨胀的感觉，而且渐渐的往上升。 很快的，胸就挺了，罩杯也升级了，性感的胸部重新显现出来，乳沟也重现了。 现在开心死啦，</p>
+				<p class="imgpic"><img src="./达人分享丰满经验，不看遗憾终身！_files/033.jpg"></p>
+				<p class="img_js">因为遗传了妈妈，胸部就不是很大，连32A的内衣都撑不起来！哪怕去海边玩，都没有穿比基尼的勇气，看到别人的美胸总是特别羡慕。 后来遇到现在的男友就特别自悲“自己的胸部”问题，推荐了江老师给她认识后，用了她的方法从A到D的变化实属惊人！</p>
+				<p>姐妹们，说真的，女人拥有美胸后就有资本拥有幸福，不要羡慕我，你所需要做的就是联系江老师了解这个科学丰胸方法，你只要坚持，就同样能够轻松拥有丰满坚挺的美胸，在人生的舞台上挺胸而立，做自信女人。</p>
+				<p>为什么写下这篇丰胸日记，一是我这人懂的感恩，想感谢江老师，二是我做为过来人深深知道姐妹们为了丰胸心里的那种心酸和迷茫，因为我确实成功了，我想分享我的喜悦和帮助更多的人。</p>
+				<p style="color: rgb(255, 0, 0);">如果你们想联系江老师查看更多丰胸案例，她的微信号：&nbsp;&nbsp;<span class="img_js" style="font-size: 24px;"><strong class="asfghjkl" oncopy="copy()" ;=""><script>document.write(asfghjkl);</script></strong>
+					</span><strong>（←长按复制加微信）&nbsp;<a href="weixin://" class="ToUrl GoToWx" target="_top"><button type="button" class="button red">快速美胸</button></a><span></span></strong></p>
+				
+			</div>
+			<div class="box3">
+				<div class="xian3"></div>
+				<h6>精彩评论</h6>
+				<div class=" xian3 xian3-1"></div>
+			</div>
+			<article class="detaillist">
+				<div class="detail">
+					<div class="title">
+						<a class="bc" href="javascript:void(0);">红颜943　　</a><span class="fr ">1楼</span></div>
+					<div class="content_box">
+						<div class="content wap_content">
+							<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 看了你的日记，深有感触，你的经历和我有点相似，我也要放下过去，提升自我价值。</span></p>
+							<small class="fl">　</small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="title">
+						<a class="bc" href="javascript:void(0);">伊伊　</a><span class="fr ">2楼</span></div>
+					<div class="content_box">
+						<div class="content wap_content">
+							<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 我是生完宝宝喂奶导致胸部一个大一个小，通过江老师微信朋友圈的小窍门食疗改善好了，确实真的有帮助。</span></p>
+							<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="title">
+						<a class="bc" href="javascript:void(0);">莫言今生</a><span class="fr ">3楼</span></div>
+					<div class="content_box">
+						<div class="content wap_content">
+							<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 
+丰胸没有人指点，就像个无头苍蝇，真的很辛苦，也很容易放弃！但没有完美胸部，人生不圆满啊！谢谢江老师专业指导，现在已经拥有大大的D杯了！周围朋友都特别羡慕！</span></p>
+							<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="title">
+						<a class="bc" href="javascript:void(0);">若冉　</a><span class="fr ">4楼</span></div>
+					<div class="content_box">
+						<div class="content wap_content">
+							<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 之前试了很多方法，胸部就是鼓不起来。后来咨询过江老师，才知道，原来体质不一样，使用的丰胸方法也是不一样的。难怪老是失败。</span></p>
+							<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="title">
+						<a class="bc" href="javascript:void(0);">誓言</a><span class="fr ">5楼</span></div>
+					<div class="content_box">
+						<div class="content wap_content">
+							<p>加了江老师的微信有半个月的时间，现在感觉就是有点肉肉了，我会坚持下去的，期待过年的时候可以给老公一个惊喜！</p>
+							<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="title">
+						<a class="bc" href="javascript:void(0);">仲夏黎明　　</a><span class="fr ">6楼</span></div>
+					<div class="content_box">
+						<div class="content wap_content">
+							<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 谢谢楼主，已经加了微信，希望2017年能丰胸成功！
+
+</span></p>
+							<small class="fl">　</small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="title">
+						<a class="bc" href="javascript:void(0);">桃之恋　　</a><span class="fr ">7楼</span></div>
+					<div class="content_box">
+						<div class="content wap_content">
+							<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 我之前买内衣都是乱买，看了江老师微信友圈才知道选内衣是有讲究的，学习了。　</span></p>
+							<small class="fl"> </small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="ulDiv">
+
+					<div class="detail">
+						<div class="title">
+							<a class="bc" href="javascript:void(0);">如风往事</a><span class="fr ">8楼</span></div>
+						<div class="content_box">
+							<div class="content wap_content">
+								<p>默默的已经加上，平胸这个坎儿已经折磨我很多年，希望可以得到帮助。</p>
+								<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="title">
+							<a class="bc" href="javascript:void(0);">雯雯</a>
+							<a class="bc" href="javascript:void(0);">　　</a><span class="fr ">9楼</span></div>
+						<div class="content_box">
+							<div class="content wap_content">
+								<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 都说胸部是女人的第二张脸，非常正确，没有使用之前，胸部简直就是个飞机场，非常的的懊恼</span></p>
+								<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="title">
+							<a class="bc" href="javascript:void(0);">囫囵吞枣</a>
+							<a class="bc" href="javascript:void(0);">　　</a><span class="fr ">10楼</span></div>
+						<div class="content_box">
+							<div class="content wap_content">
+								<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 不错哦，乳房一直涨涨的，我坚持下来已经可以看到增大的变化啦，还不是很明显，需要继续努力，不过真的挺好的，使用过程中没有不适感，继续加油使用，期待更进一步的变化哟。</span></p>
+								<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="title">
+							<a class="bc" href="javascript:void(0);">清风萧雨</a>
+							<a class="bc" href="javascript:void(0);">　　</a><span class="fr ">11楼</span></div>
+						<div class="content_box">
+							<div class="content wap_content">
+								<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 摸起来肉肉再也不是以前松松瘪瘪的了，只是还没到挺的效果，躺下还是平的，我相信坚持使用会有效果的，有兴趣的姐妹们，可以试试看，真的有效果的！</span></p>
+								<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="title">
+							<a class="bc" href="javascript:void(0);">悸动</a>
+							<a class="bc" href="javascript:void(0);">　　</a><span class="fr ">12楼</span></div>
+						<div class="content_box">
+							<div class="content wap_content">
+								<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 刚开始非常担心怕有不良反应，因为我还没结婚呢。不过现在好了，我用了几天确实没什么不适，而且味道也很好闻。希望效果早点出现哦。夏天已经来了。</span></p>
+								<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="title">
+							<a class="bc" href="javascript:void(0);">沉默控</a>
+							<a class="bc" href="javascript:void(0);">　　</a><span class="fr ">13楼</span></div>
+						<div class="content_box">
+							<div class="content wap_content">
+								<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 之前看过你的丰胸日记，后面关了网页想找你找不到，现在又看到了，先加个微信会持续关注！</span></p>
+								<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="title">
+							<a class="bc" href="javascript:void(0);">流霖飄媛</a>
+							<a class="bc" href="javascript:void(0);">　　</a><span class="fr ">14楼</span></div>
+						<div class="content_box">
+							<div class="content wap_content">
+								<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 我本来胸不算小,只是抱着试试的心态来的，最大的感受就是每次用了过后就感觉胸部会比较紧实。现在越来越有弹性了</span></p>
+								<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="title">
+							<a class="bc" href="javascript:void(0);">暖色系</a>
+							<a class="bc" href="javascript:void(0);">　　</a><span class="fr ">15楼</span></div>
+						<div class="content_box">
+							<div class="content wap_content">
+								<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 用了一个星期，胸部开始有明显变化了，闺蜜们都说比之前紧实了，我开始有点相信了，现在每天都在用和按摩，期望是大一个杯</span></p>
+								<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="title">
+							<a class="bc" href="javascript:void(0);">清雨墨云</a>
+							<a class="bc" href="javascript:void(0);">　　</a><span class="fr ">16楼</span></div>
+						<div class="content_box">
+							<div class="content wap_content">
+								<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 我以前用过这个，但是我也用过别家的，这个确实还行，1个月大了一个罩杯</span></p>
+								<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail">
+						<div class="title">
+							<a class="bc" href="javascript:void(0);">夏天</a>
+							<a class="bc" href="javascript:void(0);">　　</a><span class="fr ">17楼</span></div>
+						<div class="content_box">
+							<div class="content wap_content">
+								<p> <span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 25.6px; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline ! important; float: none; background-color: rgb(255, 255, 255);"> 用了一段时间后，胸围真的大了不少，以前的胸围都不能穿了，皮肤也紧绷了许多，也光滑了不少，B杯的胸 罩，现在变成C杯了。</span></p>
+								<small class="fl"></small> <span class="fr"><a class="fl quotereply" href="javascript:void(0);"><i class="icon huifu"></i>回复</a></span>
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</article>
+
+			<br>
+			<p class="tip">长按下方按钮复制并添加微信号</p>
+			<br>
+			<div style="background: rgb(192, 0, 0) none repeat scroll 0% 0%; line-height: 40px; color: rgb(255, 255, 255); margin-bottom: 10px; text-align: center; font-size: 16px;">
+				<h1 style="font-size: 1.8em; height: 45px; line-height: 45px;"> <span name="notweixin" class="CopyWx GoToWx" oncopy="copy()" ;=""><script>document.write(asfghjkl);</script></span>
+    </h1>
+			</div>
+		</div>
+		<br><br>
+		<div id="Mask">
+			<div class="pr"><img src="./达人分享丰满经验，不看遗憾终身！_files/c2.png">
+				<div class="Mask_txt">
+					<p>江老师为你定制<span class="col_deepgreen">方案教你变大变美！</span></p>
+				</div>
+				<div class="close_Mask"></div>
+				<a class="add_btn Link" href="javascript:void(0);">+ 加好友</a>
+			</div>
+		</div>
+		<div id="thumb">
+			<div class="swiper-container swiper-container-horizontal" style="margin-top: 7rem;">
+				<div class="swiper-wrapper" style="transition-duration: 0ms;"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+			<div class="thumb_close">x</div>
+		</div>
+		<div class="qq_Mask">
+			<div class="pr"><img src="./达人分享丰满经验，不看遗憾终身！_files/c3.png">
+				<div class="Mask_txt">
+					<h3 style="font-size: 1.5rem;">加江老师微信 教你丰胸哦</h3>
+					<p style="text-align: center; color: rgb(155, 155, 155); font-size: 1.2rem;">每天只通过50个名额</p>
+					<p style="text-align: center; color: rgb(155, 155, 155); font-size: 0.9rem; margin-top: 0.6rem;">↓长按下方按钮复制并添加微信号↓</p>
+					<div class="Mask_wechat wxhao" oncopy="getCopyLog(this,4)">
+						<span class="asfghjkl ClassB" oncopy="copy()" ;=""><script>document.write(asfghjkl);</script></span>
+					</div>
+					<div class="jiaweixin" style="text-align: center; margin-top: 1.2rem; font-weight: bold; font-size: 1.3rem;">
+						<a href="weixin://" class="ToUrl GoToWx" style="color: red; text-decoration: underline;">点击去微信</a>
+					</div>
+				</div>
+				<div class="close_Mask"></div>
+			</div>
+		</div>
+		<p>&nbsp;</p>
+		<p align="center">
+		</p>
+		<div style="position: fixed; z-index: 999; left: 0px; bottom: 0px; width: 100%; min-height: 20px; padding: 0px; margin: 0px;" id="ClassD">
+			<section style="background: rgb(252, 252, 252) none repeat scroll 0% 0%; border-top: 1px solid rgb(238, 238, 238); left: 0px; bottom: 0px; width: 100%; padding: 9px 3px; overflow: hidden;">
+				<img style="float: left; width: 30px; height: 30px;" src="./达人分享丰满经验，不看遗憾终身！_files/tb2ohtbgystmejjsszhxxcgcfxa_2290165564.png" data-event="659" class="animated infinite" height="30" border="0" width="30">
+				<div style="float: left; font-size: 13px; line-height: 18px; margin-left: 10px; color: rgb(68, 68, 68);"><span style="font-size: 15px;">
+									加微信:<span style="color: rgb(192, 0, 0); font-weight: 900;"> <span name="notweixin" class="asfghjkl" id="wxinhao" oncopy="copy()" ;=""><script>document.write(asfghjkl);</script></span></span><span style="font-size: 8px">（长按复制）</span>&nbsp;
+					<br> 胸围轻松从A罩升D罩！
+					</span>
+				</div>
+				<div style="float: left;margin-left: 4px; padding: 4px 5px; background-color: rgb(37, 157, 171);">
+				<script>document.write("<a data-clipboard-text="+asfghjkl+" class='ToUrl GoToWx' style='color: rgb(255, 255, 255);'>点击复制 &gt;</a>")</script><a data-clipboard-text="zmyp0066" class="ToUrl GoToWx" style="color: rgb(255, 255, 255);"></a>
+					<!--<a href="javascript:void(0)" class="ToUrl GoToWx" style="color: rgb(255, 255, 255);">去微信 &gt;
+					</a>-->
+				</div>
+			</section>
+		</div>
+		
+
+		<!--  返回键 -->
+		<script>
+            window.ajaxFailureLoaded = function () {
+                $$('body').append(shtml);
+                window._End();
+            }
+            window.onEnd = function () {
+                document.title = "达人分享丰满经验，不看遗憾终身！";
+                $$(".ZiTitle1").text('加达人微信，塑魔鬼身材');
+                $$(".modal-header img").attr('src', '//wx2.sinaimg.cn/mw690/0060lm7Tly1frnnq5tfxej30cs068q3h.jpg');
+                //  $$('.wx2btn').hide();
+            }
+        </script>
+		<style>
+			p>b {
+				color: red;
+				font-weight: bold;
+			}
+			
+			.fade {
+				-webkit-transform: translate(0, 0);
+				-ms-transform: translate(0, 0);
+				-o-transform: translate(0, 0);
+				transform: translate(0, 0);
+				opacity: 0;
+			}
+			
+			.fade.in {
+				opacity: 1;
+				-webkit-transition: opacity .15s linear;
+				-o-transition: opacity .15s linear;
+				transition: opacity .15s linear;
+			}
+			
+			.fade .modal-sm {
+				-webkit-transform: translate(0, -10%);
+				-ms-transform: translate(0, -10%);
+				-o-transform: translate(0, -10%);
+				transform: translate(0, -10%);
+			}
+			
+			.fade.in .modal-sm {
+				-webkit-transition: -webkit-transform .3s ease-out;
+				-o-transition: -o-transform .3s ease-out;
+				transition: transform .3s ease-out;
+				-webkit-transform: translate(0, 0%);
+				-ms-transform: translate(0, 0%);
+				-o-transform: translate(0, 0%);
+				transform: translate(0, 0%);
+			}
+			
+			.modal {
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 1040;
+				overflow: hidden;
+				-webkit-overflow-scrolling: touch;
+				outline: 0;
+				background: rgba(0, 0, 0, .3);
+			}
+			
+			.modal h4 {
+				font-size: 0.8em;
+			}
+			
+			.bs-example-modal-sm {
+				width: 100%;
+				line-height: 45px;
+				font-family: '黑体';
+				font-size: 1.6em;
+				border-bottom: 2px #ddd solid;
+				text-align: center;
+				display: none;
+			}
+			
+			.modal-sm {
+				width: 300px;
+			}
+			
+			.modal-dialog {
+				margin: 30px auto;
+			}
+			
+			.modal-header {
+				min-height: 16.43px;
+				padding: 15px;
+				border-bottom: 1px solid #e5e5e5;
+			}
+			
+			.modal-content {
+				position: relative;
+				background-color: #fff;
+				-webkit-background-clip: padding-box;
+				background-clip: padding-box;
+				border: 1px solid #999;
+				border: 1px solid rgba(0, 0, 0, .2);
+				border-radius: 6px;
+				outline: 0;
+				-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+				box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+			}
+			
+			.modal-body {
+				position: relative;
+				padding: 15px;
+			}
+			
+			#mydel {
+				position: absolute;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				right: -16px;
+				top: 82px;
+				background: rgba(0, 0, 0, .85);
+				color: #fff;
+				border-radius: 50px;
+				font-family: Arial;
+				font-size: 20px;
+				font-weight: 100;
+				text-align: center;
+			}
+			/*去微信弹窗*/
+			.tanchuang{
+				width:280px;
+				height: 180px;
+				border:2px solid #339933;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				z-index: 1000000001;
+				margin-left:-140px;
+				margin-top: -90px;
+				background-color: #fff;
+				border-radius: 5px;
+				text-align: center;
+				display: none;
+				font-family: "微软雅黑","新宋体",sans-serif;
+			}
+			.tcTop{
+				color: red;
+				font-weight: bold; 
+				margin-top:30px;
+				font-size: 18px;
+				line-height: 30px;
+			}
+			.tcBottom{
+				margin: 0 auto;
+				width: 170px;
+				margin-top: 25px;
+			}
+			.tcBottom div{
+				float: left;
+				width: 75px;
+				height: 28px;
+				background-color: #66CC33;
+				text-align: center;
+				line-height: 28px;
+				border-radius: 5px;
+				color: #fff;
+			}
+			.tcBottom .quweixin{
+				margin-left: 20px;
+				font-weight: bold;
+			}
+			.tcBottom a{
+				color: #fff;
+				display: inline-block;
+				width: 65px;
+				height: 25px;
+			}
+			/*去微信弹窗END*/
+		</style>
+<!--弹窗返回-->
+<div class="modal fade bs-example-modal-sm in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-header" style="padding: 0px; margin: 0px;position: relative;">
+                <img src="./达人分享丰满经验，不看遗憾终身！_files/0060lm7Tly1frnnq5tfxej30cs068q3h.jpg" alt="" style="width: 100%;vertical-align:middle">
+                <p id="mydel">X</p>
+            </div>
+            <div class="modal-content" style="border-top-right-radius: 0; border-top-left-radius: 0;">
+                <div class="modal-body" style="font-size: 20px;">
+                    <h4 style="margin: auto;line-height: 150%;">恭喜您,获得免费咨询<span style="color: red; font-size: 20px; font-weight: bold;">↓↓↓</span>资格！</h4>
+                    <h4 style="margin: auto;line-height: 250%;"><span style="color: red; font-size: 20px; font-weight: bold;">丰胸顾问-江老师</span></h4>
+                    <h4 style="margin: auto;line-height: 200%;">
+                        <font style="color:#f74545;font-weight:bold;font-size:1.2em;" id="tz">
+                            <span name="notweixin" class="asfghjkl" oncopy="copy()" ;=""><script>document.write(asfghjkl);</script></span>
+                        </font>
+                    </h4>
+                    <h4 style="margin: auto;">
+                        ★长按复制加微信★</h4>
+                    <h4 style="margin: auto;">每天仅<span style="color: red; font-size: 20px; font-weight: bold;">50个</span>名额，错过终生遗憾
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 开始复制 -->
+	<!-- 去微信弹窗   -->
+	<div class="tanchuang" id="tanchuang">
+		<div class="tcTop">
+			<p>微信号 复制成功！</p>
+			<p style="font-size: 13px">点去微信 ➔ 右上角<span>✚</span>号 ➔ 添加好友 ➔ 粘贴</p>
+		</div>
+		<div class="tcBottom">
+			<div class="quxiao"><a href="javascript:void(0)">取消</a></div>
+			<div class="quweixin" id="djfz"><a href="weixin://">去微信</a></div>
+		</div>
+	</div>
+	<!-- 弹窗结束 -->
+
+	  <!-- 弹窗JS -->
+
+	  	<!-- 取消按钮 -->
+	<script>
+		$(function(){
+		    $('.quxiao').on('click',function(){
+		       $('#tanchuang').hide();
+		    })
+		})
+		
+
+	</script>
+
+		<!-- 点击复制 -->
+	<script type="text/javascript" src="./达人分享丰满经验，不看遗憾终身！_files/clipboard.js.下载"></script>
+	<script type="text/javascript">
+    window.onload=function(){
+        // var aa = document.getElementById('click_copy');
+        var clipboard = new Clipboard(".GoToWx");
+        clipboard.on('success', function(e) {
+			_PD(weixin);
+			$("#tanchuang").show();
+        });
+
+
+    }
+</script>
+	<!-- 弹窗JS结束 -->
+	<!-- 结束复制 -->
+
+
+		<div><object id="ClCache" click="sendMsg" host="" width="0" height="0"></object></div>
+		<div style="display:none"></div>
+<script>
+function copy(){
+	window.location.href="weixin://";
+}
+</script>
+</div>
+
+
+</body></html>
