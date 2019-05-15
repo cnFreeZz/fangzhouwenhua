@@ -1,0 +1,557 @@
+﻿.train {
+
+}
+.train .bannerModule {
+  width: 100%;
+}
+.train .bannerModule img {
+  width: 100%;
+  display: block;
+}
+.classTableModule {
+  width: 100%;
+  margin-top: 100px;
+}
+.famousTeacherModule {
+  width: 100%;
+  height: 548px;
+  background-color: #F9F8F6;
+  overflow: hidden;
+}
+.famousTeacherModule .content,
+.classTableModule .content,
+.teacherTrainModule .content,
+.teacherModule .content,
+.newClassModule .content {
+  margin: 0 auto;
+  width: 1076px;
+}
+.famousTeacherModule .content h1,
+.teacherModule .content h1,
+.teacherTrainModule .content h1,
+.classTableModule .content h1,
+.newClassModule .content h1 {
+  margin-top: 99px;
+  position: relative;
+  width: 100%;
+}
+.newClassModule .content h1,
+.teacherModule .content h1 {
+  margin-top: 0;
+}
+.famousTeacherModule .content h1,
+.teacherTrainModule .content h1 {
+  margin-top: 50px;
+}
+.famousTeacherModule .content h1 p,
+.teacherModule .content h1 p,
+.teacherTrainModule .content h1 p,
+.classTableModule .content h1 p,
+.newClassModule .content h1 p {
+  font-size: 48px;
+  color: #643E1D;
+  text-align: center;
+  font-weight: normal;
+}
+.famousTeacherModule .content h1 .more,
+.teacherModule .content h1 .more,
+.teacherTrainModule .content h1 .more,
+.classTableModule .content h1 .more,
+.newClassModule .content h1 .more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height:16px;
+  font-size:16px;
+  color:rgba(255,87,26,1);
+  line-height:48px;
+  font-weight: normal;
+}
+.famousTeacherModule .content h1 .more:hover,
+.teacherModule .content h1 .more:hover,
+.teacherTrainModule .content h1 .more:hover,
+.classTableModule .content h1 .more:hover,
+.newClassModule .content h1 .more:hover {
+  text-decoration: underline;
+}
+.famousTeacherModule .content h1 .more i,
+.teacherModule .content h1 .more i,
+.teacherTrainModule .content h1 .more i,
+.classTableModule .content h1 .more i,
+.newClassModule .content h1 .more i {
+  position: relative;
+  top: 3px;
+  margin-left: 6px;
+  width: 8px;
+  height: 16px;
+  display: inline-block;
+  background: url(../images/right-arrow.png) no-repeat;
+  background-size: 100% 100%;
+}
+.classTableModule .content .tableModule {
+  width: 100%;
+  margin-top: 61px;
+}
+.authenticationModule,
+.schoolmasterModule,
+.newClassModule,
+.hallEnvModule {
+  margin-top: 100px;
+  width: 100%;
+}
+.authenticationModule .content,
+.schoolmasterModule .content,
+.hallEnvModule .content {
+  width: 1366px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.authenticationModule .content .title,
+.schoolmasterModule .content .title,
+.hallEnvModule .content .title {
+  font-size: 48px;
+  color: #643E1D;
+  text-align: center;
+  font-weight: normal;
+}
+.newClassModule .content .swiperBox,
+.famousTeacherModule .content .swiperBox {
+  position: relative;
+  width: 1078px;
+  margin: 61px auto 100px;
+}
+.famousTeacherModule .content .listModule,
+.newClassModule .content .listModule {
+  margin: 0 auto;
+  width: 978px;
+  //height: 176px;
+  overflow: hidden;
+}
+.newClassModule .content .listModule .classList {
+  //height: 243px;
+}
+.teacherModule .teacherList {
+  margin-top: 60px;
+  width: 1100px;
+  overflow: hidden;
+}
+.teacherModule .teacherList .swiper-slide {
+  width: 251px;
+  height: 340px;
+  float: left;
+  margin-right: 24px;
+  display: block;
+}
+.newClassModule .content .listModule .classList .swiper-slide {
+  width: 220px;
+}
+.newClassModule .content .listModule .classList .swiper-slide img {
+  width: 220px;
+  height: 165px;
+  display: block;
+  overflow: hidden;
+  background-color: #ccc;
+}
+.teacherModule .teacherList .swiper-slide img {
+  width: 251px;
+  height: 188px;
+  display: block;
+  overflow: hidden;
+  background-color: #ccc;
+}
+.newClassModule .content .listModule .classList .swiper-slide .name {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #643E1D;
+  line-height:20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.teacherTrainModule .teacherTrainList .cell .name,
+.teacherModule .teacherList .swiper-slide .name {
+  margin-top: 10px;
+  max-height: 44px;
+  font-size:16px;
+  color:rgba(100,62,29,1);
+  line-height:22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+.teacherModule .teacherList .swiper-slide .city,
+.teacherTrainModule .teacherTrainList .cell .address,
+.newClassModule .content .listModule .classList .swiper-slide .city {
+  margin-top: 11px;
+  padding-left: 18px;
+  height:14px; 
+  font-size:14px;
+  color:rgba(162,139,119,1);
+  line-height:14px;
+  background: url(../images/small-loc-icon.png) no-repeat;
+  background-position: left center;
+  background-size: 12px 14px;
+}
+.teacherModule .teacherList .swiper-slide .date,
+.teacherTrainModule .teacherTrainList .cell .date,
+.newClassModule .content .listModule .classList .swiper-slide .date {
+  margin-top: 11px;
+  padding-left: 18px;
+  height:14px; 
+  font-size:14px;
+  color:rgba(162,139,119,1);
+  line-height:14px;
+  background: url(../images/clock-icon.png) no-repeat;
+  background-position: left center;
+  background-size: 12px 12px;
+}
+.famousTeacherModule .swiperBox .swiper-button-next,
+.famousTeacherModule .swiperBox .swiper-button-prev,
+.newClassModule .content .swiper-button-next,
+.newClassModule .content .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #bbb;
+  margin-top: -20px;
+}
+.famousTeacherModule .swiperBox .swiper-button-next,
+.newClassModule .content .swiper-button-next {
+  right: 0;
+  background: url(../images/slide-icon-right.png) no-repeat;
+  background-size: 100% 100%;
+}
+.famousTeacherModule .swiperBox .swiper-button-prev,
+.newClassModule .content .swiper-button-prev {
+  left: 0;
+  background: url(../images/slide-icon-left.png) no-repeat;
+  background-size: 100% 100%;
+}
+.teacherTrainModule .teacherTrainList {
+  width: 1125px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.teacherTrainModule .teacherTrainList .cell {
+  float: left;
+  margin-right: 45px;
+  width: 330px;
+  display: block;
+  overflow: hidden;
+}
+.teacherTrainModule .teacherTrainList .cell img {
+  width: 100%;
+  height: 247px;
+  display: block;
+  background-color: #ccc;
+}
+.teacherTrainModule .teacherTrainList .cell .originPrice {
+  font-size: 16px;
+  color: #4D3016;
+  margin-top: 19px;
+}
+.teacherTrainModule .teacherTrainList .cell .truePrice {
+  height: 24px;
+}
+.teacherTrainModule .teacherTrainList .cell .truePrice .first {
+  line-height: 24px;
+  font-size: 12px;
+  color: #6B5E61;
+  display: inline-block;
+  vertical-align: middle;
+}
+.teacherTrainModule .teacherTrainList .cell .truePrice .second {
+  margin-left: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FF671A;
+  display: inline-block;
+  vertical-align: middle;
+}
+.famousTeacherModule .swiperBox .swiper-slide {
+  width: 199px;
+  text-align: center;
+}
+.famousTeacherModule .swiperBox .swiper-slide img {
+  width: 199px;
+  height: 199px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  background-color: #bbb;
+}
+.famousTeacherModule .swiperBox .swiper-slide .name {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #4D3016;
+}
+.famousTeacherModule .swiperBox .swiper-slide:hover .name {
+  color: #FF671A;
+}
+.famousTeacherModule .swiperBox .swiper-slide .city {
+  margin-top: 8px;
+  font-size:12px;
+  color:rgba(156,146,147,1);
+  line-height:12px;
+}
+.famousTeacherModule .swiperBox .swiper-slide .city i {
+  width: 10px;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+  background: url(../images/small-loc-icon.png) no-repeat;
+  background-position: left center;
+  background-size: 10px 12px;
+  top: 2px;
+}
+.famousTeacherModule .swiperBox .swiper-slide .des {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #4D3016;
+}
+.hallEnvModule .hallNav {
+  margin: 30px auto 50px;
+  width: 630px;
+  height: 50px;
+  background:rgba(255,255,255,1);
+  box-shadow: 0px 12px 15px 0px rgba(0,0,0,0.05), 0px 30px 80px 0px rgba(0,0,0,0.1); 
+  border-radius: 25px ;
+  overflow: hidden;
+}
+.hallEnvModule .hallNav .cell{
+  position: relative;
+  width: 210px;
+  float: left;
+  height: 50px;
+  overflow: hidden;
+}
+.hallEnvModule .hallNav .cell::after {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 1px;
+  background-color: #DDDDDD;
+}
+.hallEnvModule .hallNav .cell::after:first-child {
+  display: none;
+}
+.hallEnvModule .hallNav .cell .inner {
+  margin: 5px auto;
+  width: 132px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: transparent;
+  text-align: center;
+  color: #6B5E61;
+}
+.hallEnvModule .hallNav .cell.active .inner {
+  background-color: #FF794D;
+  color: #fff;
+}
+.hallEnvModule .hallNav .cell .inner p {
+  line-height: 40px;
+  font-size: 18px;
+}
+.authenticationModule .content .swiperBox,
+.hallEnvModule .content .swiperBox {
+  position: relative;
+  width: 1078px;
+  margin: 0 auto;
+}
+.hallEnvModule .content .swiperBox {
+  display: none;
+}
+.authenticationModule .content .listModule,
+.hallEnvModule .content .listModule {
+  //width: 1078px;
+  margin: 0 auto;
+  width: 934px;
+  height: 323px;
+  overflow: hidden;
+}
+.authenticationModule .content .listModule .hallList,
+.hallEnvModule .content .listModule .hallList {
+  margin-left: -178px;
+  position: relative;
+  //width: 934px;
+  width: 1290px;
+  height: 323px;
+  //overflow: hidden;
+}
+.authenticationModule .content .listModule .swiper-slide,
+.hallEnvModule .content .listModule .swiper-slide {
+  width: 260px;
+  height: 195px;
+  top: 50%;
+  margin-top: -97px;
+  overflow: hidden;
+}
+.authenticationModule .content .listModule .swiper-slide-active,
+.hallEnvModule .content .listModule .swiper-slide-active {
+  top: 0;
+  margin-top: 0;
+  width: 430px ;
+  height: 323px;
+}
+.authenticationModule .content .listModule .swiper-slide-prev img {
+  width: 62% !important;
+  margin-left: 38%;
+}
+.authenticationModule .content .listModule .swiper-slide-next img {
+  width: 62% !important;
+}
+.authenticationModule .content .swiper-button-next,
+.authenticationModule .content .swiper-button-prev,
+.hallEnvModule .content .swiper-button-next,
+.hallEnvModule .content .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #bbb;
+  margin-top: -20px;
+}
+.authenticationModule .content .swiper-button-next,
+.hallEnvModule .content .swiper-button-next {
+  right: 0;
+  background: url(../images/slide-icon-right.png) no-repeat;
+  background-size: 100% 100%;
+}
+.authenticationModule .content .swiper-button-prev,
+.hallEnvModule .content .swiper-button-prev {
+  left: 0;
+  background: url(../images/slide-icon-left.png) no-repeat;
+  background-size: 100% 100%;
+}
+.schoolmasterModule .mediaList {
+  width: 1078px;
+  margin: 52px auto 0;
+  overflow: hidden;
+}
+.schoolmasterModule .mediaList .aside {
+  width: 100%;
+  overflow: hidden;
+}
+.schoolmasterModule .mediaList .more {
+  float: right;
+  display: block;
+  height:16px;
+  font-size:16px;
+  color:rgba(255,87,26,1);
+  line-height:16px;
+}
+.schoolmasterModule .mediaList .more i {
+  margin-left: 6px;
+  position: relative;
+  width: 16px;
+  height: 8px;
+  display: inline-block;
+  background: url(../images/bottom-arrow-icon-orange.png) no-repeat;
+  background-size: 100% 100%;
+}
+.schoolmasterModule .mediaList .more.active i {
+  -webkit-transform: rotate(180deg);
+      -moz-transform:rotate(180deg);
+       -ms-transform:rotate(180deg);
+          transform: rotate(180deg);
+}
+.schoolmasterModule .mediaList .list {
+  width: 1107px;
+  height: 250px;
+  overflow: hidden;
+}
+.schoolmasterModule .mediaList .list li {
+  position: relative;
+  float: left;
+  width: 340px;
+  height: 220px;
+  overflow: hidden;
+  margin-right: 29px;
+  margin-bottom: 30px;
+}
+.schoolmasterModule .mediaList .list li .imageBox {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  display: block;
+}
+.schoolmasterModule .mediaList .list li .para {
+    margin-top: 10px;
+    display: block;
+    font-size: 18px;
+    color: #4D3016;
+    line-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.schoolmasterModule .mediaList .list li .mediaButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -35px;
+  margin-top: -35px;
+  width: 71px;
+  height: 71px;
+  background: url(../images/media-button.png) no-repeat;
+  background-size: 100% 100%;
+}
+.authenticationModule .content .swiperBox {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.activityModule {
+  width:100%;
+  height:395px; 
+  background:rgba(249,248,246,1);
+}
+.activityModule .content {
+  width: 1366px;
+  height: 395px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.activityModule .content .title {
+  margin-top: 50px;
+  font-size: 48px;
+  color: #643E1D;
+  text-align: center;
+  font-weight: normal;
+}
+.activityModule .content .detail {
+  width: 100%;
+  margin-top: 35px;
+  overflow: hidden;
+}
+.activityModule .content .detail .icon {
+  float: left;
+  margin-left: 303px;
+  width: 327px;
+  height: 202px;
+  display: block;
+}
+.activityModule .content .detail .list {
+  float: left;
+  margin-top: 20px;
+  margin-left: 88px;
+}
+.activityModule .content .detail .list p {
+  font-size:24px;
+  color:rgba(100,62,29,1);
+  line-height:30px;
+  margin-bottom: 20px;
+}
+.activityModule .content .detail .list p em {
+  margin-right: 4px;
+  width:10px;
+  height:10px; 
+  background:rgba(255,195,163,1);
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  border-radius: 50%;
+}
