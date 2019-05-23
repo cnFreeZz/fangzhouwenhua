@@ -169,13 +169,13 @@
         height: 18px;
         margin-top: 10px;
         margin-right: 5px;
-        background: url("../images/unlike.png")/*tpa=http://ly.hzmshzpb.cn/qb/images/new_ico_praise.png*/ no-repeat;
+        background: url("./unlike.png")/*tpa=http://ly.hzmshzpb.cn/qb/images/new_ico_praise.png*/ no-repeat;
         -webkit-background-size: 18px 16px;
         background-size: 18px 16px;
     }
 	
     .mm-comment .icon.active {
-        background: url("../images/like.png")/*tpa=http://ly.hzmshzpb.cn/qb/images/new_ico_praiseActive.png*/ no-repeat;
+        background: url("./like.png")/*tpa=http://ly.hzmshzpb.cn/qb/images/new_ico_praiseActive.png*/ no-repeat;
         -webkit-background-size: 18px 16px;
         background-size: 18px 16px;
     }
