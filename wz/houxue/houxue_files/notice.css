@@ -1,0 +1,48 @@
+/*通知*/
+.notice_all{
+    height: 100px;
+    background: none;
+    overflow: hidden;
+}
+
+.notice_all .notice{
+    width: 1920px;
+    /*width: 1655px;*/
+    margin: 0 auto 0 -980px;
+    height: 100px;
+    background: url(../images/notice.jpg) no-repeat;
+    position: absolute;
+    left: 51%;
+    cursor: pointer;
+}
+a#notice_exist{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background:url(../images/notice_btn.png) no-repeat ;
+    position:absolute;
+    top:5px;
+    right: 45px;
+    background-size: 15px 15px;
+}
+a#notice_exist:hover{
+    background:url(../images/notice_btn.png) no-repeat ;
+    background-size: 15px 15px;
+}
+
+a#notice_exist_no{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background:#c4c4c4 url(../images/notice_btn.png) no-repeat 0 -15px;
+    position:absolute;
+    top:5px;
+    right: 5px;
+    z-index: 10;
+    background-size: 15px 15px;
+}
+#notice_exist_no:hover{
+    background:#939393 url(../images/notice_btn.png) no-repeat 0 -15px;
+    background-size: 15px 15px;
+}
+/*通知 end*/

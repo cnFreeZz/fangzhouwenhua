@@ -1,0 +1,166 @@
+/* ��ʽ���� */
+body,ul,p,h1,h2,h3,h4,h5,input {
+    padding:0;
+    margin:0;
+    font-family: "microsoft yahei", Arial;
+}
+li{ list-style: none;}
+img { border:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:none; }
+em{font-style: normal}
+/* ������ʽ */
+body {
+    overflow-x: hidden;
+    *position: relative;
+    background-color: #fff;
+}
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; } /*�帡��*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.bor5{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.font12{
+    font-size: 12px;
+}
+.font15{
+    font-size: 15px;
+}
+.font16{
+    font-size: 16px;
+}
+#mask{
+    background: black;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.sign_pop{
+    width: 510px;
+    height: 410px;
+    margin: 0 auto;
+    border: 6px solid #a8a8a8;
+    position: fixed;
+    /*display: none;*/
+}
+.sign_pop .close_pop{
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/enroll/close_pop.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.sign_pop>.sign_success{
+    width: 510px;
+    height: 122px;
+    background-color: #e0564b;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.sign_success .success_t{
+    height: 22px;
+    padding-top: 77px;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    background-image: url("../images/enroll/success.png");
+    background-repeat: no-repeat;
+    background-position: 50% 14px;
+}
+.sign_pop>.sign_tip{
+    width: 510px;
+    height: 288px;
+    background-color: #fff;
+    overflow: hidden;
+    zoom: 1;
+}
+.sign_tip .tip{
+    font-size: 16px;
+    color: #656665;
+    line-height: 28px;
+    margin-top: 18px;
+
+}
+.mglr15{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.mgl64{
+    margin-left: 64px;
+}
+.all_message{
+    color: #49a01f;
+}
+.tip a{
+    color: #49a01f;
+    text-decoration: underline;
+}
+.sign_tip .download_tip{
+    width: 398px;
+    margin: 20px auto;
+}
+.download_tip .erweima{
+    width: 148px;
+    height: 148px;
+    padding: 3px;
+    border: 2px solid #e0594e;
+}
+.download_tip .erweima img{
+    display: block;
+    width: 148px;
+    height: 148px;
+}
+.download_tip .scan{
+    display: block;
+    margin-top: 32px;
+    margin-left: 15px;
+}
+.hx-rec_ul {
+    margin-top: 8px;
+}
+.hx-rec_ul > li {
+    float: left;
+    width: 188px;
+    box-shadow: 0 0 2px #ececec;
+}
+.hx-rec_ul > li:hover {
+    box-shadow: 0 0 6px #999;
+}
+.hx-rec_box {
+    font-size: 14px;
+    margin: 10px 10px 15px;
+}
+.hx-rec_img > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.hx-rec-kc_title {
+    line-height: 1.5;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.hx-rec-sch_title {
+    line-height: 1.5;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.maybe_like_con .clight{
+    color: #797c81;
+}
+
