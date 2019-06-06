@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://fx.pany.top/fxmy/#test -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta content="telephone=no" name="format-detection">
+	    <meta content="email=no" name="format-detection">
+	    <meta name="format-detection" content="email=no">
+	    <meta http-equiv="Cache-Control" content="no-cache">
+		<title>丰胸问题咨询平台</title>
+		<script src="./apfx_files/hm.js"></script><script src="./apfx_files/hm.js(1)"></script><script src="./apfx_files/hm.js(2)"></script><script src="./apfx_files/hm(1).js"></script><script type="text/javascript" src="./apfx_files/jquery.js" tppabs="http://kz32.gzliyanji.com/qz/js/jquery.js"></script><meta name="viewport" content="target-densitydpi=device-dpi, width=480px, user-scalable=no">
+		<!--<script type="text/javascript" src="Scripts/style.js" tppabs="http://kz32.gzliyanji.com/qz/js/style.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="./apfx_files/css.css" tppabs="http://kz32.gzliyanji.com/qz/css/css.css">
+<!--		<link rel="stylesheet" href="Content/index.css" />-->
+		<!--<link rel="stylesheet" href="Content/base_1.css" />-->
+		<!--<link rel="stylesheet" href="Content/button.css" />-->
+                <link rel="stylesheet" href="./apfx_files/tz.css">
+		<link rel="stylesheet" href="./apfx_files/style.css">
+
+
+<script type="text/javascript" src="./apfx_files/weixin.js"></script>
+<script type="text/javascript" src="./apfx_files/wxh6.js"></script>
+<script>
+	location.hash = "#test";
+</script>
+<script>
+$(function(){
+	var wangzhi = window.location.href;
+	var da=[];
+	var loadbtnstr=[];
+	var btnarr=[];
+	var csarr=[];
+	var warr=[];
+	var text=[];
+	loadbtnstr[0]='<div class="btnbox w100"><button>稍等……</button></div>';
+	loadbtnstr[1]='<div class="btnbox w100"><button>请稍候，正在为您生成结果……</button></div>';
+	text[0]='您已完成全部自测答题，请及时添加老师微信： <span class="wxnum copy" name="notweixin" data-clipboard-target=".copy"  oncopy="_czc.push([\'_trackEvent\', \'微(00)\', \'复制\', \'首页\',\'1\',\'xx\']);">'+ wechat +'</span> ，待3分钟后自测分析检测结果将发送到您的微信！老师将一对一的为你推荐丰胸方案';
+	text[1]='您的手机号码我们已收到，稍后我们的老师会电话通知您自测分析检测结果；或直接添加专家微信：<span style="color:red;"></span>，随时咨询专家！';
+	btnarr[0]='<div class="btnbox w100"><button class="btn" index="1" wtindex="0">开始</button></div></div>';
+	btnarr[1]='<div class="btnbox w33"><button class="btn" index="2" wtindex="1">A</button></div><div class="btnbox w33"><button class="btn" index="2" wtindex="1">B</button></div><div class="btnbox w33"><button class="btn" index="2" wtindex="1">C</button></div><div class="btnbox w33"><button class="btn" index="2" wtindex="1">D</button></div>';
+	btnarr[2]='<div class="btnbox w50"><button class="btn" index="3" wtindex="2">20岁以下</button></div><div class="btnbox w50"><button class="btn" index="3" wtindex="2">20-29岁</button></div><div class="btnbox w50"><button class="btn" index="3" wtindex="2">30-39岁</button></div><div class="btnbox w50"><button class="btn" index="3" wtindex="2">40岁以上</button></div>';
+	btnarr[3]='<div class="btnbox w50"><button class="btn" index="4" wtindex="3">平胸</button></div><div class="btnbox w50"><button class="btn" index="4" wtindex="3">外扩</button></div><div class="btnbox w50"><button class="btn" index="4" wtindex="3">下垂</button></div><div class="btnbox w50"><button class="btn" index="4" wtindex="3">其他</button></div>';
+	btnarr[4]='<div class="btnbox w50"><button class="btn" index="5" wtindex="4">从未尝试</button></div><div class="btnbox w50"><button class="btn" index="5" wtindex="4">食疗进补</button></div><div class="btnbox w50"><button class="btn" index="5" wtindex="4">物理填充</button></div><div class="btnbox w50"><button class="btn" index="5" wtindex="4">手术注射</button></div>';
+	btnarr[5]='<div class="input-group" style="position: fixed;bottom: 0;z-index: 1000;width: 480px;background: #f4f4f6;border-top: 1px solid #dcdcdc;box-sizing: border-box;">复制  <span class="wxnum" name="notweixin" data-clipboard-action="copy" data-clipboard-target=".copy">'+mess2+'</span>  <a href="weixin://" >去微信</a> </div>';
+	btnarr[6]='<ul class="lsbtn">';
+	btnarr[6]+="<li>您已提交成功！我们将尽快与您联系！</li>";
+
+	btnarr[9]+='</ul>';
+	warr[0]='1.您目前的胸围是多少？';
+	warr[1]='2.您的年龄是？';
+	warr[2]='3.困扰你的胸部问题是？';
+	warr[3]='4.您尝试过这样丰胸吗？';
+	csarr[0]='平胸,胸下垂,大小胸,胸外扩,胸萎缩五大问题,丰胸老师轻松帮你解决。';
+	csarr[1]='你胸部的一个情况？！只需30秒小测试，立即领取答案！你可以按下<b style="color: red;">【开始】</b>之后，根据自身情况选择相应的答案。点击开始，进行自测';
+	csfun();
+	appendbtn(0);
+	$('#comment_box').css('display','block');
+	function csfun(){
+		for(var i=0;i<8;i++){
+			da[i]=0;
+		}
+		var str="";
+		$("#wdcon").empty();
+		for(var i=0;i<csarr.length;i++){
+			str='<div class="box">';
+			str+='<div class="left">';
+			str+='<img src="./apfx_files/lily.png">';
+			str+='</div>';
+			str+='<div class="right">';
+			str+='<div class="con"><span class="sjx"></span>'+csarr[i]+'</div>';
+			str+='</div>';
+			str+='<div class="clear"></div>';
+			str+='</div>';
+			$("#wdcon").append(str);
+		}
+	}
+	function appendbtn(index){
+		$("#wdfixbom").empty();
+		$("#wdfixbom").append(btnarr[index]);
+//		if ($("#wdfixbom").find("#wx").size()) {
+//			$("#wdfixbom").find("#wx").text(mess2);
+//		}
+	}
+	function apphzlt(text){
+		var str='<div class="hzbox">';
+		str+='<div class="left">';
+		str+='<img src="./apfx_files/person.jpg">';
+		str+='</div>';
+		str+='<div class="right">';
+		str+='<div class="con"><span class="sjx"></span>'+text+'</div>';
+		str+='</div>'
+		str+='<div class="clear"></div>';
+		str+='</div>';
+		$("#wdcon").append(str);
+		var height=$(document).height() - $(window).height();
+		if(!($(document).scrollTop() >= height)){
+			var h=$("#wdcon").height()
+ 			var a = $("#wdfixbom").offset().top;
+			$('body,html').animate({
+			 	scrollTop: a-400
+			},500);
+		}
+	}
+	function appyslt(text){
+		//alert(text);//老师的问题
+		var str='<div class="box">';
+		str+='<div class="left">';
+		str+='<img src="./apfx_files/lily.png">';
+		str+='</div>';
+		str+='<div class="right">';
+		str+='<div class="con"><span class="sjx"></span>'+text+'</div>';
+		str+='</div>';
+		str+='<div class="clear"></div>';
+		str+='</div>';
+		$("#wdcon").append(str);
+//		if ($("#wdcon").find("#wx").size()) {
+//			$("#wdcon").find("#wx").text(mess2);
+//		}
+		var height=$(document).height() - $(window).height();
+		
+		
+        if(!($(document).scrollTop() >= height)){
+			var h=$("#wdcon").height()
+			var a = $("#wdfixbom").offset().top;
+			$('body,html').animate({ 
+			 	scrollTop: a-400
+			},500);
+		}
+	}
+	function loadbtn(index){
+	
+		$("#wdfixbom").empty();
+		$("#wdfixbom").append(loadbtnstr[index]);
+	}
+	function ajaxdata(){
+
+		var wangzhi = window.location.href;        	
+        var cityname="name=xinxiliu";
+        var yiyuan = "xa_全国";
+        var sex = warr[0]+da[0];
+		var ttzz = warr[1]+da[1];
+		var blxx = warr[2]+da[2];
+		var wlxx = warr[3]+da[3];
+		var gjsx = warr[4]+da[4];
+		var sfjc = warr[5]+da[5];
+		var subtel =da[7];
+		var subtext ="问题1：" + sex + "<br>问题2：" + ttzz + "<br>问题3：" + blxx + "<br>问题4：" + wlxx + "<br>问题5：" +  gjsx + "<br>问题6：" + sfjc;
+		openZoosUrl('chatwin','&e='+escape('信息流:<br/>电话：'+subtel+'<br/>内容:'+ subtext));
+
+	}
+	
+	$("#wdfixbom .btn").live('click',function(){
+		var wtindex=$(this).attr('wtindex');
+		var index=$(this).attr('index');
+		apphzlt($(this).html());
+		loadbtn(0);
+		da[wtindex-1]=$(this).html();
+		/*alert(da[wtindex-1]);//答案*/
+
+		setTimeout(function(){
+			appendbtn(index);
+			if(wtindex<=warr.length-1){
+				appyslt(warr[wtindex]);
+				/*alert(warr[wtindex]);//wenti*/
+			}else{
+				appyslt(text[0]);
+				var script=document.createElement("script");
+				script.type="text/javascript";
+				script.src="qq.asp";
+				document.getElementsByTagName('body')[0].appendChild(script); 
+				setTimeout(function(){
+					//加载留言
+					
+			        setTimeout(function(){
+						var h=$("#wdcon").children('div:last-child').height()+80;
+						$('html, body').animate({
+			                scrollTop: $(".mm-comment").offset().top-h
+			            }, 600);
+		            },300);
+				},600);
+			}
+		},1000);
+	});
+	$("#telbtn").live('click',function(){
+		var telname=$("#telname").val();
+		//alert(telname);//电话号码
+		var index=$(this).attr('index');
+		if(telname==''){
+			alert('电话或微信不能为空！');
+		}else{
+			da[index-2]=telname;
+			loadbtn(1);
+			apphzlt(telname);
+			setTimeout(function(){
+				appendbtn(index);
+				appyslt(text[1]);
+				// ajaxdata();
+			},1000);
+		}
+	});
+	$("#start").live('click',function(){
+		appendbtn(0);
+		csfun();
+	})
+})
+</script>
+
+
+
+	<script>
+    // 声明_czc对象：
+    var _czc = _czc || [];
+	//绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
+    _czc.push(["_setAccount", "1277653627"]);
+  </script></head>
+
+  
+	
+   <body oncopy="_czc.push([&#39;_trackEvent&#39;, &#39;广告&#39;, &#39;全页面复制&#39;,mess2]);">
+    
+	
+	
+
+  		<div class="open_weChat"></div>
+	
+		<div class="weChar_wrap">
+			<p>微信号复制成功，去打开微信加好友</p>
+			<a href="javascript:;" onclick="openWWW()">确定</a>
+		</div>
+		<div class="wrapper" id="test">
+			<div class="container">
+					<div class="wdbox" style="background: #fff;"><br>
+					<p style="font-size: 40px;margin: 0 auto;width: 90%;margin-bottom: 24px; text-align: center;font-weight: bold;color: #fff;background: #fc7c74;border-radius: 16px;padding: 16px 0;">只需一招<br>快速解决丰胸困扰！</p>
+					
+					<style>
+ 	.wenti{ text-align:center; margin:30px 0;}
+	.title{ font-size:30px; font-family:"微软雅黑"; color:#000;}
+	.clearfix{ clear:both;}
+	/*.w{width:-webkit-calc(20% - 10px); float:left;margin:0 5px; }*/
+	.zw{overflow:hidden; margin-top:30px; }
+	.zixun{ text-align:center; margin-bottom:30px;cursor:hand}
+	.an{color:#fff; background-color:#f42d5b;margin:30px auto; padding:5px 20px; border-radius:20px;}
+	.tu_box img{width:100%;}
+	#wt{width: 100%;}
+	#wt li{width: 19%;float: left;margin: 0 1px;}
+	#wt li img{width: 100%;height: 100%;}
+ </style>
+<div>
+	<div class="wenti">
+    	<h1 class="title">五大<span style="color:#f4798b;">胸部问题</span>你<span style="color:#f4798b;">中招</span>了吗？</h1>
+        <ul class="zw" id="wt">
+        	<li class="w"><a href="http://baidu.njzspc.cn/"><img src="./apfx_files/wt1.png"></a></li>
+            <li class="w"><a href="http://baidu.njzspc.cn/"><img src="./apfx_files/wt2.png"></a></li>
+            <li class="w"><a href="http://baidu.njzspc.cn/"><img src="./apfx_files/wt3.png"></a></li>
+            <li class="w"><a href="http://baidu.njzspc.cn/"><img src="./apfx_files/wt4.png"></a></li>
+            <li class="w"><a href="http://baidu.njzspc.cn/"><img src="./apfx_files/wt5.png"></a></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div> 
+ </div>
+ 
+
+					
+					<!-- <div class="wdtitle">
+                    肌肤问题咨询平台
+                </div> -->
+					<!--<div class="wdtit" style="text-indent: 2em">
+						你研究过产品的成分是否适合你吗？你有可能一直在用错误的方法，使用不科学成分的产品，这些只会导致你一直平胸
+					</div>-->
+					<!--<nav class="m-nav" style="padding:.7rem;">
+						<img src="picture/tb21r3iqgatbunjsszfxxxgfpxa_!!2684310334.png">
+					</nav>-->
+					<ul class="m-message1">
+						<p style="text-indent: 2em;line-height: 1.5;font-weight: normal; text-align: justify;font-size: 28px;">达人成莹的丰胸方法，不看遗憾终身！</p>
+						</ul>
+					<div style="text-align:center">
+						<img src="./apfx_files/14-1.jpg" height="5%" width="85%">
+					</div>
+					
+					<ul class="m-message1">
+						<li>
+                                                      <p style="text-indent: 2em;line-height: 1.5;font-weight: normal; text-align: justify;">
+                                                           平胸,胸下垂,大小胸,胸外扩,胸萎缩五大问题,你是属于哪一种问题?</p>
+							<p style="text-indent: 2em;line-height: 1.5;font-weight: normal; text-align: justify;">
+								2018年3月26日，经研究明确表明：<strong>“所有平胸的人群均可通过正确的丰胸方法来解决困扰” </strong>
+								为证实此理论，丰胸专家成莹老师召集了10000名女性 先天性平胸 产后导致胸小 胸部下垂严重 等等。自2017年10月15始，开展了为时30天的实验历程，平均在15天内就解决了胸部问题！
+							</p>
+							<!-- <p style="text-indent: 2em;line-height: 1.5;font-weight: normal; text-align: justify;">
+							</p> -->
+							<p style="text-indent: 2em;line-height: 1.5;font-weight: normal; text-align: justify;">
+								如果你一直平胸，尝试了很多方式都不行，<strong>毋庸置疑，丰胸方法不对！</strong>是时候使用专业的方法，将平胸解决到位，不再走弯路！
+							</p>
+						</li>
+					</ul>
+				</div>
+				<!--<div class="fword">
+					
+				</div>-->
+				<div class="wdbox">
+					<div class="wdcon" id="wdcon"><div class="box"><div class="left"><img src="./apfx_files/lily.png"></div><div class="right"><div class="con"><span class="sjx"></span>平胸,胸下垂,大小胸,胸外扩,胸萎缩五大问题,丰胸老师轻松帮你解决。</div></div><div class="clear"></div></div><div class="box"><div class="left"><img src="./apfx_files/lily.png"></div><div class="right"><div class="con"><span class="sjx"></span>你胸部的一个情况？！只需30秒小测试，立即领取答案！你可以按下<b style="color: red;">【开始】</b>之后，根据自身情况选择相应的答案。点击开始，进行自测</div></div><div class="clear"></div></div></div>
+					<!--<div class="mm-comment" id="comment_box" style="display: none;">
+						<link rel="stylesheet" href="Content/style_2.css">
+						<div class="m-commentForm">
+							<div class="m-commentFormMain">
+								<div class="m-commentFormHead">发表评论</div>
+								<div class="m-commentFormBody">
+									<form action="http://kz32.gzliyanji.com/qz/" class="m-form">
+										<div class="f-field"><textarea name="content" class="m-commentInput" placeholder="请输入评论内容" rows="6"></textarea></div>
+										<div class="f-field f-fieldBtn"><input type="hidden" name="type_id" value="71122a8fd04230f27aba83e775e24761"><input type="hidden" name="reply_id" value="" class="f-reply"><button type="button" class="f-cancelBtn">取消</button><button type="submit" class="f-submitBtn">确认评论</button></div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="m-commentResult">
+							<div class="m-commentResultHead">热门评论</div>
+							<ul class="m-conmentList" id="m_conmentList">
+								<li class="m-discuss" data-id="147">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0ef26ea0.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">纤烨千寻</span><span class="m-discussAddress">甘肃兰州</span></div>
+									<div class="m-discussContent">
+										<p>全靠老师的帮忙，终于找到丰胸真正解决办法，平时咨询问题还是免费的，太好了</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-26 20:24:06</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>10856</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="160">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0d5c6b65.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">水中伊人</span><span class="m-discussAddress">江苏南京</span></div>
+									<div class="m-discussContent">
+										<p>刚开始胸部小了点没注意，2年时间胸部小的已经非常明显，又不敢随便去美容院，也不懂那种护理方式好。这个老师真的非常好，会一点一点帮你把胸部问题分析透彻，理念也很超前，我很信任她</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-27 15:36:19</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>556</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="148">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0ec49963.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">米莉儿</span><span class="m-discussAddress">北京东城</span></div>
+									<div class="m-discussContent">
+										<p>老师非常耐心的帮我分析了我的胸部情况，还帮我制定了一套护理方案，没想到丰胸可以这么轻松，真的让我太惊喜了！</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-27 20:20:41</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>6589</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="150">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0da4ae88.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">米橙一世</span><span class="m-discussAddress">吉林长春</span></div>
+									<div class="m-discussContent">
+										<p>老师的理论很新颖，我也来试试</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-28 05:02:51</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>960</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="159">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0f602ce2.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">柠檬树</span><span class="m-discussAddress">广东广州</span></div>
+									<div class="m-discussContent">
+										<p>女人过了25岁，真的是老的特别快，胸部越来越小啊，皮肤不好啊，以前觉得平胸离自己特别远，现在发现都是一转眼的事，等不起啊</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-28 05:29:53</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>19855</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="182">
+									<div class="m-discussThumbnail"><img src="picture/5b3db12f13fa3.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">爱格格</span><span class="m-discussAddress">湖南永州</span></div>
+									<div class="m-discussContent">
+										<p>特别担心自己的胸部越来越小，变得人老珠黄，现在有这么好的老师指导，我感觉都不用担心了！<br></p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-29 01:48:24</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>598</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="158">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0e85ab6c.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">夏夏雨悠</span><span class="m-discussAddress">湖北恩施</span></div>
+									<div class="m-discussContent">
+										<p>丰胸还是要有专业护肤的人来指导，找对方法很重要！</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-29 05:20:08</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>658</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="151">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0da4ae88.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">沧海泪</span><span class="m-discussAddress">广西南宁</span></div>
+									<div class="m-discussContent">
+										<p>因为胡乱用产品丰胸，不仅没效果身体都差了很多，特别后悔！还好现在老师帮我改善好了，朋友都说恢复到年轻时候的状态了</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-30 00:04:37</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>652</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="156">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0cfa6678.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">透明人无心人</span><span class="m-discussAddress">浙江杭州</span></div>
+									<div class="m-discussContent">
+										<p>没胸部感觉特别自卑，老公都没碰过我了，唉</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-30 10:18:46</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>225</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="155">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0f981ca5.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">琳仔</span><span class="m-discussAddress">安徽安庆</span></div>
+									<div class="m-discussContent">
+										<p>我已经是2孩子的妈妈了，胸部小的可怜，跟老师咨询以后，终于找到解决办法，好开心</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-30 12:16:21</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>352</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="154">
+									<div class="m-discussThumbnail"><img src="picture/5b3db136bfb41.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">水瓶半夏詩光</span><span class="m-discussAddress">重庆南川</span></div>
+									<div class="m-discussContent">
+										<p>这几天一直坚持用老师建议的方法，最近胸部每天都有不同程度的好转，我要坚持下去，我相信老师。等全好了一定要好好谢谢她！</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-31 00:14:15</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>327</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="152">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0f981ca5.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">木惜72</span><span class="m-discussAddress">江西赣州</span></div>
+									<div class="m-discussContent">
+										<p>从来没想过丰胸可以这么轻松，老师真的很棒！</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-31 09:36:07</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>553</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="157">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0be5c81d.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">甜甜的糖</span><span class="m-discussAddress">上海</span></div>
+									<div class="m-discussContent">
+										<p>我姐就是因为胸部问题和她老公离婚的，现在的男人都是一个德性，我介绍老师给她认识，胸部足足大了2个罩杯,希望她重新找到另外一半</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-31 18:20:08</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>195</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+								<li class="m-discuss" data-id="149">
+									<div class="m-discussThumbnail"><img src="picture/5b3db0f291e6f.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">幽山静远</span><span class="m-discussAddress">四川成都</span></div>
+									<div class="m-discussContent">
+										<p>老师朋友圈还会分享很多丰胸技巧，受益匪浅！让我这种门外汉也学到了很多丰胸知识</p>
+									</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-08-01 09:35:36</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>3899</span></div>
+										<div class="m-replyBtn">回复</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="m-sendComment"><span class="m-s-btn">发表评论</span></div>
+					</div>-->
+					<div id="thumb">
+						
+					</div>
+					<div class="hander clearfix">
+					<style>
+						.nav {
+							width: 100%;
+							height: 30px;
+							line-height: 30px;
+							margin: 0 auto;
+						}
+						
+						.nav ul {
+							width: 100%;
+							overflow: hidden;
+						}
+						
+						.nav ul li {
+							float: left;
+							width: 25%;
+							text-align: center;
+							display: inline;
+						}
+						
+						.nav ul li a {
+							color: #ccc;
+							font-family: "微软雅黑";
+							font-size: 12px;
+							font-weight: bold;
+							display: block;
+							margin-left: 5px;
+							text-align: center;
+							height: 30px;
+							line-height: 30px;
+							overflow: sshidden;
+						}
+						
+						.nav ul li a span {
+							display: block;
+							font-family: "微软雅黑";
+							vertical-align: middle;
+							font-size: 13px;
+						}
+					</style>
+
+					<div style="height:0.1px;"></div>
+
+					<div class="wdfixbom" id="wdfixbom"><div class="btnbox w100"><button class="btn" index="1" wtindex="0">开始</button></div></div>
+				</div>
+					
+				
+				
+				
+			</div>
+
+               <div class="mm-comment" id="comment_box" style="display: block;">
+						<link rel="stylesheet" href="./apfx_files/new_style.css">
+						<!--<div class="m-commentForm" style="display:block;">
+							<div class="m-commentFormMain">
+								<div class="m-commentFormHead">发表评论</div>
+								<div class="m-commentFormBody">
+									<form action="#" tppabs="#" class="m-form">
+										<div class="f-field"><textarea name="content" class="m-commentInput" placeholder="请输入评论内容" rows="6"></textarea></div>
+										<div class="f-field f-fieldBtn"><input type="hidden" name="type_id" value="fec8ca9882dde89e41abfd6ff202ee54"><button type="button" class="f-cancelBtn">取消</button><button type="submit" class="f-submitBtn">确认评论</button></div>
+									</form>
+								</div>
+							</div>
+						</div>-->
+						<div class="m-commentResult">
+							<div class="m-commentResultHead">精彩评论</div>
+							<ul class="m-conmentList">
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0be5c81d.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0be5c81d.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">阿一洗</span><span class="m-discussAddress">甘肃兰州</span></div>
+									<div class="m-discussContent">不但咨询免费,效果还特别棒,挺好的 <br> <img src="./apfx_files/1105.jpg" width="80%"></div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">8天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>8535</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0c584a64.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0c584a64.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">忠实粉丝</span><span class="m-discussAddress">广西桂林</span></div>
+									<div class="m-discussContent">难怪我什么丰胸产品都用了，胸一点好转都没有，根源都没解决！真是浪费了！</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">8天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>5944</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0cfa6678.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0cfa6678.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">巧克力酱</span><span class="m-discussAddress">北京东城</span></div>
+									<div class="m-discussContent">我是遗传性平胸，也用了很多方法都没效果，一直以为是身体不好，原来是方法不对 </div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">8天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>2386</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0d5c6b65.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0d5c6b65.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">又是一轮清月</span><span class="m-discussAddress">广东汕头</span></div>
+									<div class="m-discussContent">老师好像还上了新闻的，我早就加了成莹老师的微信号，现在胸部大了一圈，真的是太感谢了！还在盲目丰胸的姐妹，左顾右盼，胸部还是平平的，应当了解自己的胸部情况，选用最科学的办法，咨询成莹老师会给到最正确方法哦  微信号是这个：<b style="color:red" name="notweixin" class="btn copy" data-clipboard-action="copy" data-clipboard-target=".copy" oncopy="_czc.push([&#39;_trackEvent&#39;, &#39;微(1)&#39;, &#39;复制&#39;, &#39;首页&#39;,&#39;1&#39;,&#39;xx&#39;]);"><script>document.write(wechat);</script> </b></div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">8天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>3542</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0da4ae88.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0da4ae88.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">你的背包</span><span class="m-discussAddress">四川成都</span></div>
+									<div class="m-discussContent">有人加微信了嘛？我平胸很多年了，不知道该怎么去才好，用了好多产品都没用</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">8天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>2356</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0df52967.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0df52967.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">菠萝镜子</span><span class="m-discussAddress">吉林长春</span></div>
+									<div class="m-discussContent">听君一席话胜读十年书啊，才知道方法不对就没法丰胸的，平胸像男人的一样，难怪丑出天际，天哪！</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">8天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1548</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0e2e563d.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0e2e563d.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">东闯闯西走走</span><span class="m-discussAddress">江苏苏州</span></div>
+									<div class="m-discussContent">科学就是力量，事实摆在面前不信都不行。而且女性同胞一定要爱护好自己的胸部，我就是个例子，因为胸小，不漂亮了，我老公就偷腥，哭闹都没用，就离婚了。后来我加了微信，现在胸部也大了，过得潇洒</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">8天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>2387</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0e85ab6c.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0e85ab6c.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">梁静茹给你的勇气吗？</span><span class="m-discussAddress">天津</span></div>
+									<div class="m-discussContent">老师的方法真的很厉害，都大了几个罩杯，非常棒！<br> <img src="./apfx_files/1104.jpg" width="80%"></div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">8天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1568</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0ec49963.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0ec49963.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">猫奴</span><span class="m-discussAddress">广东潮州</span></div>
+									<div class="m-discussContent">平了4年时间了还能丰胸吧  反正都是一个根源 刚刚加微信还挺好的 一对一咨询 问的很清楚</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">9天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>6541</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db1328fb1c.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db1328fb1c.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">Girls like you</span><span class="m-discussAddress">浙江杭州</span></div>
+									<div class="m-discussContent">以前觉得平胸没事 现在不行了 恨死我这个胸啦了 最后试一次吧</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">9天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>5952</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0f291e6f.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0f291e6f.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">绿箩萝萝萝萝</span><span class="m-discussAddress">江苏南京</span></div>
+									<div class="m-discussContent">这个我听我表姐提过啊 说是很有用 昨天我见到她还以为认错人了 那胸部羡慕死我了 哈哈哈哈哈哈 后来她告诉我按照这个增强细胞活性的方案现在都已经好了 胸水灵灵的 微信推荐给大家：<b style="color:red" name="notweixin" class="btn" data-clipboard-action="copy" data-clipboard-target=".copy" oncopy="_czc.push([&#39;_trackEvent&#39;, &#39;微(2)&#39;, &#39;复制&#39;, &#39;首页&#39;,&#39;1&#39;,&#39;xx&#39;]);"><script>document.write(wechat);</script></b></div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">9天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>5684</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3dd7bf5b7e5.png" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3dd7bf5b7e5.png" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">人生啊快活啊</span><span class="m-discussAddress">浙江杭州</span></div>
+									<div class="m-discussContent">加了还没通过  真好 可以为每个人的胸部状况定制方案</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">9天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>2654</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3dd7ca721fc.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3dd7ca721fc.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">一口盐汽水</span><span class="m-discussAddress">广东广州</span></div>
+									<div class="m-discussContent">成莹老师人又漂亮,丰胸方法又这么好,我就是她那里丰满起来的,哈哈,不要羡慕我哦 <br> <img src="./apfx_files/1111.jpg" width="80%"></div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">9天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1568</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0ef26ea0.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0ef26ea0.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">海草海草随风飘摇</span><span class="m-discussAddress">云南玉溪</span></div>
+									<div class="m-discussContent">加微信咨询了之后我发现我的丰胸方法全错了 这老师是厉害人</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">9天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>8564</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0f602ce2.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0f602ce2.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">痴人说梦</span><span class="m-discussAddress">北京</span></div>
+									<div class="m-discussContent">加了还没通过</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">9天前</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>5685</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db0f981ca5.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db0f981ca5.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">886</span><span class="m-discussAddress">上海</span></div>
+									<div class="m-discussContent">现在的胸真是让我醉了</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-03 15:20:46</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>5984</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db136bfb41.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db136bfb41.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">咿呀一字哟</span><span class="m-discussAddress">广州</span></div>
+									<div class="m-discussContent">科学就是力量啊 自己弄了那么久 没一点用 不如别人几句话</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-03 10:33:28</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>3568</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3db12f13fa3.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db12f13fa3.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">铅笔王</span><span class="m-discussAddress">江西南昌</span></div>
+									<div class="m-discussContent">原来小妙招是不能用的啊？之前我还用过什么网上很火的白醋丰胸，都是没用的 ,太浪费时间啦  不如找这个老师帮忙</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-02 15:35:03</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1954</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/5b3dd7d2082a0.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3dd7d2082a0.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">清明雨上</span><span class="m-discussAddress">陕西西安</span></div>
+									<div class="m-discussContent">乡间土办法什么的 大家可千万别用啊 我都试怕了</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-02 10:35:18</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1654</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/tou13.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db136bfb41.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">若若弱弱</span><span class="m-discussAddress">广东湛江</span></div>
+									<div class="m-discussContent">我的胸是真的丑 现在我就去加一下微信看一下</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-01 16:14:42</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1425</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/tou14.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db136bfb41.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">酸奶饼饼饼干</span><span class="m-discussAddress">广州</span></div>
+									<div class="m-discussContent">我之前听说什么方法 吃猪脚可以丰胸,吃了几个月,体重增加了几十斤,胸一点动静都没有,死的心都有</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-01 12:03:17</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1357</span></div>
+									</div>
+								</li>
+								<li class="m-discuss">
+									<div class="m-discussThumbnail"><img src="./apfx_files/tou15.jpg" tppabs="http://ly.hzmshzpb.cn/qb/images/5b3db136bfb41.jpg" alt=""></div>
+									<div class="m-discussHead"><span class="m-discussNickname">智能小书屋</span><span class="m-discussAddress">广州</span></div>
+									<div class="m-discussContent">楼上的那个也太恐怖了吧  大家一定要用科学的方法啊</div>
+									<div class="m-discussFoot">
+										<div class="m-discussTime">2018-07-01 10:25:07
+										</div>
+										<div class="m-discussPraise"><span class="icon icon-praise"></span><span>1277</span></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--<div class="m-sendComment"><span class="m-s-btn">发表评论</span></div>-->
+					</div>
+					<p style="text-align:center;font-size: 16px;color: #0D0D0D;line-height: 1;margin-top: 12px;width: 480px;margin-left: -9px;font-size:15px;color:#ccc;margin-bottom: 15px;">义乌市云图网络技术有限公司</p><br><br><br>
+
+				</div>
+
+			<style>
+				/*.wdfixbom{height:80px;}*/
+				
+				.pl-tit {
+					border-bottom: 2px solid #9fc8f5;
+					font-size: 16px;
+					line-height: 2
+				}
+
+			</style>
+			<script>
+				$(function() {
+					$(document).on("copy", ".wxnum", copyHandle);
+
+					function copyHandle() {
+						window.location.href = 'weixin://';
+					}
+				});
+			</script>
+			
+
+
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-header" style="padding: 0px; margin: 0px;">
+				<img src="./apfx_files/pic.png" alt="" style="width: 100%;"><p id="mydel">X</p>
+			</div>
+			<div class="modal-content" style="border-top-right-radius: 0; border-top-left-radius: 0;">
+				
+					
+					
+	     <div class="modal-body">
+				    <h4 style="margin: auto;line-height: 150%; margin-bottom:0.3em;font-size:1.5em; color:#FF0000;">免费获得VIP咨询名额</h4>
+                                    <h4 style="margin: auto;line-height: 150%; margin-bottom:0.3em;font-size:1.3em;">仅剩<span style="color:#FF0000; padding:5px;">6</span>个名额</h4>
+					<span style="font-size:1.2em;">↓长按复制添加微信↓</span>
+					<center><span style="display:block; background:#E5004F;border-radius:5px;font-size:1.3em; color:#FFFFFF; padding:3px; margin-top:0.8em; margin-bottom:0.5em;box-shadow:5px 5px 5px #888888; width:50%;" id="qb11" oncopy="_czc.push([&#39;_trackEvent&#39;, &#39;微(3)&#39;, &#39;复制&#39;, &#39;首页&#39;,&#39;1&#39;,&#39;xx&#39;]);"> <script>document.write(wechat);</script> </span></center>
+					<span style="size:0.5em;">咨询获取一对一<span style="color:#FF0000;">丰胸方案</span></span>
+					<span style="size:0.5em; display:block;"><span style="color:#FF0000;">50个</span>幸运名额，机会难得</span>
+              </div>
+					
+				
+			</div>
+		</div>
+	</div>	
+
+<script>
+$(function(){		
+	$("#mydel").click(function(){
+		$("#myModal").css("display",'none');
+	});
+        $("img.lazy").lazyload({
+        threshold :700
+    });
+})
+</script>
+<style type="text/css">
+#mydel{position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    right: -16px;
+    top: 82px;
+    background: rgba(0,0,0,.85);
+    color: #fff;
+    border-radius: 50px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+	}
+</style>
+<script type="text/javascript" src="./apfx_files/4a1f944673e74cdea6bb836e9b7ef269.js"></script>
+<script type="text/javascript">
+strdistrict =[lo, lc].join('\t');
+if(strdistrict.indexOf("郑州")>=0||strdistrict.indexOf("合肥")>=0){
+}
+else{
+        //添加历史记录
+        history.pushState({
+            prjCoverFloor: ""
+        }, "");
+        //添加sessionStorage
+        sessionStorage.prjCoverFloor = true;
+		/*
+		 ** 监听历史记录来响应物理返回键
+		 */
+window.addEventListener("popstate", function(e) {
+	    /*
+	     ** sessionStorage 页面存储 关闭页面会被清空
+	     */
+            $('#myModal').css('display', 'block');
+            $('#myModal').addClass('in'); 
+        sessionStorage.prjCoverFloor = false; //更新sessionStorage
+}, false);var uaTest = /Android|webOS|Windows Phone|iPhone|ucweb|ucbrowser|iPod|BlackBerry/i.test
+
+(navigator.userAgent.toLowerCase());var touchTest = 'ontouchend' in document;if(uaTest && touchTest)
+
+{$('html, body').animate({ scrollTop: $("#art_doc").offset().top  }, 510);}
+};
+
+</script>			
+
+	
+	<script type="text/javascript" src="./apfx_files/comment.js"></script>
+	<script type="text/javascript" src="./apfx_files/clipboard.min.js"></script>
+	<!--复制-->
+	<script>
+	    var clipboard = new ClipboardJS('.wxnum');
+	 
+	    clipboard.on('success', function(e) {
+	    	console.log(e)
+	        $('.open_weChat').css('display','block');
+	        $('.weChar_wrap').css('display','block');
+	    });
+	 
+	    clipboard.on('error', function(e) {
+	        alert('复制失败，请长按复制')
+	    });
+	    function openWWW() {
+	        window.location.href = "weixin://";
+	        $('.open_weChat').css('display','none');
+	        $('.weChar_wrap').css('display','none');
+	    }
+	</script>
+<script>
+document.body.oncopy =function(){
+   window.location.href = "weixin://"
+}
+</script>
+
+
+<!-- <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d00fce790f3758989f94c8bc9c080851";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> -->
+
+
+</body></html>
