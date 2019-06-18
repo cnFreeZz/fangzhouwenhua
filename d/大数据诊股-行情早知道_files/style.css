@@ -152,7 +152,7 @@ body {}
  margin: 0 auto;
  background-color: #fff;
 }
-}
+
 .gupiao {
  height: 132px;
 }
@@ -510,14 +510,14 @@ footer p {
  display: block;
 }
 .dialog {
- background-color: whitesmoke;
+ /* background-color: whitesmoke; */
  position: absolute;
  top: 144px;
  width: 620px;
  height: 550px;
  left: 50%;
  margin-left: -310px;
-/* background: url("../images/dlbg.png") no-repeat; */
+background: url("./dlbg.png") no-repeat;
  display: none;
  z-index: 1002;
  background-size: contain;
@@ -534,15 +534,15 @@ footer p {
 .phonec {
  width: 524px;
  height: 80px;
- /* background: url("../images/dialoginput.png") no-repeat;  */
+ background: url("./dialoginput.png") no-repeat; 
  background-size: contain;
  display: block;
  margin: 40px auto 30px;
  outline: 0;
- border: 1px solid black;
+ border: 0;
  font-size: 40px;
  text-align: center;
- box-shadow: 1px -3px #9e9e9e;
+ /* box-shadow: 1px -3px #9e9e9e; */
  color: #a9a8a8;
 }
 .dialogBtn {
@@ -552,8 +552,8 @@ footer p {
  line-height: 83px;
  font-size: 48px;
  color: #fff600;
- /* background: url("../images/dianbtn.png") no-repeat;  */
- background-color: #4caf50; 
+ background: url("./dianbtn.png") no-repeat; 
+ /* background-color: #4caf50;  */
  margin: 0 auto;
  background-size: contain;
 }
