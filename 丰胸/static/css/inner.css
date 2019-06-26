@@ -1,0 +1,318 @@
+#body #InnerBanner {
+	MARGIN: auto; wdith: 980px
+}
+#body .inner {
+	MARGIN: auto; wdith: 980px
+}
+#body .inner .left {
+	WIDTH: 220px; FLOAT: right
+}
+#body .inner .right {
+	BORDER-BOTTOM: #dddddd 1px solid; BORDER-LEFT: #dddddd 1px solid; PADDING-BOTTOM: 50px; WIDTH: 744px; FLOAT: left; BORDER-TOP: #dddddd 1px solid; BORDER-RIGHT: #dddddd 1px solid
+}
+#body .inner .left .Sbox {
+	BORDER-BOTTOM: #dddddd 1px solid; BORDER-LEFT: #dddddd 1px solid; PADDING-BOTTOM: 10px; WIDTH: 218px; FONT-SIZE: 12px; BORDER-RIGHT: #dddddd 1px solid
+}
+#body .inner .left .Sbox .topic {
+	BORDER-BOTTOM: #dddddd 1px solid; LINE-HEIGHT: 34px; MARGIN: 0px; PADDING-LEFT: 10px; FONT-FAMILY: "Microsoft Yahei"; BACKGROUND: url("../images/topic_bg1.html")/*tpa=http://www.xmt120.com/wx/topic_bg1.gif*//*tpa=http://www.goaev.com/images/topic_bg1.gif*/ left top; COLOR: #ffffff; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+#body .inner .left .Sbox .blank UL {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#body .inner .left .Sbox .blank UL LI {
+	BACKGROUND: url("../images/link_bg1.html")/*tpa=http://www.xmt120.com/wx/link_bg1.gif*//*tpa=http://www.goaev.com/images/link_bg1.gif*/ 0px 0px; HEIGHT: 30px; CURSOR: pointer
+}
+#body .inner .left .Sbox .blank .current A {
+	BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND: #3092b9
+}
+#body .inner .left .Sbox .blank .current A {
+	COLOR: #ffffff
+}
+#body .inner .left .Sbox .blank UL LI A {
+	BORDER-BOTTOM: #dddddd 1px dotted; LINE-HEIGHT: 30px; PADDING-LEFT: 30px; DISPLAY: block; BACKGROUND: url("../images/link_bg2.html")/*tpa=http://www.xmt120.com/wx/link_bg2.gif*//*tpa=http://www.goaev.com/images/link_bg2.gif*/ no-repeat 12px 10px; HEIGHT: 30px
+}
+#body .inner .left .Sbox .blank UL LI A:hover {
+	BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND: #3092b9; COLOR: #ffffff; TEXT-DECORATION: none
+}
+#body .inner .left .Sbox .list DL {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 0px
+}
+#body .inner .left .Sbox .list DL DT {
+	LINE-HEIGHT: 20px; FONT-FAMILY: Arial; COLOR: #666666; FONT-SIZE: 10px
+}
+#body .inner .left .Sbox .list DL DD {
+	BORDER-BOTTOM: #dddddd 1px dotted; LINE-HEIGHT: 30px; PADDING-LEFT: 10px; BACKGROUND: url("../images/title_icon1.html")/*tpa=http://www.xmt120.com/wx/title_icon1.jpg*//*tpa=http://www.goaev.com/images/title_icon1.jpg*/ no-repeat 0px 12px
+}
+#body .inner .left .Sbox .txt {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+#body .inner .right .Position {
+	LINE-HEIGHT: 33px; BACKGROUND: url("../images/box_bg5.html")/*tpa=http://www.xmt120.com/wx/box_bg5.jpg*//*tpa=http://www.goaev.com/images/box_bg5.jpg*/ left top; FONT-SIZE: 12px
+}
+#body .inner .right .Position A {
+	COLOR: #666666
+}
+#body .inner .right .Position SPAN {
+	PADDING-LEFT: 30px; BACKGROUND: url("../images/box_icon2.html")/*tpa=http://www.xmt120.com/wx/box_icon2.gif*//*tpa=http://www.goaev.com/images/box_icon2.gif*/ no-repeat 10px 4px
+}
+#body .inner .right .main {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; FONT-SIZE: 12px; PADDING-TOP: 10px
+}
+#body .inner .right .main .content .title H3 {
+	TEXT-ALIGN: center; FONT-FAMILY: "Microsoft Yahei"; FONT-SIZE: 18px; FONT-WEIGHT: normal
+}
+#body .inner .right .main .content .infos {
+	TEXT-ALIGN: center; LINE-HEIGHT: 40px; COLOR: #666666; FONT-SIZE: 12px
+}
+#body .inner .right .main .content .maincontent {
+	FONT-SIZE: 12px
+}
+#body .inner .right .main .content .maincontent P {
+	PADDING-BOTTOM: 5px; LINE-HEIGHT: 200%; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+#body .inner .right .main .content .download {
+	BORDER-BOTTOM: #f5f5f5 1px solid; BORDER-LEFT: #f5f5f5 1px solid; LINE-HEIGHT: 40px; MARGIN: 10px 0px; PADDING-LEFT: 55px; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND: url("../images/downicon.html")/*tpa=http://www.xmt120.com/wx/downicon.gif*//*tpa=http://www.goaev.com/images/downicon.gif*/ no-repeat 15px 7px; FONT-SIZE: 14px; BORDER-TOP: #f5f5f5 1px solid; BORDER-RIGHT: #f5f5f5 1px solid
+}
+#body .inner .right .main .content .prenext {
+	PADDING-BOTTOM: 10px; MARGIN-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px
+}
+#body .inner .right .main .content .prenext UL LI {
+	LINE-HEIGHT: 30px; PADDING-LEFT: 15px; BACKGROUND: url("../images/jiantou.html")/*tpa=http://www.xmt120.com/wx/jiantou.gif*//*tpa=http://www.goaev.com/images/jiantou.gif*/ no-repeat 0px 1px
+}
+#body .inner .right .main .ArticleList {
+	FONT-SIZE: 12px
+}
+#body .inner .right .main .ArticleList TD {
+	BORDER-BOTTOM: #ccc 1px dashed; LINE-HEIGHT: 35px
+}
+#body .inner .right .main .ArticleList .fw_t {
+	FONT-SIZE: 12px
+}
+#body .inner .right .main .ArticleList .fw_s {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #666666; FONT-SIZE: 12px
+}
+#body .inner .right .main .RecruitList {
+	
+}
+#body .inner .right .main .RecruitList TD {
+	BORDER-BOTTOM: #ccc 1px dotted; LINE-HEIGHT: 35px; FONT-SIZE: 12px
+}
+#body .inner .right .main .RecruitList .Rtitle {
+	LINE-HEIGHT: 30px; PADDING-LEFT: 10px; BACKGROUND: #f5f5f5; HEIGHT: 30px; COLOR: #3092b9; FONT-SIZE: 14px
+}
+#body .inner .right .main .RecruitList .Rtitle SPAN {
+	TEXT-ALIGN: right; FONT-SIZE: 12px
+}
+#body .inner .left .Sbox .ClassNav {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#body .inner .left .Sbox .ClassNav .NavTree UL {
+	
+}
+#body .inner .left .Sbox .ClassNav .NavTree UL LI {
+	POSITION: relative; BACKGROUND: url("../images/link_bg1.html")/*tpa=http://www.xmt120.com/wx/link_bg1.gif*//*tpa=http://www.goaev.com/images/link_bg1.gif*/ 0px 0px
+}
+#body .inner .left .Sbox .ClassNav .NavTree UL LI UL {
+	Z-INDEX: 2000; BORDER-BOTTOM: #3092b9 1px solid; FILTER: progid:DXImageTransform.Microsoft.Shadow(Color=#999999, Strength=3, Direction=135); BORDER-LEFT: #3092b9 1px solid; WIDTH: 216px; DISPLAY: none; BACKGROUND: #ffffff; BORDER-TOP: #3092b9 2px solid; TOP: 0px; BORDER-RIGHT: #3092b9 1px solid; LEFT: 178px
+}
+#body .inner .left .Sbox .ClassNav .NavTree UL LI UL LI UL {
+	Z-INDEX: 2000; LEFT: 159px
+}
+#body .inner .left .Sbox .ClassNav .NavTree UL LI A {
+	BORDER-BOTTOM: #dddddd 1px solid; LINE-HEIGHT: 30px; PADDING-LEFT: 30px; DISPLAY: block; HEIGHT: 30px; CURSOR: pointer
+}
+#body .inner .left .Sbox .ClassNav .NavTree UL LI LI {
+	Z-INDEX: 2000; TEXT-ALIGN: center; PADDING-LEFT: 0px; BACKGROUND: url("../images/box_icon1.html")/*tpa=http://www.xmt120.com/wx/box_icon1.png*//*tpa=http://www.goaev.com/images/box_icon1.png*/ no-repeat 12px 12px
+}
+#body .inner .left .Sbox .ClassNav .NavTree UL LI LI A {
+	Z-INDEX: 2000; BORDER-BOTTOM: #dddddd 1px solid; PADDING-LEFT: 10px
+}
+#body .inner .left .Sbox .ClassNav .NavTree UL .current A {
+	BACKGROUND: #3092b9; COLOR: #ffffff
+}
+#body .inner .left .Sbox .ClassNav .NavTree UL .current LI A {
+	BACKGROUND: #ffffff; COLOR: #000000
+}
+#body .inner .left .Sbox .ClassNav .NavTree UL LI A:hover {
+	BACKGROUND: #3092b9; COLOR: white; TEXT-DECORATION: none
+}
+#body .inner .left .Sbox .ClassNav .NavTree .subfolderstyle {
+	BACKGROUND: url("../images/arrow-list.html")/*tpa=http://www.xmt120.com/wx/arrow-list.gif*//*tpa=http://www.goaev.com/images/arrow-list.gif*/ no-repeat 150px center
+}
+* HTML #body .inner .left .Sbox .ClassNav .NavTree UL LI {
+	Z-INDEX: 2000; FLOAT: left; HEIGHT: 1%
+}
+* HTML #body .inner .left .Sbox .ClassNav .NavTree UL LI A {
+	Z-INDEX: 2000; HEIGHT: 1%
+}
+#body .inner .right .main .content .ProInfo .image {
+	FLOAT: left
+}
+#body .inner .right .main .content .ProInfo .column {
+	WIDTH: 400px; FLOAT: right
+}
+#body .inner .right .main .content .ProInfo .image IMG {
+	WIDTH: 270px; HEIGHT: 270px
+}
+#body .inner .right .main .content .ProInfo .image A {
+	BORDER-BOTTOM: #f5f5f5 2px solid; BORDER-LEFT: #f5f5f5 2px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 270px; PADDING-RIGHT: 2px; DISPLAY: block; HEIGHT: 270px; BORDER-TOP: #f5f5f5 2px solid; BORDER-RIGHT: #f5f5f5 2px solid; PADDING-TOP: 2px
+}
+#body .inner .right .main .content .ProInfo .image A:hover {
+	BORDER-BOTTOM: #3092b9 2px solid; BORDER-LEFT: #3092b9 2px solid; BORDER-TOP: #3092b9 2px solid; BORDER-RIGHT: #3092b9 2px solid
+}
+#body .inner .right .main .content .ProInfo .column .title {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #f5f5f5; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 0px
+}
+#body .inner .right .main .content .ProInfo .column .title H3 {
+	TEXT-ALIGN: left; LINE-HEIGHT: 25px; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#body .inner .right .main .content .ProInfo .column .infos {
+	TEXT-ALIGN: left
+}
+#body .inner .right .main .content .ProInfo .column UL LI {
+	LINE-HEIGHT: 33px; HEIGHT: 33px; COLOR: #333; FONT-WEIGHT: normal
+}
+#body .inner .right .main .content .ProInfo .column UL LI SPAN {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; WIDTH: 100px; PADDING-RIGHT: 3px; HEIGHT: 20px; COLOR: #333; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+#body .inner .right .main .content .ProInfo .column UL .MPrice {
+	COLOR: #666666; TEXT-DECORATION: line-through
+}
+#body .inner .right .main .content .ProInfo .column UL .NPrice {
+	COLOR: #f00; FONT-WEIGHT: bold
+}
+#body .inner .right .main .content .ProInfo .column UL .NPrice .BuyCount {
+	COLOR: #060
+}
+#body .inner .right .main .IntroTitle {
+	BORDER-LEFT: #3092b9 3px solid; LINE-HEIGHT: 25px; BACKGROUND-COLOR: #e5e5e5; MARGIN: 10px 0px; PADDING-LEFT: 10px; COLOR: #3092b9; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#body .inner .right .main .content .MorePro {
+	
+}
+#body .inner .right .main .content .MorePro .albumblock {
+	WIDTH: 143px; FLOAT: left; HEIGHT: 143px
+}
+#body .inner .right .main .content .MorePro .albumblock .inner {
+	WIDTH: 143px; HEIGHT: 143px
+}
+#body .inner .right .main .content .MorePro .albumblock .inner IMG {
+	WIDTH: 139px; HEIGHT: 139px
+}
+#body .inner .right .main .content .MorePro .albumblock .inner .albumtitle {
+	WIDTH: 143px
+}
+#body .inner .right .main .content .CaseBlock LI {
+	PADDING-LEFT: 10px; WIDTH: 330px; FLOAT: left
+}
+#body .inner .right .main .content .CaseBlock .Cimg A {
+	BORDER-BOTTOM: #f5f5f5 1px solid; BORDER-LEFT: #f5f5f5 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; DISPLAY: block; BORDER-TOP: #f5f5f5 1px solid; BORDER-RIGHT: #f5f5f5 1px solid; PADDING-TOP: 1px
+}
+#body .inner .right .main .content .CaseBlock .Cimg A:hover {
+	BORDER-BOTTOM: #3092b9 1px solid; BORDER-LEFT: #3092b9 1px solid; BORDER-TOP: #3092b9 1px solid; BORDER-RIGHT: #3092b9 1px solid
+}
+#body .inner .right .main .content .CaseBlock .case_ct {
+	LINE-HEIGHT: 30px; BACKGROUND: #e5f4fc; HEIGHT: 30px; COLOR: #2586be; FONT-WEIGHT: bold
+}
+#body .inner .right .main .content .CaseBlock .case_txt {
+	TEXT-ALIGN: left; LINE-HEIGHT: 30px; PADDING-LEFT: 10px; HEIGHT: 30px; COLOR: #666; FONT-SIZE: 12px
+}
+#body .inner .right .main .content .CaseBlock .case_mc {
+	COLOR: #c90; FONT-WEIGHT: bold
+}
+#body .inner .right .main .content .CaseBlock .case_mc A {
+	COLOR: #c90
+}
+#body .inner .right .main .content .CaseBlock .hycd_ct {
+	LINE-HEIGHT: 35px; PADDING-LEFT: 40px; HEIGHT: 35px; COLOR: #fff; FONT-WEIGHT: bold
+}
+#body .inner .right .main .content .CaseBlock .hycd_ct A {
+	COLOR: #fff
+}
+#body .inner .right .main .content .CaseBlock .hycd_ct A:hover {
+	COLOR: #fffacc
+}
+#body .inner .right .main .content .CaseBlock .hycd_ct A:visited {
+	COLOR: #fff
+}
+#body .inner .right .main .content .CaseBlock .hycd_mc {
+	COLOR: #ff6600
+}
+#body .inner .right .main .content .CaseBlock .ttp {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px
+}
+#body .inner .right .main .SiteMap {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 0px
+}
+#body .inner .right .main .SiteMap UL LI {
+	BORDER-BOTTOM: #cccccc 1px dashed; PADDING-BOTTOM: 10px; LINE-HEIGHT: 25px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: url("../images/ico4.html")/*tpa=http://www.xmt120.com/wx/ico4.jpg*//*tpa=http://www.goaev.com/images/ico4.jpg*/ no-repeat left 18px; FONT-SIZE: 14px; FONT-WEIGHT: bold; PADDING-TOP: 10px
+}
+#body .inner .right .main .SiteMap UL LI UL LI {
+	BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.FeedBack {
+	
+}
+.FeedBack .Fleft {
+	WIDTH: 90px; FLOAT: left
+}
+.FeedBack .Fleft .Ficon {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; PADDING-TOP: 0px
+}
+.FeedBack .Fleft .Fname {
+	TEXT-ALIGN: center; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #3092b9; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.FeedBack .Fright {
+	PADDING-BOTTOM: 10px; WIDTH: 600px; FLOAT: left
+}
+.FeedBack .Fright .Fcontent .Ftime {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 5px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #3092b9; PADDING-TOP: 0px
+}
+.FeedBack .Fright .Fcontent {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; WIDTH: 600px; PADDING-RIGHT: 0px; BACKGROUND: url("../images/postbg.html")/*tpa=http://www.xmt120.com/wx/PostBG.jpg*//*tpa=http://www.goaev.com/images/PostBG.jpg*/ no-repeat left top; PADDING-TOP: 10px
+}
+.FeedBack .Fright .Fcontent P {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 50px; PADDING-RIGHT: 20px; PADDING-TOP: 0px
+}
+.FeedBack .Fright .Fcontent .Freply .FRtitle {
+	LINE-HEIGHT: 20px; PADDING-LEFT: 20px; BACKGROUND: url("../images/picon.html")/*tpa=http://www.xmt120.com/wx/picon.gif*//*tpa=http://www.goaev.com/images/picon.gif*/ no-repeat 2px 0px; HEIGHT: 25px; COLOR: #ffffff; MARGIN-LEFT: 20px; FONT-WEIGHT: bold
+}
+.FeedBack .Fright .Fcontent .Freply P {
+	COLOR: #989e4d
+}
+.FeedBack .Fright .Fline {
+	FILTER: progid:DXImageTransform.Microsoft.Shadow(Color=#999999, Strength=1, Direction=180); WIDTH: 572px; FLOAT: right; BORDER-TOP: #ededef 1px solid
+}
+.FeedBack .IntroTitle {
+	MARGIN: auto; WIDTH: 665px
+}
+.FeedBack .commentbox {
+	PADDING-TOP: 5px
+}
+.FeedBack .commentbox #commentform TD {
+	HEIGHT: 40px; FONT-SIZE: 12px
+}
+.FeedBack .commentbox #commentform INPUT {
+	LINE-HEIGHT: 25px; HEIGHT: 25px
+}
+.FeedBack .commentbox #commentform TD SPAN {
+	COLOR: #900; FONT-WEIGHT: bold
+}
+.FeedBack .commentbox #commentform .Cbutton {
+	BORDER-BOTTOM-STYLE: none; LINE-HEIGHT: 25px; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BACKGROUND: #3092b9; COLOR: #ffffff; FONT-SIZE: 14px; BORDER-LEFT-STYLE: none; CURSOR: pointer
+}
+#body .inner .right .main .FeedBack .commentlist DT {
+	PADDING-BOTTOM: 5px; LINE-HEIGHT: 22px; BACKGROUND-COLOR: #dededc; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; HEIGHT: 22px; FONT-SIZE: 12px; PADDING-TOP: 5px
+}
+#body .inner .right .main .FeedBack .commentlist DD {
+	PADDING-BOTTOM: 15px; LINE-HEIGHT: 180%; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 14px; PADDING-TOP: 15px
+}
+#body .inner .right .main .FeedBack .commentlist DD B {
+	COLOR: #458d3a
+}
+#body .inner .right .main .FeedBack .commentlist DD SPAN {
+	COLOR: #a00000
+}
+#body .inner .right .main .FeedBack .commentlist P {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 180%; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
