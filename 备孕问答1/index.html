@@ -1,0 +1,93 @@
+<html>
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="static/js/jquery.min.js"></script>
+        <!-- <script src="static/js/test_ip.js"></script> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta content="telephone=no" name="format-detection">
+        <title>在线咨询</title>
+        <link href="static/css/style.css" rel="stylesheet" type="text/css" media="all">
+        <script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+        <script src="static/js/weixin.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .hander {height: 20px;width: 100%;overflow: hidden;text-align: center;max-width: 750px;min-width: 320px;font-family: "微软雅黑";color: #fff;margin: 0 auto;position: absolute;bottom: 0}
+        .nav {width: 100%;height: 20px;line-height: 20px;margin: 0 auto;}
+        .nav ul {width: 100%;overflow: hidden;}
+        .nav ul li {float: left;width: 25%;text-align: center;display: inline;}
+        .nav ul li a {color: #cfcccc;font-family: "微软雅黑";font-size: 12px;display: block;margin-left: 5px;text-align: center;height: 20px;line-height: 20px;overflow: hidden;}
+        .nav ul li a span {display: block;font-family: "微软雅黑";vertical-align: middle;font-size: 13px;}
+    </style>
+        </head><body style="">
+            <header class="ly-header">
+                <nav>
+                    <h2>在线咨询</h2>
+                </nav>
+            </header>
+            <section class="ly-section1" style="position: relative;">
+                <div class="talk" id="messbox">
+                        <div class="line ly-hide line_wx" style="display: block;">
+                        
+                                <div class="ly-clear"></div>
+                            </div>
+                    <div class="line ly-hide line_wx" style="display: block;">
+                        <div class="left"> <img src="static/picture/header.jpg" width="40px">
+                            <div> <i></i> 您好，我是粉红丝带美胸咨询师，非常高兴为您服务 </div>
+                        </div>
+                        <div class="ly-clear"></div>
+                    </div>
+                    </div>
+            </section>
+            <div class="select_botton" style="" id="option_1">
+                <a href="javascript:" wtindex="1" data-w="1" style="width: 30%;">胸部扁平</a>
+                <a href="javascript:" wtindex="1" data-w="2" style="width: 30%;">哺乳后胸部变小</a>
+                <a href="javascript:" wtindex="1" data-w="3" style="width: 30%;">乳房下垂/外扩</a>
+                <a href="javascript:" wtindex="1" data-w="4" style="width: 30%;">胸部不对称</a>
+                <!-- <a href="javascript:" wtindex="1" data-w="5" style="width: 30%;">其他</a> -->
+            </div>
+            <div class="select_botton" style="display:none;" id="option_2">
+                <a href="javascript:" wtindex="2" style="width: 40%;">20岁以下</a>
+                <a href="javascript:" wtindex="2" style="width: 40%;">20-25岁</a>
+                <a href="javascript:" wtindex="2" style="width: 40%;">26-35岁</a>
+                <a href="javascript:" wtindex="2" style="width: 40%;">35岁以上</a>
+            </div>
+            <div class="select_botton" style="display:none;" id="option_3">
+                <a href="javascript:" wtindex="4" style="width: 40%;">3个月以下</a>
+                <a href="javascript:" wtindex="4" style="width: 40%;">3个月-1年</a>
+                <a href="javascript:" wtindex="4" style="width: 40%;">1-3年</a>
+                <a href="javascript:" wtindex="4" style="width: 40%;">3年以上</a>
+            </div>
+            <div class="select_botton" style="display:none;" id="option_4">
+                <a href="javascript:" wtindex="4" style="width: 45%;">有</a>
+                <a href="javascript:" wtindex="4" style="width: 45%;">否</a>
+            </div>
+            <!-- <div class="select_botton" style="display:none;" id="option_5">
+                <a href="javascript:" wtindex="5" style="width: 30%;">一胎</a>
+                <a href="javascript:" wtindex="5" style="width: 30%;">二胎</a>
+            </div> -->
+            <div class="select_botton" style="display:none;" id="option_5">
+                <a href="javascript:" wtindex="6" index="0" style="width: 45%;">中医按摩</a>
+                <a href="javascript:" wtindex="6" index="0" style="width: 45%;">隆胸</a>
+                <a href="javascript:" wtindex="6" index="0" style="width: 45%;">购买产品</a>
+                <a href="javascript:" wtindex="6" index="0" style="width: 45%;">没有用过</a>
+            </div>
+            <div class="select_botton" style="display:none;" id="option_7">
+                <a href="javascript:" wtindex="7" index="1" style="width: 45%;">联系老师</a>
+                <a href="javascript:" wtindex="7" index="2" style="width: 45%;">免费获取咨询方案</a>
+            </div>
+    
+            <script type="text/javascript" src="static/js/js.js"></script>
+            <script>
+                $(function() {
+                    $(document).on("copy", ".wxnum", copyHandle);
+        
+                    function copyHandle() {
+                        window.location.href = 'weixin://';
+                    }
+                });
+            </script>
+    </body>
+</html>
